@@ -1,0 +1,163 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+textarea:focus, input:focus{
+    outline: none;
+    border: none;
+}
+img, button, img,
+img, button:active img
+img, button:focus img {
+  border: none;
+  outline: 0;
+  padding: 0;
+}
+input[type=button]{
+    border: none;
+    padding: 0;
+}
+input[type=submit]{
+    border: none;
+    padding: 0;
+}
+input{
+    border: none;
+}
+
+/* -- Font links -- */
+
+@font-face {                                                                                                                                                                                                                                                                              
+    font-family:'Light';                                                                                                                                                                                                                                                                
+    src: url(Graphik/Light.woff) format("woff");                                                                                                                                                                                                                                                                                                                                                                                                                                       
+}
+@font-face {                                                                                                                                                                                                                                                                              
+    font-family:'Regular';                                                                                                                                                                                                                                                                
+    src: url(Graphik/Regular.woff) format("woff");                                                                                                                                                                                                                                                                                                                                                                                                                                       
+}
+@font-face {                                                                                                                                                                                                                                                                              
+    font-family:'Medium';                                                                                                                                                                                                                                                                
+    src: url(Graphik/Medium.woff) format("woff");                                                                                                                                                                                                                                                                                                                                                                                                                                       
+}
+
+
+
+/* -- Text Styles -- */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: ;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2A2E28;
+}
+
+.maggi{
+    display: flex;
+    height: 100%;
+    background-image: url("img/maggi.jpg");
+    width: auto;
+    background-size: cover;
+}
+.maggi-mobile{
+    display: none;
+}
+
+h1{
+    font-size: 64px;
+    letter-spacing: -0,4px;
+    font-family: "Medium";
+}
+.logo-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 30vw;
+}
+
+@media only screen and (max-width: 640px){
+
+    h1 {
+        font-size: 48px;
+    }
+    body{
+        flex-direction: column;
+    }
+    .maggi{
+        display: none;
+    }
+    .logo{
+        width: 60vw;
+    }
+    .maggi-mobile{
+        display: flex;
+        height: auto;
+        background-image: url("img/maggi-mobile.jpg");
+        width: 100%;
+        background-size: cover;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
