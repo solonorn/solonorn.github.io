@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Fishing Tour Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="booking-form">
+    <h2>Book Your Fly Fishing Tour</h2>
+    <form action="submit_booking.php" method="POST">
+        <!-- Tour Length Selection with Boxes -->
+        <div class="tour-options">
+            <label>
+                <input type="radio" name="tour_length" value="1 day" required>
+                <div class="tour-option-box">
+                    <h3>1 Day Tour</h3>
+                    <p>Pick-up and drop-off<br>Fishing gear included<br>Guided tour</p>
+                    <p>From $790 per person</p>
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="tour_length" value="2 days" required>
+                <div class="tour-option-box">
+                    <h3>2 Day Tour</h3>
+                    <p>Private lodge<br>Breakfast, lunch, dinner</p>
+                    <p>From $1490 per person</p>
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="tour_length" value="3 days" required>
+                <div class="tour-option-box">
+                    <h3>3 Day Tour</h3>
+                    <p>Private lodge<br>Breakfast, lunch, dinner</p>
+                    <p>From $2490 per person</p>
+                </div>
+            </label>
+        </div>
+
+        <!-- Contact Information -->
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <!-- Number of Guests -->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" name="guests" id="guests" min="1" required>
+
+        <!-- Month of Travel -->
+        <label for="month">Month of Travel:</label>
+        <input type="month" name="month" id="month" required>
+
+        <!-- Submit Button -->
+        <button type="submit">Send request</button>
+    </form>
+</div>
+
+</body>
+</html>
