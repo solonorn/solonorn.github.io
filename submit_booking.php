@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $month = htmlspecialchars($_POST['month']);
 
     // Prepare email
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "solon@elastra.is"; // Replace with your email address
     $subject = "New Fly Fishing Tour Booking Request";
     $message = "
         Tour Length: $tour_length\n
