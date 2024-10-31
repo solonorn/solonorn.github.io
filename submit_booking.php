@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Collect form data
     $tour_length = htmlspecialchars($_POST['tour_length']);
     $name = htmlspecialchars($_POST['name']);
