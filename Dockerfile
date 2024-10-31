@@ -9,6 +9,3 @@ COPY . /var/www/html
 
 # Set permissions for all files in the web root
 RUN chmod -R 755 /var/www/html
-
-# Restart Apache to apply any new configurations
-RUN service apache2 restart
