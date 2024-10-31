@@ -1,9 +1,14 @@
+# Use PHP with Apache
 FROM php:8.0-apache
 
-# Copy all project files to the web server root
-COPY . /var/www/html/
+# Set the working directory to /var/www/html
+WORKDIR /var/www/html
 
-# Set the document root in Apache
-RUN echo "DocumentRoot /var/www/html" >> /etc/apache2/sites-available/000-default.conf
+# Copy all files from the project directory into the container's web root
+COPY . /var/www/html
 
-RUN chmod 644 /var/www/html/form.php
+# Set permissions for all files in the web root
+RUN chmod -R 755 /var/www/html
+
+# Restart Apache to apply any new configurations
+RUN service apache2 restart
