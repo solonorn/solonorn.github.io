@@ -8,9 +8,9 @@
 </head>
 <body>
 
-<div class="booking-form">
+<div class="booking-form" id="bookingForm">
     <h2>Book Your Fly Fishing Tour</h2>
-    <form action="https://getform.io/f/azyyydzb" method="POST">
+    <form id="tourBookingForm">
         <!-- Tour Length Selection with Boxes -->
         <div class="tour-options">
             <label>
@@ -58,6 +58,43 @@
         <button type="submit">Send request</button>
     </form>
 </div>
+
+<div class="thank-you-message" id="thankYouMessage" style="display: none; text-align: center;">
+    <h2>Thank You!</h2>
+    <p>Your booking request was submitted successfully.</p>
+    <button onclick="resetForm()">Back to Booking Form</button>
+</div>
+
+<script>
+    document.getElementById("tourBookingForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Submit the form data via AJAX
+        fetch("https://getform.io/f/azyyydzb", {
+            method: "POST",
+            body: new FormData(this)
+        })
+        .then(response => {
+            if (response.ok) {
+                // Hide the form and show the thank-you message
+                document.getElementById("bookingForm").style.display = "none";
+                document.getElementById("thankYouMessage").style.display = "block";
+            } else {
+                alert("There was an error submitting the form. Please try again.");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("There was an error submitting the form. Please try again.");
+        });
+    });
+
+    function resetForm() {
+        document.getElementById("thankYouMessage").style.display = "none";
+        document.getElementById("bookingForm").style.display = "block";
+        document.getElementById("tourBookingForm").reset(); // Reset the form fields
+    }
+</script>
 
 </body>
 </html>
