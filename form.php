@@ -1,29 +1,29 @@
 <?php
+// Enable error reporting for troubleshooting
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Collect form data
-    $tour_length = htmlspecialchars($_POST['tour_length']);
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $guests = htmlspecialchars($_POST['guests']);
-    $month = htmlspecialchars($_POST['month']);
+    // Retrieve form data safely
+    $tour_length = htmlspecialchars($_POST['tour_length'] ?? '');
+    $name = htmlspecialchars($_POST['name'] ?? '');
+    $email = htmlspecialchars($_POST['email'] ?? '');
+    $guests = htmlspecialchars($_POST['guests'] ?? '');
+    $month = htmlspecialchars($_POST['month'] ?? '');
 
-    // Prepare email
-    $to = "solon@elastra.is"; // Replace with your email address
-    $subject = "New Fly Fishing Tour Booking Request";
-    $message = "
-        Tour Length: $tour_length\n
-        Name: $name\n
-        Email: $email\n
-        Number of Guests: $guests\n
-        Month of Travel: $month
-    ";
-    $headers = "From: no-reply@example.com";
-
-    // Send email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "<h2>Thank you!</h2><p>Your booking request has been received. We will contact you shortly.</p>";
+    // Basic form validation
+    if (empty($tour_length) || empty($name) || empty($email) || empty($guests) || empty($month)) {
+        echo "<h2>Error: Please fill in all required fields.</h2>";
     } else {
-        echo "<h2>Oops!</h2><p>There was a problem submitting your request. Please try again later.</p>";
+        // Display a success message if all fields are filled
+        echo "<h2>Form submitted successfully!</h2>";
+        echo "<p>Tour Length: $tour_length</p>";
+        echo "<p>Name: $name</p>";
+        echo "<p>Email: $email</p>";
+        echo "<p>Number of Guests: $guests</p>";
+        echo "<p>Month of Travel: $month</p>";
     }
+} else {
+    echo "<h2>Error: Form not submitted correctly.</h2>";
 }
-?>
