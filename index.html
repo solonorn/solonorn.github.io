@@ -9,7 +9,10 @@
   <meta name="description" content="AlltRaf Rafverktakar">
   <meta property="og:image" content=""/>
   <meta name="keywords" content="Rafverktakar, Rafvirki">
-  <meta name="author" content="AlltRaf Rafverktakar">
+  <meta name="author" content="AlltRaf Rafverktakar">  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.0.9/css/glightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.0.9/js/glightbox.min.js"></script> <script src="lightbox.js"></script>
 
 </head>
 
@@ -79,7 +82,7 @@
                     <div class="gallery">
                       <button class = "secondary">Show all photos</button>
                       <div class ="gallery-1">
-                        <img loading = "lazy" src="img/g1-1.jpg">
+                        <img loading = "lazy" src="img/g1-1.jpg" class = "glightbox">
                         <img loading = "lazy" src="img/g1-2.jpg">
                       </div>
                       <div class="gallery-2">
@@ -109,6 +112,12 @@
           </div>
       
     </div>
+
+    <script>
+
+        const lightbox = GLightbox({ selector: '.glightbox' });
+
+    </script>
 
   </body>
 
