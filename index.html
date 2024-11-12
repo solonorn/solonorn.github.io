@@ -79,22 +79,30 @@
                     <p>River Lýsa is located at the south<br> coast of Snæfellsnes surrounded<br>by wild untouched nature</p>
 
                     <div class="gallery">
-                      <button class = "secondary">Show all photos</button>
-                      <div class ="gallery-1">
-                        <img loading = "lazy" src="img/g1-1.jpg" class = "glightbox">
-                        <img loading = "lazy" src="img/g1-2.jpg" class = "glightbox">
-                      </div>
-                      <div class="gallery-2">
 
-                        <div class = "gallery-2-top">
-                          <img loading = "lazy" src="img/g1-3.jpg">
-                          <img loading = "lazy" src="img/g1-4.jpg">
+                        <button class = "secondary"onclick="openGlightbox()">Show all photos</button>
+                        <div class ="gallery-1">
+                          <a href="img/g1-1-fullres.jpg" class = "glightbox" data-gallery="mygallery">
+                            <img loading = "lazy" src="img/g1-1.jpg">
+                          </a>
+                          <a href="img/g1-2-fullres.jpg" class = "glightbox" data-gallery="mygallery">
+                            <img loading = "lazy" src="img/g1-2.jpg">
+                          </a>
                         </div>
-                        <div class="gallery-2-bottom">
-                          <img loading = "lazy" class = "gallery-img-last" src="img/g1-5.jpg">
+                        <div class="gallery-2">
+
+                          <div class = "gallery-2-top">
+                            <img loading = "lazy" src="img/g1-3.jpg">
+                            <img loading = "lazy" src="img/g1-4.jpg">
+                          </div>
+                          <div class="gallery-2-bottom">
+                            <img loading = "lazy" class = "gallery-img-last" src="img/g1-5.jpg">
+                          </div>
                         </div>
 
-                      </div>
+                        <a href="img/g1-6-fullres.jpg" class = "glightbox hidden" data-gallery="mygallery">
+                            <img loading = "lazy" src="img/g1-1.jpg">
+                        </a>
 
 
                       </div>
@@ -106,7 +114,7 @@
 
           <div class="sticky-cta">
             <div class="img-container">
-              <img loading ="lazy" src="img/1-small.jpg">
+              <img loading ="lazy" src="img/1-small.jpg" width="300" height="100">
             </div>
           </div>
       
@@ -118,6 +126,13 @@
     <!-- Your Initialization Script -->
     <script>
         const lightbox = GLightbox({ selector: '.glightbox' });
+
+        function openGlightbox() {
+           const lightbox = GLightbox({
+              selector: '.glightbox',  // Select all images with the class 'glightbox'
+           });
+           lightbox.open();  // Open the lightbox programmatically
+        }
 
     </script>
 

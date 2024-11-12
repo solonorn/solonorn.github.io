@@ -248,6 +248,9 @@ p{
   z-index: -1;
 }
 
+.hidden {
+    display: none; /* Hides additional images */
+}
 
 button {
     font-family: "Bold";

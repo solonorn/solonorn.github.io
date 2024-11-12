@@ -430,7 +430,7 @@ iframe.wait-autoplay{
 }
 .glightbox-clean .gclose,.glightbox-clean .gnext,.glightbox-clean .gprev{
     background-color:rgba(0,0,0,.75);
-    border-radius:4px
+    border-radius:999px
 }
 .glightbox-clean .gclose path,.glightbox-clean .gnext path,.glightbox-clean .gprev path{
     fill:#fff
@@ -765,7 +765,7 @@ iframe.wait-autoplay{
         overflow-y:auto
     }
     .glightbox-clean .gclose,.glightbox-clean .gnext,.glightbox-clean .gprev{
-        background-color:rgba(0,0,0,.32)
+        background-color:rgba(255,255,255,1);
     }
     .glightbox-clean .gclose:hover,.glightbox-clean .gnext:hover,.glightbox-clean .gprev:hover{
         background-color:rgba(0,0,0,.7)
