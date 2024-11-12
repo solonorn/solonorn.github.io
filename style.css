@@ -190,6 +190,11 @@ p{
     width: calc(50% - 4px);
 }
 
+.gallery-1 a{
+    height: 242px;
+    overflow: hidden;
+}
+
 .gallery-2{
     display: flex;
     justify-content: space-between;
@@ -201,11 +206,25 @@ p{
     overflow: hidden;
 }
 
+.gallery img:hover{
+    transform: scale(1.1);
+}
+
 .gallery-2-top{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 242px;
+}
+
+.gallery-2-top a{
+    height: 117px;
+    overflow: hidden;
+}
+
+.gallery-2-bottom a{
+    height: 242px;
+    overflow: hidden;
 }
 
 .gallery-img-last{
@@ -227,6 +246,8 @@ p{
     background-color: rgba(255, 255, 255, 0.6);
     overflow: hidden;
     z-index: 99;
+    padding: 13px 22px 13px 22px;
+    font-size: 16px;
 }
 
 .gallery button:hover{
@@ -366,12 +387,44 @@ body{
     display: flex;
     width: 20vw;
     height: 363px;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 20px;
     position: sticky;
     overflow: hidden;
     top: 105px;
     min-width: 300px;
+}
+.sticky-cta button{
+    width: 100%;
+    padding: 16px;
+}
+.sticky-cta span{
+    font-family: "Black";
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 2%;
+    color: #1D1F1C;
+}
+.sticky-container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.span-1{
+    font-family: "Bold" !important;
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+    letter-spacing: 2% !important;
+    color: #1D1F1C !important;
+}
+.span-2{
+    font-family: "Medium" !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    letter-spacing: 0% !important;
+    color: #1D1F1C !important;
 }
 .sticky-margin{
     height: 56px;
