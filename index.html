@@ -12,7 +12,7 @@
   <meta name="author" content="AlltRaf Rafverktakar">  
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.0.9/css/glightbox.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.0.9/js/glightbox.min.js"></script> <script src="lightbox.js"></script>
+
 
 </head>
 
@@ -83,7 +83,7 @@
                       <button class = "secondary">Show all photos</button>
                       <div class ="gallery-1">
                         <img loading = "lazy" src="img/g1-1.jpg" class = "glightbox">
-                        <img loading = "lazy" src="img/g1-2.jpg">
+                        <img loading = "lazy" src="img/g1-2.jpg" class = "glightbox">
                       </div>
                       <div class="gallery-2">
 
@@ -113,8 +113,11 @@
       
     </div>
 
-    <script>
+    <!-- GLightbox Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.0.9/js/glightbox.min.js"></script>
 
+    <!-- Your Initialization Script -->
+    <script>
         const lightbox = GLightbox({ selector: '.glightbox' });
 
     </script>
