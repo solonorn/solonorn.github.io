@@ -332,11 +332,23 @@ body{
     height: 100vh;
     min-height: 100vh;
     background-color: #2A2E28;
-    background-image: url("img/hero-back.svg");
+}
+
+.hero-left img{
+    position: absolute;
+    z-index: 0;
+    height: 100vw;
+    bottom: 0;
+    left: 0;
+}
+
+.z-index{
+    z-index: 999;
 }
 
 .hero-left{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: flex-end;
     width: 60vw;
@@ -345,6 +357,7 @@ body{
     padding-bottom: 10vh;
     box-sizing: border-box;
     background-image: url("");
+    overflow: hidden;
 }
 
 .hero-left h2{
