@@ -562,11 +562,7 @@ body{
         height: 30vh;
     }
     .video-insert{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
+        display: none;
 }
 
 
