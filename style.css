@@ -70,22 +70,22 @@ input{
 
 @font-face {                                                                                                                                                                                                                                                                              
     font-family:'Regular';                                                                                                                                                                                                                                                                
-    src: url(America/GT-America-Regular.woff) format("woff");
+    src: url(America/GT-America-Regular.woff2) format("woff2");
     font-display: swap;                                                                                                                                                                                                                                                                                                                                                                                                                                       
 }
 @font-face {                                                                                                                                                                                                                                                                              
     font-family:'Medium';                                                                                                                                                                                                                                                                
-    src: url(America/GT-America-Medium.woff) format("woff"); ,
+    src: url(America/GT-America-Medium.woff2) format("woff2"); ,
     font-display: swap;                                                                                                                                                                                                                                                                                                                                                                                                                                     
 }
 @font-face {                                                                                                                                                                                                                                                                              
     font-family:'Bold';                                                                                                                                                                                                                                                                
-    src: url(America/GT-America-Bold.woff) format("woff");
+    src: url(America/GT-America-Bold.woff2) format("woff2");
     font-display: swap;                                                                                                                                                                                                                                                                                                                                                                                                                                   
 }
 @font-face {                                                                                                                                                                                                                                                                              
     font-family:'Black';                                                                                                                                                                                                                                                                
-    src: url(America/GT-America-Black.woff) format("woff");
+    src: url(America/GT-America-Black.woff2) format("woff2");
     font-display: swap;                                                                                                                                                                                                                                                                                                                                                                                                                                   
 }
 
