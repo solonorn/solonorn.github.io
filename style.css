@@ -225,12 +225,12 @@ p{
 
 .gallery-2-bottom a{
     height: 242px;
+    width: 100%;
     overflow: hidden;
 }
 
 .gallery-img-last{
     height: 242px !important;
-    z-index: -2;
 }
 
 .gallery-2-bottom{
@@ -246,6 +246,7 @@ p{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     overflow: hidden;
     z-index: 99;
     padding: 13px 22px 13px 22px;
@@ -329,8 +330,9 @@ body{
     display: flex;
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
     background-color: #2A2E28;
-
+    background-image: url("img/hero-back.svg");
 }
 
 .hero-left{
