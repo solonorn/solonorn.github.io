@@ -386,6 +386,8 @@ body{
     position: fixed; /* Cover the entire viewport */
     z-index: 1000; /* Ensure it's above everything */
     left: 0;
+    align-items: center;
+    justify-content: center;
     top: 0;
     width: 100%;
     height: 100%;
@@ -395,28 +397,211 @@ body{
 
 .modal-content {
     position: relative;
-    margin: 10% auto;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
+    border-radius: 20px;
+    width: 55vw;
+    height: 97vh;
     overflow: auto;
-    max-height: 80vh;
+}
+
+.close img{
+
+}
+
+.modal-content img{
+    width: 100%;
+}
+
+.close img{
+    width: 20px;
+    height: 20px;
 }
 
 .close {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
+    top: 12px;
+    right: 12px;
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 99px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+}
+
+.close:hover{
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.modal-open {
     overflow: hidden; /* Disable scrolling */
     position: fixed; /* Prevent body movement entirely */
     width: 100%;
+}
+
+/*Form*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.form-header p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.package-selection h2,
+.information-form h2 {
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.package-options {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.package {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.package input[type="radio"] {
+    display: none; /* Hide radio button */
+}
+
+.package-details {
+    pointer-events: none; /* Prevent interactions with content */
+}
+
+.package h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.package ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    color: #666;
+}
+
+.package .price {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.package input[type="radio"]:checked + .package-details {
+    background-color: #e0f7e8; /* Highlight selected package */
+    border: 2px solid #6fcf97;
+    border-radius: 10px;
+}
+
+.popular .tag {
+    background-color: #6fcf97;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.information-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #a0d993;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #8ccf81;
 }
 
 .logo{

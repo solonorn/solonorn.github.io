@@ -142,9 +142,9 @@
           <!-- Submit form -->
               <div id="modal" class="modal">
                   <div class="modal-content">
-                      <span class="close">&times;</span>
+                      <span class="close"><img src="img/Close-X.svg"></span>
                       <div id="modal-content-placeholder">
-                          Loading content...
+                          <img src="img/form-cover.jpg">
                       </div>
                   </div>
               </div>
@@ -198,7 +198,7 @@
         // Function to open the modal
         function openModalFunction() {
             scrollPosition = window.scrollY; // Save the current scroll position
-            modal.style.display = "block"; // Show modal
+            modal.style.display = "flex"; // Show modal
             document.body.classList.add("modal-open"); // Prevent scrolling
             document.body.style.top = `-${scrollPosition}px`; // Fix position
             document.body.style.width = "100%"; // Prevent shrinkage
