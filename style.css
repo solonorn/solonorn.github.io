@@ -335,6 +335,7 @@ body{
 }
 
 .hero-left img{
+    display: none;
     position: absolute;
     z-index: 0;
     height: 100vw;
