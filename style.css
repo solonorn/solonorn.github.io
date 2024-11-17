@@ -446,6 +446,333 @@ body.modal-open {
     width: 100%;
 }
 
+
+
+.logo{
+    width: 30vw;
+}
+
+.video-insert{
+  width: 41vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 88vw;
+    margin-top: 56px;
+}
+.sticky-cta-container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sticky-cta{
+    display: flex;
+    width: 20vw;
+    height: auto;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    position: sticky;
+    overflow: hidden;
+    top: 105px;
+    min-width: 300px;
+}
+.sticky-cta button{
+    width: 100%;
+    padding: 16px;
+    margin-top: 28px;
+}
+.sticky-cta span{
+    font-family: "Black";
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 2%;
+    color: #1D1F1C;
+    margin-left: 6px;
+}
+.sticky-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.span-1{
+    font-family: "Bold" !important;
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+    letter-spacing: 2% !important;
+    color: #1D1F1C !important;
+    margin-top: 10px !important;
+    width: 100%;
+    margin-left: 6px;
+}
+.span-2{
+    font-family: "Medium" !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    letter-spacing: 0% !important;
+    color: #1D1F1C !important;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px !important;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.sticky-margin{
+    height: 56px;
+    width: 100%;
+}
+.sticky-cta .img-container img{
+    width: 100%;
+}
+
+.info-left{
+    margin-top: 40px;
+    width: 40vw;
+    height: 2000px;
+}
+
+
+/*Form*/
+
+.form-container {
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.form-header p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.package-selection h2,
+.information-form h2 {
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.package-options {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.package {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.package input[type="radio"] {
+    display: none; /* Hide radio button */
+}
+
+.package-details {
+    pointer-events: none; /* Prevent interactions with content */
+}
+
+.package h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.package ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    color: #666;
+}
+
+.package .price {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.package input[type="radio"]:checked + .package-details {
+    background-color: #e0f7e8; /* Highlight selected package */
+    border: 2px solid #6fcf97;
+    border-radius: 10px;
+}
+
+.popular .tag {
+    background-color: #6fcf97;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.information-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #a0d993;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #8ccf81;
+}
+
+.logo{
+    width: 30vw;
+}
+
+.video-insert{
+  width: 41vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 88vw;
+    margin-top: 56px;
+}
+.sticky-cta-container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sticky-cta{
+    display: flex;
+    width: 20vw;
+    height: auto;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    position: sticky;
+    overflow: hidden;
+    top: 105px;
+    min-width: 300px;
+}
+.sticky-cta button{
+    width: 100%;
+    padding: 16px;
+    margin-top: 28px;
+}
+.sticky-cta span{
+    font-family: "Black";
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 2%;
+    color: #1D1F1C;
+    margin-left: 6px;
+}
+.sticky-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.span-1{
+    font-family: "Bold" !important;
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+    letter-spacing: 2% !important;
+    color: #1D1F1C !important;
+    margin-top: 10px !important;
+    width: 100%;
+    margin-left: 6px;
+}
+.span-2{
+    font-family: "Medium" !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    letter-spacing: 0% !important;
+    color: #1D1F1C !important;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px !important;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.sticky-margin{
+    height: 56px;
+    width: 100%;
+}
+.sticky-cta .img-container img{
+    width: 100%;
+}
+
+.info-left{
+    margin-top: 40px;
+    width: 40vw;
+    height: 2000px;
+}
+
+
 /*Form*/
 
 * {
@@ -453,14 +780,6 @@ body.modal-open {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f3f3f3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
 }
 
 .form-container {
@@ -695,6 +1014,98 @@ textarea {
 }
 
 
+
+.logo{
+    width: 30vw;
+}
+
+.video-insert{
+  width: 41vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 88vw;
+    margin-top: 56px;
+}
+.sticky-cta-container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sticky-cta{
+    display: flex;
+    width: 20vw;
+    height: auto;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    position: sticky;
+    overflow: hidden;
+    top: 105px;
+    min-width: 300px;
+}
+.sticky-cta button{
+    width: 100%;
+    padding: 16px;
+    margin-top: 28px;
+}
+.sticky-cta span{
+    font-family: "Black";
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 2%;
+    color: #1D1F1C;
+    margin-left: 6px;
+}
+.sticky-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.span-1{
+    font-family: "Bold" !important;
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+    letter-spacing: 2% !important;
+    color: #1D1F1C !important;
+    margin-top: 10px !important;
+    width: 100%;
+    margin-left: 6px;
+}
+.span-2{
+    font-family: "Medium" !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    letter-spacing: 0% !important;
+    color: #1D1F1C !important;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px !important;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.sticky-margin{
+    height: 56px;
+    width: 100%;
+}
+.sticky-cta .img-container img{
+    width: 100%;
+}
+
+.info-left{
+    margin-top: 40px;
+    width: 40vw;
+    height: 2000px;
+}
+
+
 /*FORMS*/
 .booking-form {
     background-color: #2a2a2a;
@@ -772,6 +1183,8 @@ textarea {
 .booking-form button:hover {
     background-color: #45a049;
 }
+
+
 
 
 
