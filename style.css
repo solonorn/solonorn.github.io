@@ -334,10 +334,13 @@ body{
     background-color: #2A2E28;
 }
 
-.hero-left img{
+.hero-left-back{
     position: absolute;
+    background: url('img/hero-back.png') no-repeat center center;
+    background-size: cover;
     z-index: 0;
-    height: 100vw;
+    width: 60vw;
+    height: 100vh;
     bottom: 0;
     left: 0;
 }
