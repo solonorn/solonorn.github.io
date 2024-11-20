@@ -473,6 +473,9 @@ body.modal-open {
     flex-direction: column;
     overflow: hidden;
 }
+
+
+
 .sticky-cta{
     display: flex;
     width: 20vw;
@@ -558,7 +561,6 @@ body {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Title and Subtitle */
@@ -602,6 +604,9 @@ body {
   box-sizing: border-box;
   border: 1.5px solid #FFF;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
 }
 
 .input-container input:focus,
@@ -858,7 +863,7 @@ form button:hover {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 
