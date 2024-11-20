@@ -604,9 +604,8 @@ body {
   box-sizing: border-box;
   border: 1.5px solid #FFF;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance:    none;
-  appearance:         none;
+  -webkit-appearance:   none;
+  -moz-appearance:  none;
 }
 
 .input-container input:focus,
@@ -647,6 +646,18 @@ body {
   transform: translateY(-50%);
   pointer-events: none; /* Ensures the arrow doesn't block clicks */
 }
+
+.custom-date-icon::after {
+  content: url('img/calendar.svg'); /* Unicode character for arrow */
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensures the arrow doesn't block clicks */
+}
+
 
 textarea {
   height: 100px;
