@@ -585,7 +585,7 @@ body {
   font-size: 13px;
   font-family: "Bold";
   color: #2C2E2C;
-  transition: all 0.3s ease;
+  transition: all 0.05s ease;
   pointer-events: none;
 }
 
@@ -599,10 +599,12 @@ body {
   background: #FFFFFF;
   font-family: "Regular";
   line-height: 1.3;
+  color: #2C2E2C !important;
   font-size: 17px;
   outline: none !important;
   box-sizing: border-box;
   border: 1.5px solid #FFF;
+  transition: 0.3s;
   appearance: none;
   -webkit-appearance:   none;
   -moz-appearance:  none;
@@ -636,6 +638,8 @@ body {
   font-family: "Bold";
 }
 
+
+
 .custom-select::after {
   content: url('img/arrow-down.svg'); /* Unicode character for arrow */
   position: absolute;
@@ -658,6 +662,18 @@ body {
   pointer-events: none; /* Ensures the arrow doesn't block clicks */
 }
 
+input[type="number"]{
+    appearance: none;
+    -webkit-appearance:   none;
+    -moz-appearance:  none;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 textarea {
   height: 100px;
@@ -673,25 +689,108 @@ textarea {
 
 .package {
   flex: 1;
-  border: 1px solid #ddd;
   border-radius: 8px;
   cursor: pointer;
   overflow: hidden;
   transition: box-shadow 0.3s;
   background-color: #fff;
   text-align: center;
-  padding: 15px;
 }
 
 .package:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Card hover start */
+
+/* General styles for the packages container */
+.packages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Individual package styling */
+.package {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  background-color: #fff;
+  opacity: 1; /* Default opacity */
+}
+
+.package input[type="radio"] {
+  display: none; /* Hide radio button */
+}
+
+.package-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.package .price {
+  margin-top: auto;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hover effect - dim all packages except the hovered one */
+.packages:hover .package {
+  opacity: 0.5; /* Dim all packages when hovering */
+}
+
+.package:hover {
+  opacity: 1 !important; /* Ensure hovered package stays fully visible */
+  transform: scale(1.05); /* Optional: Slightly enlarge the hovered package */
+}
+
+/* Selected (Active) state */
+.package input[type="radio"]:checked + .package-content {
+  border: 2px solid #4caf50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f0fff0;
+  opacity: 1 !important; /* Ensure selected package is fully visible */
+  transform: scale(1.05); /* Slightly enlarge selected package */
+}
+
+/* Handle both hover and selected states together */
+.packages:hover .package input[type="radio"]:checked + .package-content {
+  opacity: 1 !important; /* Ensure selected package remains fully visible during hover */
+}
+
+/* Most popular banner styling */
+.most-popular {
+  position: relative;
+}
+
+.popular-banner {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Card hover end */
+
 .package input {
   display: none;
 }
 
-.package input:checked + .package-content {
+.package input:checked + .package-content {  
   border-color: #34a853;
   box-shadow: 0 0 0 2px #34a853;
 }
@@ -894,7 +993,6 @@ form button:hover {
 .package {
     background-color: #fafafa;
     border-radius: 10px;
-    padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1;

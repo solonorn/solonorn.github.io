@@ -7,6 +7,12 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
   <title>AlltRaf</title>
 
+  <!-- Add CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- Add JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
   <meta name="description" content="AlltRaf Rafverktakar">
   <meta property="og:image" content=""/>
   <meta name="keywords" content="Rafverktakar, Rafvirki">
@@ -100,8 +106,8 @@
          </div>
          <div class="form-field">
            <div class="input-container custom-date-icon">
-             <label for="pickup-date" class = "custom-date">Date of pick-up</label>
-             <input type="date" id="pickup-date" name="pickup-date" min="2025-06-01" required>
+             <label for="pickup-date" class="custom-date">Date of pick-up</label>
+             <input type="text" id="pickup-date" name="pickup-date" required>
            </div>
          </div>
        </div>
@@ -162,6 +168,15 @@
           });
         });
 
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            flatpickr("#pickup-date", {
+                minDate: "2025-06-01", // Matches your `min` attribute
+                dateFormat: "Y-m-d",   // ISO format for form submission
+            });
+        });
     </script>
 
 </body>
