@@ -150,11 +150,11 @@
 
           <!-- Submit form -->
               <div id="modal" class="modal">
-                  <div class="modal-content">
-                      <span class="close"><img src="img/Close-X.svg"></span>
-                      <div id="modal-content-placeholder">
-                          <img src="img/form-cover.jpg">
+                  <div class="modal-content"> 
+                      <div class="close-container">
+                        <span class="close"><img src="img/Close-X.svg"></span>
                       </div>
+                      <img class ="form-cover" src="img/form-cover.jpg">
 
                       <div class="form-container">
                         <h1>River Lýsa</h1>
@@ -227,12 +227,12 @@
                                 </select>
                               </div>
                             </div>
-                            <div class="form-field">
-                              <div class="input-container custom-date-icon">
-                                <label for="pickup-date" class="custom-date">Date of pick-up</label>
-                                <input type="text" id="pickup-date" name="pickup-date" required>
-                              </div>
-                            </div>
+                           <div class="form-field">
+                             <div class="input-container custom-date-icon">
+                               <label for="pickup-date" class="custom-date">Date of pick-up</label>
+                               <input type="text" id="pickup-date" name="pickup-date" required>
+                             </div>
+                           </div>
                           </div>
                           <div class="form-field">
                             <div class="input-container">
@@ -242,7 +242,12 @@
                           </div>
 
                           <!-- Submit Button -->
-                          <button type="submit">Submit enquiry</button>
+
+                          <div class="form-cta">
+                            <button type="submit">Submit enquiry</button>
+                          </div>
+
+
                         </form>
                       </div>
                   </div>
@@ -380,12 +385,12 @@
     </script>
 
     <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", () => {
-            flatpickr("#pickup-date", {
-                minDate: "2025-06-01", // Matches your `min` attribute
-                dateFormat: "Y-m-d",   // ISO format for form submission
-            });
-        });
+      document.addEventListener("DOMContentLoaded", () => {
+          flatpickr("#pickup-date", {
+              dateFormat: "Y-m-d",
+              appendTo: document.querySelector(".modal-content") // Adjust to your modal's container
+          });
+      });
     </script>
 
   </body>
