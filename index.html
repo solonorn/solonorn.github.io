@@ -7,6 +7,12 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
   <title>AlltRaf</title>
 
+  <!-- Add CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- Add JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
   <meta name="description" content="AlltRaf Rafverktakar">
   <meta property="og:image" content=""/>
   <meta name="keywords" content="Rafverktakar, Rafvirki">
@@ -321,6 +327,65 @@
         // Attach close event for existing close buttons
         attachCloseEvent();
 
+    </script>
+
+    <script type="text/javascript">
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const decrementButton = document.getElementById("decrement");
+            const incrementButton = document.getElementById("increment");
+            const groupNumber = document.getElementById("group-number");
+
+            // Attach event listener for increment
+            incrementButton.addEventListener("click", () => {
+                let currentValue = parseInt(groupNumber.value, 10) || 0; // Parse current value
+                const maxValue = parseInt(groupNumber.max, 10) || Infinity; // Get max value
+                if (currentValue < maxValue) {
+                    groupNumber.value = currentValue + 1; // Increment value
+                }
+            });
+
+            // Attach event listener for decrement
+            decrementButton.addEventListener("click", () => {
+                let currentValue = parseInt(groupNumber.value, 10) || 0; // Parse current value
+                const minValue = parseInt(groupNumber.min, 10) || 0; // Get min value
+                if (currentValue > minValue) {
+                    groupNumber.value = currentValue - 1; // Decrement value
+                }
+            });
+
+            // Allow typing and validate only on blur (when the user leaves the input field)
+            groupNumber.addEventListener("blur", () => {
+                const minValue = parseInt(groupNumber.min, 10) || 0;
+                const maxValue = parseInt(groupNumber.max, 10) || Infinity;
+                let currentValue = parseInt(groupNumber.value, 10);
+
+                // Correct value if out of bounds
+                if (isNaN(currentValue) || currentValue < minValue) {
+                    groupNumber.value = minValue; // Reset to min if invalid
+                } else if (currentValue > maxValue) {
+                    groupNumber.value = maxValue; // Reset to max if invalid
+                }
+            });
+
+            // Optional: Prevent invalid characters
+            groupNumber.addEventListener("input", (event) => {
+                const value = event.target.value;
+                if (!/^\d*$/.test(value)) {
+                    event.target.value = value.replace(/[^\d]/g, ''); // Remove non-numeric characters
+                }
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            flatpickr("#pickup-date", {
+                minDate: "2025-06-01", // Matches your `min` attribute
+                dateFormat: "Y-m-d",   // ISO format for form submission
+            });
+        });
     </script>
 
   </body>
