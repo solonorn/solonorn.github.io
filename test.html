@@ -39,7 +39,7 @@
 
      <form action="https://getform.io/f/azyyydzb" method="POST">
        <!-- Package Selection -->
-       <h2>Choose a Package</h2>
+       <h2 class = "form-head">Choose a Package</h2>
        <div class="packages">
          <label class="package">
            <input type="radio" name="package" value="1-day" required>
@@ -69,15 +69,15 @@
        </div>
 
        <!-- Group Size -->
-       <h2>How many are in your group?</h2>
+       <h2 class ="form-head">How many are in your group?</h2>
        <div class="group-size">
-         <button type="button" id="decrement">-</button>
-         <input type="number" id="group-number" name="group-size" value="2" min="1" max="8" required>
-         <button type="button" id="increment">+</button>
+           <button type="button" id="decrement"></button>
+           <input type="number" id="group-number" name="group-size" value="2" min="1" max="8" required>
+           <button type="button" id="increment"></button>
        </div>
 
        <!-- User Information -->
-       <h2>Enter Your Information</h2>
+       <h2 class = "form-head">Enter Your Information</h2>
        <div class="form-row">
          <div class="form-field">
            <div class="input-container">
@@ -123,49 +123,55 @@
      </form>
    </div>
 
-   <script>
-     // Script for increment/decrement group size
-     const decrementButton = document.getElementById("decrement");
-     const incrementButton = document.getElementById("increment");
-     const groupInput = document.getElementById("group-number");
-
-     decrementButton.addEventListener("click", () => {
-       const currentValue = parseInt(groupInput.value, 10);
-       if (currentValue > 1) {
-         groupInput.value = currentValue - 1;
-       }
-     });
-
-     incrementButton.addEventListener("click", () => {
-       const currentValue = parseInt(groupInput.value, 10);
-       if (currentValue < 8) {
-         groupInput.value = currentValue + 1;
-       }
-     });
-   </script>
  </body>
  </html>
 
     <script type="text/javascript">
         
-        document.addEventListener('DOMContentLoaded', () => {
-          const decrementBtn = document.getElementById('decrement');
-          const incrementBtn = document.getElementById('increment');
-          const groupInput = document.getElementById('group-number');
+        document.addEventListener("DOMContentLoaded", () => {
+            const decrementButton = document.getElementById("decrement");
+            const incrementButton = document.getElementById("increment");
+            const groupNumber = document.getElementById("group-number");
 
-          decrementBtn.addEventListener('click', () => {
-            let currentValue = parseInt(groupInput.value, 10);
-            if (currentValue > 1) {
-              groupInput.value = currentValue - 1;
-            }
-          });
+            // Attach event listener for increment
+            incrementButton.addEventListener("click", () => {
+                let currentValue = parseInt(groupNumber.value, 10) || 0; // Parse current value
+                const maxValue = parseInt(groupNumber.max, 10) || Infinity; // Get max value
+                if (currentValue < maxValue) {
+                    groupNumber.value = currentValue + 1; // Increment value
+                }
+            });
 
-          incrementBtn.addEventListener('click', () => {
-            let currentValue = parseInt(groupInput.value, 10);
-            if (currentValue < 8) {
-              groupInput.value = currentValue + 1;
-            }
-          });
+            // Attach event listener for decrement
+            decrementButton.addEventListener("click", () => {
+                let currentValue = parseInt(groupNumber.value, 10) || 0; // Parse current value
+                const minValue = parseInt(groupNumber.min, 10) || 0; // Get min value
+                if (currentValue > minValue) {
+                    groupNumber.value = currentValue - 1; // Decrement value
+                }
+            });
+
+            // Allow typing and validate only on blur (when the user leaves the input field)
+            groupNumber.addEventListener("blur", () => {
+                const minValue = parseInt(groupNumber.min, 10) || 0;
+                const maxValue = parseInt(groupNumber.max, 10) || Infinity;
+                let currentValue = parseInt(groupNumber.value, 10);
+
+                // Correct value if out of bounds
+                if (isNaN(currentValue) || currentValue < minValue) {
+                    groupNumber.value = minValue; // Reset to min if invalid
+                } else if (currentValue > maxValue) {
+                    groupNumber.value = maxValue; // Reset to max if invalid
+                }
+            });
+
+            // Optional: Prevent invalid characters
+            groupNumber.addEventListener("input", (event) => {
+                const value = event.target.value;
+                if (!/^\d*$/.test(value)) {
+                    event.target.value = value.replace(/[^\d]/g, ''); // Remove non-numeric characters
+                }
+            });
         });
 
     </script>

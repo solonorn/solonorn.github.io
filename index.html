@@ -149,6 +149,96 @@
                       <div id="modal-content-placeholder">
                           <img src="img/form-cover.jpg">
                       </div>
+
+                      <div class="form-container">
+                        <h1>River Lýsa</h1>
+                        <p class="subtitle">Embark on an unforgettable fly fishing journey</p>
+
+                        <form action="https://getform.io/f/azyyydzb" method="POST">
+                          <!-- Package Selection -->
+                          <h2 class = "form-head">Choose a Package</h2>
+                          <div class="packages">
+                            <label class="package">
+                              <input type="radio" name="package" value="1-day" required>
+                              <div class="package-content">
+                                <h3>1 day tour</h3>
+                                <p>8 hours of fishing time<br>Lunch and snacks<br>Rods, waders & flies</p>
+                                <p class="price">From $790 per person</p>
+                              </div>
+                            </label>
+                            <label class="package">
+                              <input type="radio" name="package" value="2-day">
+                              <div class="package-content most-popular">
+                                <span class="popular-banner">Most Popular</span>
+                                <h3>2 day tour</h3>
+                                <p>One night stay in lodge<br>Breakfast, lunch, dinner<br>Rods, waders & flies</p>
+                                <p class="price">From $1490 per person</p>
+                              </div>
+                            </label>
+                            <label class="package">
+                              <input type="radio" name="package" value="3-day">
+                              <div class="package-content">
+                                <h3>3 day tour</h3>
+                                <p>Two nights stay in lodge<br>Breakfast, lunch, dinner<br>Rods, waders & flies</p>
+                                <p class="price">From $2490 per person</p>
+                              </div>
+                            </label>
+                          </div>
+
+                          <!-- Group Size -->
+                          <h2 class ="form-head">How many are in your group?</h2>
+                          <div class="group-size">
+                              <button type="button" id="decrement"></button>
+                              <input type="number" id="group-number" name="group-size" value="2" min="1" max="8" required>
+                              <button type="button" id="increment"></button>
+                          </div>
+
+                          <!-- User Information -->
+                          <h2 class = "form-head">Enter Your Information</h2>
+                          <div class="form-row">
+                            <div class="form-field">
+                              <div class="input-container">
+                                <label for="full-name">Full name</label>
+                                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                              </div>
+                            </div>
+                            <div class="form-field">
+                              <div class="input-container">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-field">
+                              <div class="input-container custom-select">
+                                <label for="pickup-location">Pick-up location</label>
+                                <select id="pickup-location" class = "custom-select" name="pickup-location" required>
+                                  <option value="" disabled selected>Choose pick-up location</option>
+                                  <option value="location1">Reykjavík central area</option>
+                                  <option value="location2">Keflavík Airport</option>
+                                  <option value="location2">Outside of center area</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-field">
+                              <div class="input-container custom-date-icon">
+                                <label for="pickup-date" class="custom-date">Date of pick-up</label>
+                                <input type="text" id="pickup-date" name="pickup-date" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-field">
+                            <div class="input-container">
+                              <label for="comments">Add comment</label>
+                              <textarea id="comments" name="comments" placeholder="Let us know if you have any questions"></textarea>
+                            </div>
+                          </div>
+
+                          <!-- Submit Button -->
+                          <button type="submit">Submit enquiry</button>
+                        </form>
+                      </div>
                   </div>
               </div>
       
