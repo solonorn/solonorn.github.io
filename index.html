@@ -167,45 +167,46 @@
                             <label class="package">
                               <input type="radio" name="package" value="1-day" required>
                               <div class="package-content">
+                                <span class="popular-banner">Most Popular</span>
                                 <div class="package-left">
-                                <h3>1 day tour</h3>
-                                <ul>
-                                  <li>Private fishing + Lodge</li>
-                                  <li>Breakfast, lunch, dinner</li>
-                                  <li>Guide, rods, waders, flies</li>
-                                </ul>
-                                <p class="price">From $790 per person</p>
+                                  <h3>1 day tour</h3>
+                                  <ul>
+                                    <li>Private fishing + Lodge</li>
+                                    <li>Breakfast, lunch, dinner</li>
+                                    <li>Guide, rods, waders, flies</li>
+                                  </ul>
+                                  <p class="price">From $790 per person</p>
                                 </div>
                               </div>
                             </label>
-                            <label class="package">
+                            <label class="package" data-most-popular="true">
                               <input type="radio" name="package" value="2-day">
-                              <div class="package-content most-popular">
+                              <div class="package-content">
                                 <span class="popular-banner">Most Popular</span>
                                 <div class="package-left">
-                                <h3>2 day tour</h3>
-                                <ul>
-                                  <li>Private fishing + Lodge</li>
-                                  <li>Breakfast, lunch, dinner</li>
-                                  <li>Guide, rods, waders, flies</li>
-                                </ul>
-                                <p class="price">From $1490 per person</p>
+                                  <h3>2 day tour</h3>
+                                  <ul>
+                                    <li>Private fishing + Lodge</li>
+                                    <li>Breakfast, lunch, dinner</li>
+                                    <li>Guide, rods, waders, flies</li>
+                                  </ul>
+                                  <p class="price">From $1490 per person</p>
                                 </div>
-
                               </div>
                             </label>
                             <label class="package">
                               <input type="radio" name="package" value="3-day">
                               <div class="package-content">
-                               <div class="package-left">
-                               <h3>3 day tour</h3>
-                               <ul>
-                                 <li>Private fishing + Lodge</li>
-                                 <li>Breakfast, lunch, dinner</li>
-                                 <li>Guide, rods, waders, flies</li>
-                               </ul>
-                               <p class="price">From $2490 per person</p>
-                               </div>
+                                <span class="popular-banner">Most Popular</span>
+                                <div class="package-left">
+                                  <h3>3 day tour</h3>
+                                  <ul>
+                                    <li>Private fishing + Lodge</li>
+                                    <li>Breakfast, lunch, dinner</li>
+                                    <li>Guide, rods, waders, flies</li>
+                                  </ul>
+                                  <p class="price">From $2490 per person</p>
+                                </div>
                               </div>
                             </label>
                           </div>
@@ -491,6 +492,44 @@
         updatePackageOpacity();
       });
 
+    </script>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        const packages = document.querySelectorAll(".package");
+
+        const updateBanners = (selectedInput) => {
+          packages.forEach((packageElement) => {
+            const input = packageElement.querySelector("input[type='radio']");
+            const banner = packageElement.querySelector(".popular-banner");
+
+            if (banner) {
+              if (input === selectedInput) {
+                // Show "✔ Selected Package" for the selected one
+                banner.textContent = "✔ Selected Package";
+                banner.style.visibility = "visible";
+              } else if (packageElement.dataset.mostPopular && !selectedInput) {
+                // Show "Most Popular" if it's the most popular package and nothing is selected
+                banner.textContent = "Most Popular";
+                banner.style.visibility = "visible";
+              } else {
+                // Hide the banner for all other cases
+                banner.style.visibility = "hidden";
+              }
+            }
+          });
+        };
+
+        // Attach a single event listener to the form/container for better performance
+        document.querySelector(".packages").addEventListener("change", (e) => {
+          if (e.target.matches("input[type='radio']")) {
+            updateBanners(e.target); // Pass the newly selected input directly
+          }
+        });
+
+        // Initial setup
+        updateBanners(null); // Null means no selection initially
+      });
     </script>
 
   </body>

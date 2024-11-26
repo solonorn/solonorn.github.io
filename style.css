@@ -828,6 +828,7 @@ textarea {
   line-height: 1.2;
   font-size: 12px;
   font-family: "Black";
+  transition: all 0.3s ease;
 }
 
 .popular-banner::after{
