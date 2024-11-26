@@ -160,36 +160,57 @@
                         <h1>River Lýsa</h1>
                         <p class="subtitle">Embark on an unforgettable fly fishing journey</p>
 
-                        <form action="https://getform.io/f/azyyydzb" method="POST">
+                        <form action="https://getform.io/f/azyyydzb" method="POST" class ="form-post-container">
                           <!-- Package Selection -->
                           <h2 class = "form-head">Choose a Package</h2>
                           <div class="packages">
                             <label class="package">
                               <input type="radio" name="package" value="1-day" required>
                               <div class="package-content">
+                                <div class="package-left">
                                 <h3>1 day tour</h3>
-                                <p>8 hours of fishing time<br>Lunch and snacks<br>Rods, waders & flies</p>
+                                <ul>
+                                  <li>Private fishing + Lodge</li>
+                                  <li>Breakfast, lunch, dinner</li>
+                                  <li>Guide, rods, waders, flies</li>
+                                </ul>
                                 <p class="price">From $790 per person</p>
+                                </div>
                               </div>
                             </label>
                             <label class="package">
                               <input type="radio" name="package" value="2-day">
                               <div class="package-content most-popular">
                                 <span class="popular-banner">Most Popular</span>
+                                <div class="package-left">
                                 <h3>2 day tour</h3>
-                                <p>One night stay in lodge<br>Breakfast, lunch, dinner<br>Rods, waders & flies</p>
+                                <ul>
+                                  <li>Private fishing + Lodge</li>
+                                  <li>Breakfast, lunch, dinner</li>
+                                  <li>Guide, rods, waders, flies</li>
+                                </ul>
                                 <p class="price">From $1490 per person</p>
+                                </div>
+
                               </div>
                             </label>
                             <label class="package">
                               <input type="radio" name="package" value="3-day">
                               <div class="package-content">
-                                <h3>3 day tour</h3>
-                                <p>Two nights stay in lodge<br>Breakfast, lunch, dinner<br>Rods, waders & flies</p>
-                                <p class="price">From $2490 per person</p>
+                               <div class="package-left">
+                               <h3>3 day tour</h3>
+                               <ul>
+                                 <li>Private fishing + Lodge</li>
+                                 <li>Breakfast, lunch, dinner</li>
+                                 <li>Guide, rods, waders, flies</li>
+                               </ul>
+                               <p class="price">From $2490 per person</p>
+                               </div>
                               </div>
                             </label>
                           </div>
+
+                          <div class="line-seperator"></div>
 
                           <!-- Group Size -->
                           <h2 class ="form-head">How many are in your group?</h2>
@@ -198,6 +219,8 @@
                               <input type="number" id="group-number" name="group-size" value="2" min="1" max="8" required>
                               <button type="button" id="increment"></button>
                           </div>
+
+                          <div class="line-seperator"></div>
 
                           <!-- User Information -->
                           <h2 class = "form-head">Enter Your Information</h2>
@@ -230,7 +253,7 @@
                            <div class="form-field">
                              <div class="input-container custom-date-icon">
                                <label for="pickup-date" class="custom-date">Date of pick-up</label>
-                               <input type="text" id="pickup-date" name="pickup-date" required>
+                               <input type="text" placeholder="Select date" id="pickup-date" name="pickup-date" required>
                              </div>
                            </div>
                           </div>
@@ -428,8 +451,46 @@
               instance.altInput.value = formattedDate;
             }
           },
+          onReady: (selectedDates, dateStr, instance) => {
+               // Move the calendar container 20px higher
+               instance.calendarContainer.style.marginTop = "-40px";
+             },
         });
       });
+    </script>
+
+    <script type="text/javascript">
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const packageLabels = document.querySelectorAll(".packages .package");
+
+        // Function to update opacity based on the selected input
+        const updatePackageOpacity = () => {
+          const selectedInput = document.querySelector(".packages input[type='radio']:checked");
+
+          packageLabels.forEach((label) => {
+            const input = label.querySelector("input[type='radio']");
+
+            if (selectedInput) {
+              // Dim all non-selected packages
+              label.style.opacity = input.checked ? "1" : "0.5";
+            } else {
+              // Reset opacity if nothing is selected
+              label.style.opacity = "1";
+            }
+          });
+        };
+
+        // Add event listeners to radio inputs
+        packageLabels.forEach((label) => {
+          const input = label.querySelector("input[type='radio']");
+          input.addEventListener("change", updatePackageOpacity);
+        });
+
+        // Initial setup
+        updatePackageOpacity();
+      });
+
     </script>
 
   </body>

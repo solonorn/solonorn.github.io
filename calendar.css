@@ -152,7 +152,6 @@
     user-select:none;
     text-decoration:none;
     cursor:pointer;
-    position:absolute;
     top:10;
     height:36px;
     width: 36px;
@@ -393,7 +392,7 @@
     -webkit-align-items:center;
     -ms-flex-align:center;
     align-items:center;
-    height:28px
+    height:36px
 }
 .flatpickr-weekdays .flatpickr-weekdaycontainer{
     display:-webkit-box;
@@ -471,7 +470,6 @@ span.flatpickr-weekday{
     box-shadow:-1px 0 0 #e6e6e6
 }
 .flatpickr-day{
-
     background:none;
     border:1px solid transparent;
     border-radius:150px;
@@ -485,7 +483,7 @@ span.flatpickr-weekday{
     cursor:pointer;
     width: 40px;
     height: 40px;
-    margin:0;
+    margin-bottom: 3px;
     display:inline-block;
     position:relative;
     -webkit-box-pack:center;
