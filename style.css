@@ -314,6 +314,13 @@ button:active{
     margin-top: 82px;
 }
 
+.button-container-thanks{
+    margin-top: 112px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* -- Text Styles -- */
 
 body{
@@ -347,6 +354,50 @@ body{
 
 .z-index{
     z-index: 99;
+}
+
+.hero-center{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url("");
+    align-items: center;
+    overflow: hidden;
+    padding-top: 10vh;
+}
+
+.hero-center h1{
+    text-align: center;
+    font-size: 84px;
+    letter-spacing: 2%;
+    line-height: 110%;
+    margin-top: 54px;
+}
+
+.hero-center h2{
+    text-align: center;
+    font-family: "Bold";
+    font-size: 28px;
+    line-height: 110%;
+    margin-top: 40px;
+}
+
+.hero-center h3{
+    text-align: center;
+    font-family: "Medium";
+    letter-spacing: 2%;
+    line-height: 1.1;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+
+.hero-center h4{
+    text-align: center;
 }
 
 .hero-left{

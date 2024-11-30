@@ -265,6 +265,8 @@
                             </div>
                           </div>
 
+                          <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you?email=" />
+
                           <!-- Submit Button -->
 
                           <div class="form-cta">
@@ -531,8 +533,18 @@
         updateBanners(null); // Null means no selection initially
       });
     </script>
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        // Get the email input value
+        const emailField = document.querySelector("input[name='email']");
+        if (emailField) {
+          // Save the email to local storage
+          localStorage.setItem("userEmail", emailField.value);
+        }
+      });
+    </script>
 
-    
 
   </body>
 

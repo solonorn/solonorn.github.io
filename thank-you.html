@@ -58,32 +58,43 @@
   <body>
 
     <div class="hero">
-      <div class="hero-left">
+      <div class="hero-center">
         <div class="z-index">
-        <h4>RIVER LÝSA</h4>
-        <h1 class="white">Thank you!</h1>
-        <h2 class="white">
-          We’ll get back with you via email as early as possible
-        </h2>
-        <h3 class="white">
-          sent to : 123
-        </h3>
-        <div class="button-container">
-          <button>Back home</button>
+          <h4>RIVER LÝSA</h4>
+          <h1 class="white">Thank you!</h1>
+          <h2 class="white">
+            We’ll get back with you via<br> email as early as possible
+          </h2>
+          <h3 class="white">
+            Sent to: <span id="user-email">[Loading...]</span>
+          </h3>
+          <div class="button-container button-container-thanks">
+            <button onclick="window.location.href='/'">Back home</button>
+          </div>
+        </div>
+
+        <div class="hero-left-back">
+          <link rel="preload" href="img/hero-back.png" as="image">
         </div>
       </div>
-      
-      <div class="hero-left-back">
-        <link rel="preload" href="img/hero-back.png" as="image">
-      </div>
 
-      </div>
-
-      <video poster ="img/poster.jpg"class="video-insert" autoplay loop muted playsinline><source src="img/video.mp4" type="video/mp4"></video>
-
+      <video poster="img/poster.jpg" class="video-insert" autoplay loop muted playsinline>
+        <source src="img/video.mp4" type="video/mp4">
+      </video>
     </div>
 
-    
+    <script>
+      // Retrieve the email from local storage and display it
+      document.addEventListener("DOMContentLoaded", () => {
+        const email = localStorage.getItem("userEmail"); // Get email from local storage
+        const emailDisplay = document.getElementById("user-email"); // Get the span element
+        if (email) {
+          emailDisplay.textContent = email; // Update span with email
+        } else {
+          emailDisplay.textContent = "an unknown email address"; // Fallback if no email
+        }
+      });
+    </script>
 
   </body>
 
