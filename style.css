@@ -392,7 +392,7 @@ body{
     letter-spacing: 2%;
     line-height: 1.1;
     font-size: 16px;
-    margin-top: 80px;
+    margin-top: 28px;
 }
 
 
@@ -604,6 +604,18 @@ body.modal-open {
     height: 2000px;
 }
 
+.mail-container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail-container img{
+    width: 32px;
+    height: 32px;
+}
 
 /*Form start*/
 
