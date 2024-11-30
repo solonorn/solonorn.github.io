@@ -291,6 +291,29 @@ button {
     margin-right: 12px;
     transition: 0.3s;
 }
+
+a{
+        font-family: "Bold";
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 1%;
+        color: #2A2E28;
+        background-color: #B6DB91;
+        padding: 18px 32px 18px 32px;
+        border-radius: 99px;;
+        margin-right: 12px;
+        transition: 0.3s;
+}
+
+a:hover{
+    background-color: #99CD65;
+    cursor: pointer;
+}
+a:active{
+    background-color: #80B04F;
+}
+
+
 button:hover{
     background-color: #99CD65;
     cursor: pointer;
@@ -319,6 +342,10 @@ button:active{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button-container-thanks a{
+    margin: 0px;
 }
 
 /* -- Text Styles -- */
@@ -354,6 +381,9 @@ body{
 
 .z-index{
     z-index: 99;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .hero-center{
@@ -382,7 +412,7 @@ body{
     text-align: center;
     font-family: "Bold";
     font-size: 28px;
-    line-height: 110%;
+    line-height: 124%;
     margin-top: 40px;
 }
 
