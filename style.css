@@ -100,9 +100,10 @@ header{
     box-sizing: border-box;
     margin-top: 10px;
     padding-left: 28px;
-    width: calc(100vw - 10vw);
+    width: calc(100vw - 13vw);
     border-radius: 99px;
     z-index: 1001;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
 }
 
 h1{
@@ -313,6 +314,9 @@ a{
         border-radius: 99px;;
         margin-right: 12px;
         transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 a:hover{
@@ -410,6 +414,11 @@ body{
     padding-top: 10vh;
 }
 
+.hero-center a{
+    width: 201px;
+}
+
+
 .hero-center h1{
     text-align: center;
     font-size: 84px;
@@ -447,7 +456,7 @@ body{
     justify-content: flex-end;
     width: 60vw;
     height: 100%;
-    padding-left: 6vw;
+    padding-left: 8vw;
     padding-bottom: 10vh;
     box-sizing: border-box;
     background-image: url("");
@@ -490,14 +499,32 @@ body{
 }
 
 .modal-content {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 20px;
-    width: 55vw;
-    height: 97vh;
-    overflow: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  width: 55vw;
+  height: 97vh;
+  overflow: hidden; /* Ensures rounded corners are respected */
+  position: relative;
 }
+
+
+.form-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px 20px 0 0; /* Matches parent border-radius */
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Allows vertical scrolling */
+}
+
 
 .close img{
 
@@ -561,13 +588,6 @@ body.modal-open {
   object-fit: cover;
 }
 
-.body-container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 88vw;
-    margin-top: 56px;
-}
 .sticky-cta-container{
     display: flex;
     flex-direction: column;
@@ -606,6 +626,7 @@ body.modal-open {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
 }
 .span-1{
     font-family: "Bold" !important;
@@ -1052,13 +1073,6 @@ textarea {
   object-fit: cover;
 }
 
-.body-container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 88vw;
-    margin-top: 56px;
-}
 .sticky-cta-container{
     display: flex;
     flex-direction: column;
@@ -1225,6 +1239,7 @@ textarea {
     margin-top: 30px;
 }
 
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -1286,7 +1301,7 @@ textarea {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 88vw;
+    width: 84vw;
     margin-top: 56px;
 }
 .sticky-cta-container{
@@ -1372,14 +1387,6 @@ textarea {
   width: 41vw;
   height: 100%;
   object-fit: cover;
-}
-
-.body-container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 88vw;
-    margin-top: 56px;
 }
 .sticky-cta-container{
     display: flex;
