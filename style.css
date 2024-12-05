@@ -1743,12 +1743,13 @@ textarea {
         background-color: transparent !important;
         border-radius: 0px;
         margin-top: 0;
-        padding: 10px 11px 11px 18px;
+        padding: 9px 12px 9px 18px;
         box-shadow: none;
     }
 
     header svg{
         transform: scale(1.1);
+        position: absolute;
     }
 
     header.scrolled{
