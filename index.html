@@ -22,8 +22,7 @@
 
 </head>
 
-  <header>
-    
+  <header class="header">
     <svg width="87" height="52" viewBox="0 0 87 52" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M66.4546 10.9717H72.8864C74.4373 10.9717 75.7468 11.2159 76.8147 11.7042C77.888 12.1872 78.6903 12.858 79.2216 13.7167C79.7582 14.5753 80.0266 15.5628 80.0266 16.679C80.0266 17.7684 79.7475 18.7532 79.1894 19.6333C78.6366 20.5134 77.7887 21.2137 76.6456 21.7343C75.5079 22.2548 74.1019 22.5151 72.4275 22.5151H66.4546V10.9717ZM72.3551 19.5769C73.0528 19.5769 73.6458 19.4589 74.1341 19.2227C74.6225 18.9866 74.9901 18.6512 75.2369 18.2165C75.4838 17.7765 75.6072 17.2586 75.6072 16.6629C75.6072 15.8203 75.355 15.1522 74.8505 14.6585C74.3515 14.1594 73.5975 13.9099 72.5885 13.9099H70.5761V19.5769H72.3551Z" fill="#2A2E28"/>
     <path d="M65.126 19.1503V22.5151H54.5244V10.9717H58.6459V19.1503H65.126Z" fill="#2A2E28"/>
@@ -44,16 +43,16 @@
     </clipPath>
     </defs>
     </svg>
-
-
-
-
-    <ul>
-      <li></li>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <button>Book now</button>
-
   </header>
+
 
   <body>
 
@@ -80,7 +79,11 @@
 
       </div>
 
-      <video poster ="img/poster.jpg"class="video-insert" autoplay loop muted playsinline><source src="img/video.mp4" type="video/mp4"></video>
+      <video poster ="img/poster.jpg"class="video-insert" autoplay loop muted playsinline><source src="img/video.mp4" type="video/mp4">
+
+
+
+      </video>
 
     </div>
 
@@ -281,6 +284,27 @@
               </div>
       
     </div>
+
+
+    <script>
+      
+      // Get reference to the header
+      const header = document.querySelector('header');
+
+      // Function to handle scroll event
+      function handleScroll() {
+        if (window.scrollY > 50) {
+          // Add "scrolled" class when scroll is greater than 50px
+          header.classList.add('scrolled');
+        } else {
+          // Remove "scrolled" class when at the top
+          header.classList.remove('scrolled');
+        }
+      }
+
+      // Add the scroll event listener
+      window.addEventListener('scroll', handleScroll);
+    </script>>
 
     <!-- GLightbox Library -->
     <script src="glightbox.min.js"></script>
