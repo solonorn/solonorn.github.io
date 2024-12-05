@@ -1693,6 +1693,7 @@ textarea {
 
     .hero-left h3{
         margin-top: 20px;
+        margin-bottom: 78px;
     }
 
     .hero-left h2{
@@ -1701,6 +1702,11 @@ textarea {
 
     .button-container{
         margin-top: 50px;
+        position: absolute;
+        bottom: -26px; /* Moves buttons outside the bottom of the container */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
     }
 
     .z-index{
@@ -1720,6 +1726,16 @@ textarea {
     .hero{
         flex-direction: column;
         max-height: 852px !important;
+    }
+
+    .button-container button:nth-child(1){
+        width: 178px;
+    }
+
+    .button-container button:nth-child(2){
+        width: 118px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     header{
@@ -1766,6 +1782,7 @@ textarea {
     }
 
     .hero-left{
+        overflow: visible;
         width: 100%;
         justify-content: flex-start;
         align-items: center !important;
