@@ -1745,6 +1745,19 @@ textarea {
         fill: #1D1F1C;
     }
 
+    header.scrolled .menu-icon {
+        background-color: #fff;
+    }
+
+
+    header.scrolled .menu-icon .navicon:after {
+        background: #1D1F1C;
+    }
+
+    header.scrolled .menu-icon .navicon:before {
+        background: #1D1F1C;
+    }
+
     header button{
         display: none;
     }
