@@ -111,6 +111,7 @@ input{
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  margin: 0;
 }
 
 .header li a:hover,
@@ -151,8 +152,12 @@ input{
   padding: 23px 13px 23px 13px;
   position: relative;
   user-select: none;
-  margin-top: 3px;
+  margin-top: 9px;
+  margin-right: 12px;
+  margin-bottom: 9px;
 }
+
+/* padding: 9px 12px 9px 18px; */
 
 .header .menu-icon .navicon {
   background: transparent;
@@ -1839,6 +1844,8 @@ textarea {
     header svg{
         transform: scale(1.1);
         position: absolute;
+        margin-top: 9px;
+        margin-left: 20px;
     }
 
     header.scrolled{
