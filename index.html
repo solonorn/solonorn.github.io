@@ -18,7 +18,10 @@
   <meta name="keywords" content="Rafverktakar, Rafvirki">
   <meta name="author" content="AlltRaf Rafverktakar">  
   <meta http-equiv="Cache-Control" content="max-age=31536000">
-  <meta name="theme-color" content="#2A2E28">
+  <!-- <meta name="theme-color" content="#2A2E28">   -->
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
 </head>
@@ -312,6 +315,19 @@
         <button class="reserve-btn">Reserve now</button>
       </div>
     </div>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header'); // Your header element
+        const scrollPosition = window.scrollY;
+
+        // Determine the color based on the scroll position or header styles
+        const headerColor = window.getComputedStyle(header).backgroundColor;
+
+        // Update the body or html background color to match the header
+        document.body.style.backgroundColor = headerColor;
+      });
+    </script>
 
     <script type="text/javascript">
       document.addEventListener("scroll", function () {
