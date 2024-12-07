@@ -18,11 +18,7 @@
   <meta name="keywords" content="Rafverktakar, Rafvirki">
   <meta name="author" content="AlltRaf Rafverktakar">  
   <meta http-equiv="Cache-Control" content="max-age=31536000">
-  <!-- <meta name="theme-color" content="#2A2E28">   -->
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
+  <meta name="theme-color" content="#2A2E28">
 
 </head>
 
@@ -317,15 +313,24 @@
     </div>
 
     <script>
+      function updateThemeColor(color) {
+        let themeMetaTag = document.querySelector('meta[name="theme-color"]');
+        if (!themeMetaTag) {
+          // If the meta tag doesn't exist, create it
+          themeMetaTag = document.createElement('meta');
+          themeMetaTag.setAttribute('name', 'theme-color');
+          document.head.appendChild(themeMetaTag);
+        }
+        themeMetaTag.setAttribute('content', color);
+      }
+
+      // Example: Change theme color dynamically on scroll
       window.addEventListener('scroll', () => {
-        const header = document.querySelector('header'); // Your header element
-        const scrollPosition = window.scrollY;
-
-        // Determine the color based on the scroll position or header styles
-        const headerColor = window.getComputedStyle(header).backgroundColor;
-
-        // Update the body or html background color to match the header
-        document.body.style.backgroundColor = headerColor;
+        if (window.scrollY > 100) {
+          updateThemeColor('#ff0000'); // Red color when scrolled down
+        } else {
+          updateThemeColor('#2A2E28'); // Default color at the top
+        }
       });
     </script>
 
