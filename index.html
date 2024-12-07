@@ -312,27 +312,6 @@
       </div>
     </div>
 
-    <script>
-      function updateThemeColor(color) {
-        let themeMetaTag = document.querySelector('meta[name="theme-color"]');
-        if (!themeMetaTag) {
-          // If the meta tag doesn't exist, create it
-          themeMetaTag = document.createElement('meta');
-          themeMetaTag.setAttribute('name', 'theme-color');
-          document.head.appendChild(themeMetaTag);
-        }
-        themeMetaTag.setAttribute('content', color);
-      }
-
-      // Example: Change theme color dynamically on scroll
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-          updateThemeColor('#ff0000'); // Red color when scrolled down
-        } else {
-          updateThemeColor('#2A2E28'); // Default color at the top
-        }
-      });
-    </script>
 
     <script type="text/javascript">
       document.addEventListener("scroll", function () {
