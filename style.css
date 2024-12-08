@@ -2134,6 +2134,15 @@ textarea {
         font-size: 16px;
     }
 
+    .section-2 h2{
+        width: 70%;
+        font-size: 24px;
+    }
+
+    .section-2 span{
+        width: 300px
+    }
+
 
 }
 
