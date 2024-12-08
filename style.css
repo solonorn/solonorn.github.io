@@ -2113,6 +2113,26 @@ textarea {
     .info-left{
         margin-top: 32px;
     }
+    
+    .fish-card{
+        flex-direction: column;
+        width: 60vw;
+    }
+
+    .fish-card img{
+        width: 100%;
+        height: 136px;
+    }
+
+    .fish-grid-content{
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-bottom: 20px;
+    }
+
+    .fish-grid-content h3{
+        font-size: 16px;
+    }
 
 
 }
