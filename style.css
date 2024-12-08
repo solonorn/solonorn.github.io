@@ -1981,9 +1981,10 @@ textarea {
     }
 
     header svg{
+        transform: scale(0.88);
         position: absolute;
-        margin-top: 9px;
-        margin-left: 14px;
+        margin-top: 5px;
+        margin-left: 6px;
     }
 
     header.scrolled{
@@ -2013,7 +2014,7 @@ textarea {
     }
 
     header path{
-        fill: #fff;
+        fill: ;
     }
 
     .hero-left{
