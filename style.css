@@ -97,7 +97,7 @@ input{
   width: 86vw;
   z-index: 1000;
   border-radius: 999px;
-  margin-top: 10px;
+  margin-top: 11.5px;
   overflow: hidden;
   height: 72px;
 }
@@ -1981,10 +1981,9 @@ textarea {
     }
 
     header svg{
-        transform: scale(1.1);
         position: absolute;
         margin-top: 9px;
-        margin-left: 20px;
+        margin-left: 14px;
     }
 
     header.scrolled{
