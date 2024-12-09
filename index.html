@@ -666,16 +666,20 @@
       });
     </script>
     <script>
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const emailField = document.querySelector("input[name='email']");
-        if (emailField && emailField.checkValidity()) {
-          localStorage.setItem("userEmail", emailField.value);
-          form.submit();
-        } else {
-          alert("Please enter a valid email address.");
-        }
-      });
+      <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", (e) => {
+          e.preventDefault(); // Prevent form reload
+          const emailField = document.querySelector("input[name='email']");
+          if (emailField) {
+            console.log("Saving email:", emailField.value); // Debugging log
+            localStorage.setItem("userEmail", emailField.value); // Save email
+          } else {
+            console.log("Email input field not found!");
+          }
+          form.submit(); // Submit the form
+        });
+      </script>
     </script>
 
 

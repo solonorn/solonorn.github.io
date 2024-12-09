@@ -51,7 +51,7 @@
           <div class="mail-container">
             <img src="mail.svg">
             <h3 class="white">
-            Sent to <span id="user-email">[Loading...]</span>
+              Sent to <span id="user-email">[Loading...]</span>
             </h3>
           </div>
 
@@ -74,12 +74,14 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const email = localStorage.getItem("userEmail");
+        console.log("Retrieved email:", email); // Debugging log
         const emailDisplay = document.getElementById("user-email");
         if (email) {
-          emailDisplay.textContent = email;
-          localStorage.removeItem("userEmail"); // Clear after use
+          emailDisplay.textContent = email; // Display email
+          localStorage.removeItem("userEmail"); // Clear email after use
         } else {
-          emailDisplay.textContent = "an unknown email address";
+          console.log("No email found in localStorage!");
+          emailDisplay.textContent = "an unknown email address"; // Fallback
         }
       });
     </script>
