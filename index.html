@@ -666,13 +666,14 @@
       });
     </script>
     <script>
-      const form = document.querySelector("form");
       form.addEventListener("submit", (e) => {
-        // Get the email input value
+        e.preventDefault();
         const emailField = document.querySelector("input[name='email']");
-        if (emailField) {
-          // Save the email to local storage
+        if (emailField && emailField.checkValidity()) {
           localStorage.setItem("userEmail", emailField.value);
+          form.submit();
+        } else {
+          alert("Please enter a valid email address.");
         }
       });
     </script>
