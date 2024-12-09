@@ -73,15 +73,17 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const email = localStorage.getItem("userEmail");
-        console.log("Retrieved email:", email); // Debugging log
+        // Retrieve email from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get("email") || localStorage.getItem("userEmail");
+
         const emailDisplay = document.getElementById("user-email");
         if (email) {
-          emailDisplay.textContent = email; // Display email
-          localStorage.removeItem("userEmail"); // Clear email after use
+          emailDisplay.textContent = email;
+          // Optional: Clear localStorage after use
+          localStorage.removeItem("userEmail");
         } else {
-          console.log("No email found in localStorage!");
-          emailDisplay.textContent = "an unknown email address"; // Fallback
+          emailDisplay.textContent = "an unknown email address";
         }
       });
     </script>
