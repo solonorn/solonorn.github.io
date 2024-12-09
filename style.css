@@ -2169,6 +2169,18 @@ textarea {
         width: 100vw;
     }
 
+    .modal-content{
+        width: 100%;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+
+    .close-container{
+        width: 100%;
+    }
+
 
 }
 
