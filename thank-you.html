@@ -73,15 +73,11 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // Retrieve email from the URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const email = urlParams.get("email") || localStorage.getItem("userEmail");
-
+        const email = localStorage.getItem("userEmail");
         const emailDisplay = document.getElementById("user-email");
+
         if (email) {
           emailDisplay.textContent = email;
-          // Optional: Clear localStorage after use
-          localStorage.removeItem("userEmail");
         } else {
           emailDisplay.textContent = "an unknown email address";
         }

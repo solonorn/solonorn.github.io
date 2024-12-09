@@ -313,7 +313,7 @@
                           <div class="form-field">
                             <div class="input-container">
                               <label for="email">Email address</label>
-                              <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                             </div>
                           </div>
                         </div>
@@ -665,27 +665,22 @@
         updateBanners(null); // Null means no selection initially
       });
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const form = document.querySelector(".form-post-container");
-        const emailField = document.querySelector("input[name='email']");
-        const redirectField = document.querySelector("input[name='redirect']");
 
-        form.addEventListener("submit", (e) => {
-          if (emailField && redirectField) {
-            const emailValue = emailField.value;
-            // Update the redirect field with the email query parameter
-            redirectField.value = `https://yourwebsite.com/thank-you?email=${encodeURIComponent(emailValue)}`;
-            console.log("Redirect URL updated:", redirectField.value);
-            // Save email to localStorage as a backup
-            localStorage.setItem("userEmail", emailValue);
-          } else {
-            console.error("Email field or redirect field not found.");
-          }
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const form = document.querySelector(".form-post-container");
+          form.addEventListener("submit", (e) => {
+            const emailField = document.querySelector("input[name='email']");
+            if (emailField) {
+              localStorage.setItem("userEmail", emailField.value);
+              console.log("Email saved:", emailField.value);
+            } else {
+              console.error("Email field not found.");
+            }
+          });
         });
-      });
       </script>
-    </script>
+    
 
 
   </body>
