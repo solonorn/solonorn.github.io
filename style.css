@@ -607,7 +607,7 @@ body{
     background-color: #2A2E28;
 }
 
-.hero-left-back{
+.hero-left img{
     position: absolute;
     background: url('img/hero-back.png') no-repeat center center;
     background-size: cover;
