@@ -92,7 +92,7 @@ input{
 /* header */
 
 .header {
-  background-color: #20231F;
+  background-color: transparent;
   position: fixed;
   width: 100vw;
   z-index: 1000;
@@ -111,6 +111,10 @@ header svg{
 
 }
 
+.header button{
+    display: none;
+}
+
 
 
 
@@ -122,6 +126,8 @@ header svg{
   background-color: transparent;
 }
 
+.
+
 .header li a {
   display: block;
   padding: 20px 20px;
@@ -131,7 +137,22 @@ header svg{
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: ;
+}
+
+.header li a{
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+
+.menu li{
+    margin-top: 6px;
+}
+
+.menu button{
+    padding: 16px 32px 16px 32px !important;
+    margin-top: 10px;
+    margin-right: 0px !important;
 }
 
 .header .logo {
@@ -149,7 +170,6 @@ header svg{
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  margin-top: 4px;
 }
 
 .menu{
@@ -1785,6 +1805,7 @@ textarea {
     line-height: 1.5;
     letter-spacing: 1%;
     color: #fff;
+    justify-content: flex-start;
 }
 
 .reserve-btn {
@@ -1839,6 +1860,10 @@ textarea {
       clear: both;
       max-height: 0;
       transition: max-height .2s ease-out;
+    }
+
+    .header button{
+        display: flex;
     }
 
     .menu a{
@@ -1988,7 +2013,7 @@ textarea {
     }
 
     header button{
-        display: none;
+
     }
 
     .header svg path:nth-child(1) {
@@ -1996,6 +2021,19 @@ textarea {
     }
     .header svg path:nth-child(2) {
         fill: #B6DB91; /* Original color of second path */
+    }
+
+    .menu li{
+        margin: 0px;
+        background-color: #F5F5F5;
+    }
+
+    .header li a{
+
+    }
+
+    a{
+        margin: 0px;
     }
 
     .hero-left{
@@ -2008,11 +2046,10 @@ textarea {
         align-items: center;
         padding-bottom: 0;
         z-index: 100;
-        height: 100vh;
+        height: auto;
     }
 
     .hero-left img{
-        contain: layout paint size;
         width: 100%;
     }
 
