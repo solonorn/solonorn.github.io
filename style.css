@@ -2008,7 +2008,7 @@ textarea {
         align-items: center;
         padding-bottom: 0;
         z-index: 100;
-        height: auto;
+        height: 100vh;
     }
 
     .hero-left img{
