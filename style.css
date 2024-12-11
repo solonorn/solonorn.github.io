@@ -607,7 +607,7 @@ body{
     background-color: #2A2E28;
 }
 
-.hero-left img{
+.hero img{
     position: absolute;
     background: url('img/hero-back.png') no-repeat center center;
     background-size: cover;
@@ -808,6 +808,7 @@ body.modal-open {
 }
 
 .video-insert{
+    z-index: 50;
   width: 41vw;
   height: 100%;
   object-fit: cover;
@@ -2011,7 +2012,7 @@ textarea {
         height: auto;
     }
 
-    .hero-left img{
+    .hero img{
         width: 100%;
     }
 
