@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-step {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .form-step.active {
+      display: block;
+      opacity: 1;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form id="multiStepForm">
+      <!-- Step 1 -->
+      <div class="form-step active" id="step-1">
+        <h2>Step 1</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step" id="step-2">
+        <h2>Step 2</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="form-step" id="step-3">
+        <h2>Step 3</h2>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="prev-btn" disabled>Backward</button>
+        <button type="button" class="next-btn">Continue</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const formSteps = document.querySelectorAll(".form-step");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+
+    let currentStep = 0;
+
+    function updateSteps() {
+      formSteps.forEach((formStep, index) => {
+        formStep.classList.toggle("active", index === currentStep);
+      });
+
+      // Disable or enable navigation buttons based on the current step
+      prevBtn.disabled = currentStep === 0;
+      nextBtn.textContent = currentStep === formSteps.length - 1 ? "Submit" : "Continue";
+    }
+
+    // Handle Next Button
+    nextBtn.addEventListener("click", () => {
+      if (currentStep < formSteps.length - 1) {
+        currentStep++;
+        updateSteps();
+      } else {
+        // Submit form when on the last step
+        document.getElementById("multiStepForm").submit();
+      }
+    });
+
+    // Handle Previous Button
+    prevBtn.addEventListener("click", () => {
+      if (currentStep > 0) {
+        currentStep--;
+        updateSteps();
+      }
+    });
+  </script>
+</body>
+</html>

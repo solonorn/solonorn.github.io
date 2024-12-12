@@ -392,7 +392,7 @@ span{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 24px;
+    padding-left: 20px;
 
 }
 
@@ -421,7 +421,7 @@ span{
 }
 
 .fish-card img {
-    width: 30%;
+    width: 40% !important;
     height: 108px;
     object-fit: cover;
 }
@@ -910,7 +910,6 @@ body.modal-open {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
 }
 .span-2{
     font-family: "Medium" !important;
@@ -1353,6 +1352,7 @@ textarea {
     overflow: hidden;
 }
 .sticky-cta{
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
     display: flex;
     width: 20vw;
     height: auto;
