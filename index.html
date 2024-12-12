@@ -36,8 +36,8 @@
     <ul class="menu">
       <li><a href="#work">River Lýsa</a></li>
       <li><a href="#about">Day tours</a></li>
-      <li><a href="#careers">About us</a></li>
-      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#careers">About</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li>    <button id="openModal">Reserve</button></li>
     </ul>
 
@@ -55,7 +55,7 @@
     <div class="hero">
       <div class="hero-left">
         <div class="z-index">
-        <h4>AVAILABLE JUNE – SEPTEMBER</h4>
+        <h4>AVAILABLE JUNE – SEPTEMBER 2025</h4>
         <h1 class="white">River Lýsa</h1>
         <h2 class="white">
           Unforgettable fly<br> fishing journey in <br> west Iceland
@@ -467,6 +467,82 @@
       });
 
     </script>
+
+    <script>
+            const lightbox = GLightbox({ selector: '.glightbox' });
+
+            function openGlightbox() {
+               const lightbox = GLightbox({
+                  selector: '.glightbox',  // Select all images with the class 'glightbox'
+               });
+               lightbox.open();  // Open the lightbox programmatically
+            }
+
+            // Forms
+            // Variables to store scroll position
+            let scrollPosition = 0;
+
+            // Elements
+            const modal = document.getElementById("modal");
+            const openModal = document.getElementById("openModal");
+            const modalContent = document.getElementById("modal-content-placeholder");
+
+            // Function to load modal content lazily
+            function loadModalContent() {
+                if (!modalContent.innerHTML.trim() || modalContent.innerHTML === "Loading content...") {
+                    // Simulating dynamic loading - replace this with your fetch logic if needed
+                    modalContent.innerHTML = `
+                        <h2>Dynamic Content Loaded</h2>
+                        <p>This is the content of the modal.</p>
+                        <button class="close">Close Modal</button>
+                    `;
+                    // Attach close event to dynamically added buttons
+                    attachCloseEvent();
+                }
+            }
+
+            // Function to attach close events
+            function attachCloseEvent() {
+                document.querySelectorAll(".close").forEach(closeButton => {
+                    closeButton.addEventListener("click", closeModalFunction);
+                });
+            }
+
+            // Function to open the modal
+            function openModalFunction() {
+                scrollPosition = window.scrollY; // Save the current scroll position
+                modal.style.display = "flex"; // Show modal
+                document.body.classList.add("modal-open"); // Prevent scrolling
+                document.body.style.top = `-${scrollPosition}px`; // Fix position
+                document.body.style.width = "100%"; // Prevent shrinkage
+                loadModalContent(); // Load modal content
+            }
+
+            // Function to close the modal
+            function closeModalFunction() {
+                modal.style.display = "none"; // Hide modal
+                document.body.classList.remove("modal-open"); // Restore scrolling
+                document.body.style.position = ""; // Reset styles
+                document.body.style.top = "";
+                document.body.style.width = "";
+                window.scrollTo(0, scrollPosition); // Restore scroll position
+            }
+
+            // Open modal on button click
+            openModal.addEventListener("click", openModalFunction);
+
+            // Close modal when clicking outside modal content
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    closeModalFunction();
+                }
+            });
+
+            // Attach close event for existing close buttons
+            attachCloseEvent();
+
+        </script>
+
 
     <script type="text/javascript">
         
