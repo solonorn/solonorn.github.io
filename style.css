@@ -927,8 +927,15 @@ body.modal-open {
     height: 56px;
     width: 100%;
 }
+
+.img-container{
+    display: flex;
+    gap: 6px;
+}
+
 .sticky-cta .img-container img{
     width: 100%;
+    object-fit: cover;
 }
 
 .info-left{
