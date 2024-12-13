@@ -342,6 +342,7 @@ span{
     font-size: 14px;
     line-height: 1.4;
     color: #519031;
+    letter-spacing: 0.4px;
 }
 
 
@@ -621,6 +622,7 @@ button:active{
 
 .button-container{
     margin-top: 82px;
+    margin-left: -4px;
 }
 
 .button-container-thanks{
@@ -902,7 +904,7 @@ body.modal-open {
     line-height: 1.3;
     letter-spacing: 2%;
     color: #1D1F1C;
-    margin-left: 6px;
+    margin-left: 4px;
 }
 .sticky-container{
     display: flex;
@@ -1381,7 +1383,6 @@ textarea {
     line-height: 1.3;
     letter-spacing: 2%;
     color: #1D1F1C;
-    margin-left: 6px;
 }
 .sticky-container{
     display: flex;
@@ -1612,7 +1613,6 @@ textarea {
     line-height: 1.3;
     letter-spacing: 2%;
     color: #1D1F1C;
-    margin-left: 6px;
 }
 .sticky-container{
     display: flex;
@@ -1686,7 +1686,6 @@ textarea {
     line-height: 1.3;
     letter-spacing: 2%;
     color: #1D1F1C;
-    margin-left: 6px;
 }
 .sticky-container{
     display: flex;
