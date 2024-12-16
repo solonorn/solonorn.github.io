@@ -370,6 +370,56 @@ span{
     margin-bottom: 20px;
 }
 
+.section-3 h1{
+    font-size: 44px;
+    line-height: 1.1;
+    letter-spacing: 2%;
+    padding-top: 68px;
+}
+
+.lodge-included ul{
+    border-radius: 16px;
+    font-family: "Medium";
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.lodge-included li{
+    padding: 16px 0px;
+    border-bottom: 1px dashed #D9D9D9;
+}
+
+.lodge-included-container{
+    display: flex;
+    gap: 16px;
+}
+
+.lodge-included li:last-child{
+    border-bottom: none;
+}
+
+.section-3 .gallery{
+    margin-top: 48px !important;
+    margin-bottom: 52px !important;
+}
+
+.section-3 span{
+    margin-left: 8px;
+    font-size: 17px;
+}
+
+.lodge-included{
+    width: 100%;
+    margin-top: 32px;
+}
+
+.section-3 .gallery-2-bottom{
+    gap: 8px;
+}
+
 .fly-fishing-section {
   padding: 20px;
   text-align: center;
@@ -379,7 +429,7 @@ span{
 
 .fish-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Always use two columns */
   gap: 12px;
   overflow: hidden;
   margin-top: 40px;
@@ -421,7 +471,7 @@ span{
 }
 
 .fish-card img {
-    width: 40% !important;
+    width: 40%;
     height: 108px;
     object-fit: cover;
 }
@@ -942,8 +992,8 @@ body.modal-open {
 
 .info-left{
     margin-top: 40px;
-    width: 40vw;
-    height: 2000px;
+    width: 45vw;
+    height: 4000px;
 }
 
 .mail-container{
@@ -1421,12 +1471,6 @@ textarea {
     width: 100%;
 }
 
-.info-left{
-    margin-top: 40px;
-    width: 40vw;
-    height: 2000px;
-}
-
 
 /*Form*/
 
@@ -1641,13 +1685,6 @@ textarea {
     width: 100%;
 }
 
-.info-left{
-    margin-top: 40px;
-    width: 40vw;
-    height: 2000px;
-}
-
-
 
 .logo{
     width: 30vw;
@@ -1712,12 +1749,6 @@ textarea {
 }
 .sticky-cta .img-container img{
     width: 100%;
-}
-
-.info-left{
-    margin-top: 40px;
-    width: 40vw;
-    height: 2000px;
 }
 
 
@@ -2100,7 +2131,7 @@ textarea {
         align-items: center;
         padding-bottom: 0;
         z-index: 100;
-        height: auto;
+        height: 4000px;
     }
 
     .hero-left img{
@@ -2196,7 +2227,7 @@ textarea {
     }
 
     .fish-card img{
-        width: 100%;
+        width: 100% !important;
         height: 136px;
     }
 
@@ -2252,6 +2283,36 @@ textarea {
 
     .close-container{
         width: 100%;
+    }
+
+    .lodge-included-container{
+        flex-direction: column;
+        padding: 0px 2.5vw;
+    }
+
+    .lodge-included{
+        margin-top: 20px;
+    }
+
+    .lodge-included:nth-child(2){
+        margin-top: 0px;
+    }
+
+    .section-3 span{
+        margin-left: 20px;
+    }
+
+    .section-3 .gallery{
+        margin-bottom: 32px !important;
+        margin-top: 28px !important;
+    }
+
+    .section-3 h1{
+        font-size: 28px;
+        line-height: 1.1;
+        letter-spacing: 2%;
+        margin-left: 20px;
+        padding-top: 44px;
     }
 
 
