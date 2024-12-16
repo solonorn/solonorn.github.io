@@ -2231,7 +2231,7 @@ textarea {
     }
 
     .info-left{
-        margin-top: 32px;
+        margin-top: 40px;
     }
     
     .fish-card{
@@ -2242,6 +2242,10 @@ textarea {
     .fish-card img{
         width: 100% !important;
         height: 136px;
+    }
+
+    .fish-card-last{
+        object-position: 0px -124px;
     }
 
     .fish-grid-content{
@@ -2256,6 +2260,7 @@ textarea {
 
     .fish-grid{
         padding-left: 2.5vw;
+        padding-right: 2.5vw;
     }
 
     .fish-grid {
