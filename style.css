@@ -2244,8 +2244,12 @@ textarea {
         height: 136px;
     }
 
+    .fish-card-2nd{
+        object-position: 0px -54px;
+    }
+
     .fish-card-last{
-        object-position: 0px -124px;
+        object-position: 0px -136px;
     }
 
     .fish-grid-content{
