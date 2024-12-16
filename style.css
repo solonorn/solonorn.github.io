@@ -1887,7 +1887,7 @@ textarea {
     display: none;
 }
 
-.desktop-show{
+.desktop-show-btn{
     display: flex !important;
     padding-top: 16px;
     height: 48px;
@@ -1895,8 +1895,13 @@ textarea {
     margin-top: 16px;
 }
 
+.mobile-show{
+    display: none;
+}
 
-
+.desktopop-show{
+    display: flex;
+}
 
 
 @media only screen and (max-width: 880px){
@@ -1914,6 +1919,14 @@ textarea {
     }
     h4{
         font-size: 14px;
+    }
+
+    .mobile-show{
+        display: flex;
+    }
+
+    .desktop-show{
+        display: none;
     }
 
     .header{
@@ -1938,7 +1951,7 @@ textarea {
         display: flex;
     }
 
-    .desktop-show{
+    .desktop-show-btn{
         display: none !important;
     }
 
@@ -2250,6 +2263,7 @@ textarea {
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
+      margin-top: 24px;
     }
 
     .fish-card {
@@ -2262,6 +2276,8 @@ textarea {
         width: 70%;
         font-size: 24px;
         margin-left: 20px;
+        margin-bottom: 12px !important;
+        margin-top: 36px !important;
     }
 
     .section-2 span{
