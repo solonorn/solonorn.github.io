@@ -2014,6 +2014,11 @@ textarea {
         border-radius: 99px;
     }
 
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
     h1 {
         font-size: 48px;
     }

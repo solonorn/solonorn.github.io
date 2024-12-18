@@ -534,6 +534,20 @@
       </svg>
     </a>
 
+    <script type="text/javascript">
+      //hide thumbs down
+
+          const button = document.querySelector('.sticky-thumbs-down');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        button.classList.add('hidden');
+      } else {
+        button.classList.remove('hidden');
+      }
+    });
+
+    </script>
 
     <script type="text/javascript">
       document.addEventListener("scroll", function () {
