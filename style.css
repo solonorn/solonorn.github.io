@@ -406,6 +406,7 @@ span{
 
 .section-4 .lodge-included{
     width: calc(22.5vw - 8px);
+    margin-top: 28px !important;
 }
 
 .section-4 h2{
@@ -432,6 +433,76 @@ span{
     padding-left: 8px;
 }
 
+.section-5{
+    padding-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.section-5-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    gap: 24px;
+}
+
+.section-5-cards{
+    display: flex;
+    gap: 10px;
+    padding-top: 32px;
+}
+
+.section-5-cards .card{
+    font-family: "Medium";
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 2%;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 20px 24px;
+    width: 33%;
+    padding-right: 7%;
+}
+
+.section-5 h3{
+    font-family: "Black";;
+}
+
+.section-5 span{
+    font-family: "Medium";
+    letter-spacing: 2%;
+    line-height: 1.2;
+    color: #1D1F1C;
+    font-size: 16px;
+}
+
+.section-5 a{
+    background-color: #1D1F1C;
+    color: #fff;
+    padding: 13px 22px !important;
+    line-height: 1;
+    height: 42px;
+}
+
+.section-5 a:hover{
+    background-color: #30332E;
+}
+
+.section-5 a:hover{
+    background-color: #464B44;
+}
+
+
+.transportation{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
 
 .lodge-included ul{
     border-radius: 16px;
@@ -986,19 +1057,6 @@ body.modal-open {
 }
 
 
-
-.sticky-cta{
-    display: flex;
-    width: 20vw;
-    height: auto;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 20px;
-    position: sticky;
-    overflow: hidden;
-    top: 105px;
-    min-width: 300px;
-}
 .sticky-cta button{
     width: 100%;
     padding: 16px;
@@ -1465,19 +1523,7 @@ textarea {
     flex-direction: column;
     overflow: hidden;
 }
-.sticky-cta{
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
-    display: flex;
-    width: 20vw;
-    height: auto;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 20px;
-    position: sticky;
-    overflow: hidden;
-    top: 105px;
-    min-width: 300px;
-}
+
 .sticky-cta button{
     width: 100%;
     padding: 16px;
@@ -1690,18 +1736,7 @@ textarea {
     flex-direction: column;
     overflow: hidden;
 }
-.sticky-cta{
-    display: flex;
-    width: 20vw;
-    height: auto;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 20px;
-    position: sticky;
-    overflow: hidden;
-    top: 105px;
-    min-width: 300px;
-}
+
 .sticky-cta button{
     width: 100%;
     padding: 16px;
@@ -1959,8 +1994,23 @@ textarea {
     display: flex;
 }
 
+.sticky-thumbs-down{
+    display: none;   
+}
+
 
 @media only screen and (max-width: 880px){
+
+    .sticky-thumbs-down{
+        display: flex;
+        position: fixed;
+        bottom: 32px;
+        padding: 14px 44px;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-radius: 99px;
+    }
 
     h1 {
         font-size: 48px;
@@ -2297,7 +2347,7 @@ textarea {
 
     .fish-card img{
         width: 100% !important;
-        height: 136px;
+        height: 120px;
     }
 
     .fish-card-2nd{
@@ -2333,13 +2383,13 @@ textarea {
 
     .fish-card {
       flex: 0 0 auto;
-      width: 80%; /* Adjust the width for the carousel */
+      width: 70%; /* Adjust the width for the carousel */
       scroll-snap-align: center;
     }
 
     .section-2 h2{
         width: 70%;
-        font-size: 24px;
+        font-size: 26px;
         margin-left: 20px;
         margin-bottom: 12px !important;
         margin-top: 36px !important;
@@ -2417,7 +2467,7 @@ textarea {
     }
 
     .section-4 h2{
-        font-size: 30px;
+        font-size: 32px;
         line-height: 1.1;
         letter-spacing: 2%;
         padding-top: 0px;
@@ -2429,6 +2479,10 @@ textarea {
         letter-spacing: 2.5%;
         padding-top: 14px;
         padding-bottom: 36px;
+    }
+
+    .section-5-cards{
+        flex-direction: row;
     }
 
 
