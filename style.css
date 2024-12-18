@@ -2004,7 +2004,7 @@ textarea {
     .sticky-thumbs-down{
         display: flex;
         position: fixed;
-        bottom: 32px;
+        bottom: 16px;
         padding: 14px 44px;
         background-color: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(24px);
