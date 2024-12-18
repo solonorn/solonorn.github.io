@@ -2493,8 +2493,25 @@ textarea {
         padding-bottom: 36px;
     }
 
+    .section-5{
+        padding: 0px 2.5vw;
+    }
+
     .section-5-cards{
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .section-5-cards .card{
+        width: 100%;
+    }
+
+    .section-5-top a{
+        display: none;
+    }
+
+    .section-5 h3{
+        margin-top: 36px;
+        font-size: 22px !important;
     }
 
 
