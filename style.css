@@ -2497,8 +2497,13 @@ textarea {
         padding: 0px 2.5vw;
     }
 
+    .section-5 span{
+        font-size: 15px;
+    }
+
     .section-5-cards{
         flex-direction: column;
+        padding-top: 28px;
     }
 
     .section-5-cards .card{
