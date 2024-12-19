@@ -2068,6 +2068,16 @@ textarea {
         border-radius: 99px;
     }
 
+    .sticky-thumbs-down:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .sticky-thumbs-down:active{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    }
+
+
     #sec1{
         position: relative;
         top: -100px;
