@@ -2046,7 +2046,7 @@ textarea {
     display: none;
 }
 
-.desktopop-show{
+.desktop-show{
     display: flex;
 }
 
@@ -2539,6 +2539,7 @@ textarea {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
         margin-top: 40px;
+        gap: 0px;
     }
 
     .section-4 .lodge-included{
@@ -2549,6 +2550,7 @@ textarea {
     .section-4-right{
         width: 100%;
         flex-direction: row;
+        margin-bottom: 22px;
     }
 
     .section-4 img{
@@ -2568,6 +2570,10 @@ textarea {
         letter-spacing: 2.5%;
         padding-top: 14px;
         padding-bottom: 28px;
+    }
+
+    .section-4 span{
+        -top: 16px;
     }
 
     .section-5{
