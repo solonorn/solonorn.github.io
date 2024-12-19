@@ -2054,8 +2054,23 @@ textarea {
     display: none;   
 }
 
+@media only screen and (max-width: 990px){
 
-@media only screen and (max-width: 880px){
+    .body-container{
+        width: 92vw;
+    }
+
+    .fish-grid{
+
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Adjust the min-width */
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 720px){
 
     .sticky-thumbs-down{
         display: flex;
@@ -2443,7 +2458,7 @@ textarea {
     }
 
     .fish-card-last{
-        object-position: 0px -136px;
+        object-position: 0px -86px;
     }
 
     .fish-grid-content{
@@ -2578,6 +2593,13 @@ textarea {
 
     .section-5{
         padding: 0px 2.5vw;
+    }
+
+    .section-5 a{
+        margin-top: 32px;
+        width: 60%;
+        transform: translateX(-50%);
+        margin-left: 50%;
     }
 
 
