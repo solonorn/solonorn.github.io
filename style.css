@@ -2308,8 +2308,12 @@ textarea {
         padding-bottom: 12px;
     }
 
-    .header li a{
+    .menu li:nth-child(1){
+        padding-top: 24px;
+    }
 
+    .header li a{
+        padding : 10px 20px
     }
 
     a{
