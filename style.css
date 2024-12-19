@@ -2075,7 +2075,7 @@ textarea {
     .sticky-thumbs-down:active{
         background-color: rgba(0, 0, 0, 0.9);
     }
-    }
+
 
 
     #sec1{
@@ -2422,12 +2422,20 @@ textarea {
     
     .fish-card{
         flex-direction: column;
-        width: 60vw;
+        width: 60% !important;
     }
 
     .fish-card img{
         width: 100% !important;
-        height: 120px;
+        height: 100px;
+    }
+
+    .fish-grid-content ul{
+        margin-top: 4px;
+    }
+
+    .fish-grid-content li{
+        margin-top: 3px;
     }
 
     .fish-card-2nd{
@@ -2439,9 +2447,9 @@ textarea {
     }
 
     .fish-grid-content{
-        padding-top: 16px;
-        padding-left: 16px;
-        padding-bottom: 20px;
+        padding-top: 12px;
+        padding-left: 14px;
+        padding-bottom: 16px;
     }
 
     .fish-grid-content h3{
@@ -2571,8 +2579,6 @@ textarea {
         font-size: 15px;
     }
 
-
-
     .section-5-cards{
         flex-direction: column;
         padding-top: 28px;
@@ -2604,6 +2610,7 @@ textarea {
 
 }
 
+}
 
 
 
