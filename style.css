@@ -19,8 +19,8 @@ time, mark, audio, video {
     vertical-align: baseline;
     text-decoration: none;
     color: inherit;
+    
     scroll-behavior: smooth;
-
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -488,6 +488,7 @@ span{
     padding: 13px 22px !important;
     line-height: 1;
     height: 42px;
+    margin: 0px;
 }
 
 .section-5 a:hover{
@@ -886,7 +887,7 @@ body{
     background-color: #2A2E28;
 }
 
-.hero-left img{
+.hero-left img, .hero-left-back img{
     position: absolute;
     background: url('img/hero-back.png') no-repeat center center;
     background-size: cover;
@@ -1162,6 +1163,7 @@ body.modal-open {
     margin-top: 40px;
     width: 45vw;
     height: 4000px;
+    scroll-behavior: smooth;
 }
 
 .mail-container{
@@ -2549,6 +2551,7 @@ textarea {
     .section-5{
         padding: 0px 2.5vw;
     }
+
 
     .section-5 span{
         font-size: 15px;
