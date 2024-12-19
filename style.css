@@ -518,7 +518,7 @@ span{
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Adjust the min-width */
-    gap: 12px;
+    gap: 8px;
     text-align: left;
 }
 
@@ -2634,6 +2634,26 @@ textarea {
 
     .lodge-included li{
         padding: 14px 0px;
+    }
+
+    .section-6{
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+
+    .section-6 h3{
+        font-size: 30px;
+        line-height: 1.1;
+        letter-spacing: 2%;
+    }
+
+    .faq-item{
+        font-size: 15px;
+        padding: 16px 18px 16px 18px;
+    }
+
+    .faq-section{
+        padding-top: 30px;
     }
 
 
