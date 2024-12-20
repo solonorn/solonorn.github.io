@@ -2748,16 +2748,10 @@ textarea {
 }
 
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
-    .form-container {
-        background: red !important;
-    }
-}
-
-@supports (-webkit-touch-callout: none) and (not (-moz-appearance: none)) {
+@supports (-webkit-touch-callout: none) {
     @media only screen and (max-width: 768px) {
-        .modal-content {
-            height: 85vh;
+        .form-container {
+            background-color: black !important; /* Safari and WebKit-based browsers */
         }
     }
 }
