@@ -539,10 +539,13 @@ span{
 
 .faq-question{
     text-align: center;
-    margin-top: 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.faq-question .line-seperator{ 
+    max-width: 75%;
 }
 
 .faq-container{
@@ -1709,6 +1712,7 @@ textarea {
     letter-spacing: 2%;
     line-height: 1.1;
     color: #1D1F1C;
+    margin-bottom: 48px;
 }
 
 
@@ -2705,6 +2709,7 @@ textarea {
     .section-6{
         padding-left: 2.5vw;
         padding-right: 2.5vw;
+        padding-top: 56px;
     }
 
     .section-6 h3{
@@ -2722,6 +2727,23 @@ textarea {
         padding-top: 30px;
     }
 
+    .faq-question p{
+        font-size: 15px;
+        max-width: 97%;
+    }
+
+    .faq-question h5{
+        font-size: 19px;
+    }
+
+    .faq-question{
+        margin-top: 40px;
+    }
+
+    .form-container h4{
+        font-size: 34px;
+        margin-top: 24px;
+    }
 
 }
 
