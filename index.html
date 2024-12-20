@@ -57,7 +57,12 @@
           // Function to detect Safari
           function isSafari() {
               const ua = navigator.userAgent;
-              return ua.includes("Safari") && !ua.includes("Chrome");
+              return (
+                  ua.includes("Safari") &&
+                  !ua.includes("Chrome") &&
+                  !ua.includes("CriOS") && // Exclude Chrome on iOS
+                  !ua.includes("FxiOS")   // Exclude Firefox on iOS
+              );
           }
 
           // Check if Safari and apply styles
@@ -68,7 +73,10 @@
               if (modalContent) {
                   // Apply the height dynamically
                   modalContent.style.height = "85vh";
+                  console.log("Safari detected: Applied height 85vh to .modal-content");
               }
+          } else {
+              console.log("Safari not detected: No changes applied.");
           }
       });
     </script>
