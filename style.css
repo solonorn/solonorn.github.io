@@ -2748,6 +2748,32 @@ textarea {
 }
 
 
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .modal-content {
+        height: 85vh;
+    }
+}}
+/* Test website on real Safari 11+ */
+
+/* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){ 
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+    .modal-content {
+        height: 85vh;
+    }
+}}
+
+/* Safari 6.1-10.0 (but not 10.1) */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){ 
+@media {
+    .modal-content {
+        height: 85vh;
+    }
+}}
+
+/*
 @supports (-webkit-touch-callout: none) and (not (-moz-appearance: none)) {
     @media only screen and (max-width: 768px) {
         .modal-content {
