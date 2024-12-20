@@ -19,7 +19,6 @@ time, mark, audio, video {
     vertical-align: baseline;
     text-decoration: none;
     color: inherit;
-    
     scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
@@ -2749,6 +2748,17 @@ textarea {
 
 }
 
+
+@supports (-webkit-touch-callout: none) {
+    @media only screen and (max-width: 768px) {
+        /* Safari-specific styles for mobile */
+        
+        .modal-content{
+            height: 80vh;
+        }
+
+
+}
 
 
 
