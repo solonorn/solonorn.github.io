@@ -705,7 +705,7 @@ iframe.wait-autoplay{
 }
 @media (min-width:769px){
     .glightbox-container .ginner-container{
-        width:auto;
+        width:40vw;
         height:auto;
         -webkit-box-orient:horizontal;
         -webkit-box-direction:normal;
