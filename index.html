@@ -52,6 +52,17 @@
 
   <body>
 
+    <script type="text/javascript">
+      
+      const ua = navigator.userAgent;
+
+      // Detect Safari only (not Chrome or other WebKit browsers)
+      if (/Safari/.test(ua) && !/Chrome/.test(ua) && /iPhone|iPad|iPod/.test(ua)) {
+          document.body.classList.add("safari-mobile");
+      }
+      
+    </script>
+
     <div class="hero">
       <div class="hero-left">
         <div class="z-index">

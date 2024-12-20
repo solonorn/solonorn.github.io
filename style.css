@@ -2750,7 +2750,7 @@ textarea {
 
 @supports (-webkit-touch-callout: none) {
     @media only screen and (max-width: 768px) {
-        .form-container {
+        .safari-mobile .form-container {
             background-color: black !important; /* Safari and WebKit-based browsers */
         }
     }
