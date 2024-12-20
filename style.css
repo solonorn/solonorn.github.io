@@ -2749,17 +2749,12 @@ textarea {
 }
 
 
-@supports (-webkit-touch-callout: none) {
-    @media only screen and (max-width: 768px) {
-        /* Safari-specific styles for mobile */
-        
-        .modal-content{
-            height: 80vh;
-        }
-
-
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    /* Safari-specific mobile styles go here */
+    .form-container {
+        color: black !important;
+    }
 }
-
 
 
 
