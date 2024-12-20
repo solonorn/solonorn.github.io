@@ -56,9 +56,13 @@
       
       const ua = navigator.userAgent;
 
-      // Detect Safari only (not Chrome or other WebKit browsers)
-      if (/Safari/.test(ua) && !/Chrome/.test(ua) && /iPhone|iPad|iPod/.test(ua)) {
-          document.body.classList.add("safari-mobile");
+      // Detect iOS Safari (not Chrome or other WebKit browsers)
+      if (
+          ua.includes("Safari") && // Must have "Safari" in the user agent
+          !ua.includes("Chrome") && // Exclude Chrome
+          (/iPhone|iPad|iPod/).test(ua) // Must be an iOS device
+      ) {
+          document.body.classList.add("safari-only");
       }
       
     </script>
