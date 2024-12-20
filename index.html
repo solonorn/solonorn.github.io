@@ -402,7 +402,12 @@
 
                         <!-- Lightbox Content -->
                         <div id="faq1" class="faq-lightbox-content" style="display: none;">
-                          <h2>Are flights included?</h2>
+
+                          <div class="close-container">
+                            <span class="close"><img src="img/Close-X.svg"></span>
+                          </div>
+                            
+                          <h4>Are flights included?</h4>
                           <p>Flights are not included in our prices. We recommend booking your flights independently to ensure the best fit. That said, we’re here to help! If you need assistance with flight arrangements, we’re happy to provide guidance and support.</p>
                         </div>
                         <div id="faq2" class="faq-lightbox-content" style="display: none;">
@@ -417,12 +422,50 @@
                       </div>
 
                       <script type="text/javascript">
-                        // FAQ Lightbox
-                        document.addEventListener('DOMContentLoaded', function () {
-                          const faqLightbox = GLightbox({
-                            selector: '.glightbox', // Target your FAQ links
-                          });
-                        }); // Close the function and event listener
+
+                       document.addEventListener("DOMContentLoaded", () => {
+                         const modal = document.getElementById("modal");
+                         let scrollPosition = 0; // To store the scroll position
+
+                         // Function to open the modal
+                         const openModalFunction = (event) => {
+                           event.preventDefault(); // Prevent default behavior
+                           console.log("Opening Modal...");
+                           scrollPosition = window.scrollY; // Save current scroll position
+                           modal.style.display = "flex"; // Show modal
+                           document.body.classList.add("modal-open"); // Lock scrolling
+                           document.body.style.top = `-${scrollPosition}px`; // Offset the page by the saved scroll position
+                         };
+
+                         // Function to close the modal
+                         const closeModalFunction = () => {
+                           console.log("Closing Modal...");
+                           modal.style.display = "none"; // Hide modal
+                           document.body.classList.remove("modal-open"); // Unlock scrolling
+                           document.body.style.top = ""; // Reset the body's top offset
+                           window.scrollTo(0, scrollPosition); // Restore the saved scroll position
+                         };
+
+                         // Attach click event listeners to all modal-opening buttons
+                         document.querySelectorAll("#openModal").forEach((button) => {
+                           console.log("Attaching openModalFunction to:", button);
+                           button.addEventListener("click", openModalFunction);
+                         });
+
+                         // Attach click event listeners to all close buttons
+                         document.querySelectorAll(".close").forEach((button) => {
+                           console.log("Attaching closeModalFunction to:", button);
+                           button.addEventListener("click", closeModalFunction);
+                         });
+
+                         // Close modal when clicking outside the modal content
+                         modal.addEventListener("click", (event) => {
+                           if (event.target === modal) {
+                             console.log("Clicked outside modal content.");
+                             closeModalFunction();
+                           }
+                         });
+                       });
                       </script>
 
                     </div>
@@ -460,7 +503,7 @@
                     <img class="form-cover" src="img/form-cover.jpg">
 
                     <div class="form-container">
-                      <h1>River Lýsa</h1>
+                      <h3>River Lýsa</h3>
                       <p class="subtitle">Embark on an unforgettable fly fishing journey</p>
 
                       <form action="https://getform.io/f/azyyydzb" method="POST" class="form-post-container">
@@ -592,7 +635,7 @@
                         <img class="form-cover" src="img/form-cover.jpg">
 
                         <div class="form-container">
-                          <h1>Questions</h1>
+                          <h3>Questions</h3>
                           <p class="subtitle">Shoot us a message and we will get back to you as soon as possible.</p>
 
                           <form action="https://getform.io/f/azyyydzb" method="POST" class="form-post-container">
