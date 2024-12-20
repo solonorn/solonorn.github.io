@@ -52,19 +52,25 @@
 
   <body>
 
-    <script type="text/javascript">
-      
-      const ua = navigator.userAgent;
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Function to detect Safari
+          function isSafari() {
+              const ua = navigator.userAgent;
+              return ua.includes("Safari") && !ua.includes("Chrome");
+          }
 
-      // Detect iOS Safari (not Chrome or other WebKit browsers)
-      if (
-          ua.includes("Safari") && // Must have "Safari" in the user agent
-          !ua.includes("Chrome") && // Exclude Chrome
-          (/iPhone|iPad|iPod/).test(ua) // Must be an iOS device
-      ) {
-          document.body.classList.add("safari-only");
-      }
-      
+          // Check if Safari and apply styles
+          if (isSafari()) {
+              // Select the modal-content element(s)
+              const modalContent = document.querySelector(".modal-content");
+
+              if (modalContent) {
+                  // Apply the height dynamically
+                  modalContent.style.height = "85vh";
+              }
+          }
+      });
     </script>
 
     <div class="hero">
