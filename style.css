@@ -2747,12 +2747,10 @@ textarea {
 
 }
 
-}
-
 
 @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
-    body {
-        background: red !important;
+    .modal-content {
+        height: 90vh;
     }
 }
 
