@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatpickr Debug</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <div class="input-container custom-date-icon">
+        <label for="pickup-date" class="custom-date">Date of pick-up</label>
+        <input type="text" placeholder="Select date" id="pickup-date" name="pickup-date" required>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Initialize Flatpickr
+            const element = document.querySelector("#pickup-date");
+
+            if (element) {
+                console.log("Flatpickr initializing...");
+                flatpickr(element, {
+                    dateFormat: "Y-m-d",
+                    altInput: true,
+                    altFormat: "F j, Y",
+                    onReady: () => {
+                        console.log("Flatpickr ready!");
+                    },
+                    onChange: (selectedDates, dateStr, instance) => {
+                        console.log("Selected date:", dateStr);
+                    }
+                });
+            } else {
+                console.error("Element #pickup-date not found!");
+            }
+        });
+    </script>
+</body>
+</html>

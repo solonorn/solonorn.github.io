@@ -54,30 +54,31 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-          // Function to detect Safari
-          function isSafari() {
-              const ua = navigator.userAgent;
-              return (
-                  ua.includes("Safari") &&
-                  !ua.includes("Chrome") &&
-                  !ua.includes("CriOS") && // Exclude Chrome on iOS
-                  !ua.includes("FxiOS")   // Exclude Firefox on iOS
-              );
-          }
+        // Function to detect Safari on mobile
+        function isMobileSafari() {
+          const ua = navigator.userAgent;
+          return (
+            ua.includes("Safari") &&
+            !ua.includes("Chrome") &&
+            !ua.includes("CriOS") && // Exclude Chrome on iOS
+            !ua.includes("FxiOS") && // Exclude Firefox on iOS
+            (ua.includes("iPhone") || ua.includes("iPad") || ua.includes("iPod")) // Include only mobile Safari
+          );
+        }
 
-          // Check if Safari and apply styles
-          if (isSafari()) {
-              // Select the modal-content element(s)
-              const modalContent = document.querySelector(".modal-content");
+        // Check if it's Mobile Safari and apply styles
+        if (isMobileSafari()) {
+          // Select the modal-content element(s)
+          const modalContent = document.querySelector(".modal-content");
 
-              if (modalContent) {
-                  // Apply the height dynamically
-                  modalContent.style.height = "85vh";
-                  console.log("Safari detected: Applied height 85vh to .modal-content");
-              }
-          } else {
-              console.log("Safari not detected: No changes applied.");
+          if (modalContent) {
+            // Apply the height dynamically
+            modalContent.style.height = "85vh";
+            console.log("Mobile Safari detected: Applied height 85vh to .modal-content");
           }
+        } else {
+          console.log("Mobile Safari not detected: No changes applied.");
+        }
       });
     </script>
 
@@ -407,22 +408,22 @@
 
                       <div class="faq-section">
                         <div class="faq-grid">
-                          <a id="openModal-3" class="faq-item">
+                          <a class="openModal-3 faq-item">
                             Are flights included? <span>  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.5" d="M2.60156 9.50293C2.60156 9.1748 2.71615 8.89616 2.94531 8.66699C3.17969 8.43262 3.46094 8.31543 3.78906 8.31543H8.125V3.9873C8.125 3.65918 8.23958 3.38053 8.46875 3.15137C8.69792 2.91699 8.97656 2.7998 9.30469 2.7998C9.63281 2.7998 9.91146 2.91699 10.1406 3.15137C10.375 3.38053 10.4922 3.65918 10.4922 3.9873V8.31543H14.8281C15.151 8.31543 15.4271 8.43262 15.6562 8.66699C15.8906 8.89616 16.0078 9.1748 16.0078 9.50293C16.0078 9.83105 15.8906 10.1123 15.6562 10.3467C15.4271 10.5758 15.151 10.6904 14.8281 10.6904H10.4922V15.0264C10.4922 15.3493 10.375 15.6253 10.1406 15.8545C9.91146 16.0889 9.63281 16.2061 9.30469 16.2061C8.97656 16.2061 8.69792 16.0889 8.46875 15.8545C8.23958 15.6253 8.125 15.3493 8.125 15.0264V10.6904H3.78906C3.46094 10.6904 3.17969 10.5758 2.94531 10.3467C2.71615 10.1123 2.60156 9.83105 2.60156 9.50293Z" fill="#1D1F1C"/>
                               </svg></span>
                           </a>
-                          <a id="openModal-3" class="faq-item">
+                          <a class="openModal-3 faq-item">
                             What skill level do I need to have? <span> <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.5" d="M2.60156 9.50293C2.60156 9.1748 2.71615 8.89616 2.94531 8.66699C3.17969 8.43262 3.46094 8.31543 3.78906 8.31543H8.125V3.9873C8.125 3.65918 8.23958 3.38053 8.46875 3.15137C8.69792 2.91699 8.97656 2.7998 9.30469 2.7998C9.63281 2.7998 9.91146 2.91699 10.1406 3.15137C10.375 3.38053 10.4922 3.65918 10.4922 3.9873V8.31543H14.8281C15.151 8.31543 15.4271 8.43262 15.6562 8.66699C15.8906 8.89616 16.0078 9.1748 16.0078 9.50293C16.0078 9.83105 15.8906 10.1123 15.6562 10.3467C15.4271 10.5758 15.151 10.6904 14.8281 10.6904H10.4922V15.0264C10.4922 15.3493 10.375 15.6253 10.1406 15.8545C9.91146 16.0889 9.63281 16.2061 9.30469 16.2061C8.97656 16.2061 8.69792 16.0889 8.46875 15.8545C8.23958 15.6253 8.125 15.3493 8.125 15.0264V10.6904H3.78906C3.46094 10.6904 3.17969 10.5758 2.94531 10.3467C2.71615 10.1123 2.60156 9.83105 2.60156 9.50293Z" fill="#1D1F1C"/>
                               </svg></span>
                           </a>
-                          <a id="openModal-3" class="faq-item">
+                          <a class="openModal-3 faq-item">
                             What do I need to bring? <span>  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path opacity="0.5" d="M2.60156 9.50293C2.60156 9.1748 2.71615 8.89616 2.94531 8.66699C3.17969 8.43262 3.46094 8.31543 3.78906 8.31543H8.125V3.9873C8.125 3.65918 8.23958 3.38053 8.46875 3.15137C8.69792 2.91699 8.97656 2.7998 9.30469 2.7998C9.63281 2.7998 9.91146 2.91699 10.1406 3.15137C10.375 3.38053 10.4922 3.65918 10.4922 3.9873V8.31543H14.8281C15.151 8.31543 15.4271 8.43262 15.6562 8.66699C15.8906 8.89616 16.0078 9.1748 16.0078 9.50293C16.0078 9.83105 15.8906 10.1123 15.6562 10.3467C15.4271 10.5758 15.151 10.6904 14.8281 10.6904H10.4922V15.0264C10.4922 15.3493 10.375 15.6253 10.1406 15.8545C9.91146 16.0889 9.63281 16.2061 9.30469 16.2061C8.97656 16.2061 8.69792 16.0889 8.46875 15.8545C8.23958 15.6253 8.125 15.3493 8.125 15.0264V10.6904H3.78906C3.46094 10.6904 3.17969 10.5758 2.94531 10.3467C2.71615 10.1123 2.60156 9.83105 2.60156 9.50293Z" fill="#1D1F1C"/>
                         </svg></span>
                           </a>
-                          <a id="openModal-3" class="faq-item">
+                          <a class="openModal-3 faq-item">
                             Can I customize our tour? <span>  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path opacity="0.5" d="M2.60156 9.50293C2.60156 9.1748 2.71615 8.89616 2.94531 8.66699C3.17969 8.43262 3.46094 8.31543 3.78906 8.31543H8.125V3.9873C8.125 3.65918 8.23958 3.38053 8.46875 3.15137C8.69792 2.91699 8.97656 2.7998 9.30469 2.7998C9.63281 2.7998 9.91146 2.91699 10.1406 3.15137C10.375 3.38053 10.4922 3.65918 10.4922 3.9873V8.31543H14.8281C15.151 8.31543 15.4271 8.43262 15.6562 8.66699C15.8906 8.89616 16.0078 9.1748 16.0078 9.50293C16.0078 9.83105 15.8906 10.1123 15.6562 10.3467C15.4271 10.5758 15.151 10.6904 14.8281 10.6904H10.4922V15.0264C10.4922 15.3493 10.375 15.6253 10.1406 15.8545C9.91146 16.0889 9.63281 16.2061 9.30469 16.2061C8.97656 16.2061 8.69792 16.0889 8.46875 15.8545C8.23958 15.6253 8.125 15.3493 8.125 15.0264V10.6904H3.78906C3.46094 10.6904 3.17969 10.5758 2.94531 10.3467C2.71615 10.1123 2.60156 9.83105 2.60156 9.50293Z" fill="#1D1F1C"/>
                             </svg></span>
@@ -799,7 +800,18 @@
           modal.style.display = "none"; // Hide modal
           document.body.classList.remove("modal-open"); // Unlock scrolling
           document.body.style.top = ""; // Reset the body's top offset
-          window.scrollTo(0, scrollPosition); // Restore the saved scroll position
+
+          // Temporarily disable smooth scrolling
+          const html = document.documentElement; // Target the <html> element
+          html.style.scrollBehavior = "auto";
+
+          // Restore the saved scroll position
+          window.scrollTo(0, scrollPosition);
+
+          // Re-enable smooth scrolling
+          setTimeout(() => {
+            html.style.scrollBehavior = "smooth";
+          }, 0);
         };
 
         // Attach click event listeners to all modal-opening buttons
@@ -821,9 +833,7 @@
       });
 
     </script>
-
     <script type="text/javascript">
-      
       document.addEventListener("DOMContentLoaded", () => {
         const modal2 = document.getElementById("modal-2");
         let scrollPosition2 = 0; // To store the scroll position for the second button
@@ -842,7 +852,18 @@
           modal2.style.display = "none"; // Hide modal
           document.body.classList.remove("modal-open"); // Unlock scrolling
           document.body.style.top = ""; // Reset the body's top offset
-          window.scrollTo(0, scrollPosition2); // Restore the saved scroll position
+
+          // Temporarily disable smooth scrolling
+          const html = document.documentElement; // Target the <html> element
+          html.style.scrollBehavior = "auto";
+
+          // Restore the saved scroll position
+          window.scrollTo(0, scrollPosition2);
+
+          // Re-enable smooth scrolling
+          setTimeout(() => {
+            html.style.scrollBehavior = "smooth";
+          }, 0);
         };
 
         // Attach click event listener to the second modal-opening button
@@ -864,12 +885,11 @@
     </script>
 
     <script type="text/javascript">
-      
       document.addEventListener("DOMContentLoaded", () => {
         const modal3 = document.getElementById("modal-3");
-        let scrollPosition2 = 0; // To store the scroll position for the second button
+        let scrollPosition2 = 0; // To store the scroll position for the modal
 
-        // Function to open the second modal
+        // Function to open the modal
         const openModalFunction2 = (event) => {
           event.preventDefault(); // Prevent default behavior
           scrollPosition2 = window.scrollY; // Save current scroll position
@@ -878,21 +898,32 @@
           document.body.style.top = `-${scrollPosition2}px`; // Offset the page by the saved scroll position
         };
 
-        // Function to close the second modal
+        // Function to close the modal
         const closeModalFunction2 = () => {
           modal3.style.display = "none"; // Hide modal
           document.body.classList.remove("modal-open"); // Unlock scrolling
           document.body.style.top = ""; // Reset the body's top offset
-          window.scrollTo(0, scrollPosition2); // Restore the saved scroll position
+
+          // Temporarily disable smooth scrolling
+          const html = document.documentElement; // Target the <html> element
+          html.style.scrollBehavior = "auto";
+
+          // Restore the saved scroll position
+          window.scrollTo(0, scrollPosition2);
+
+          // Re-enable smooth scrolling
+          setTimeout(() => {
+            html.style.scrollBehavior = "smooth";
+          }, 0);
         };
 
-        // Attach click event listener to the second modal-opening button
-        const openModal3Button = document.getElementById("openModal-3");
-        if (openModal3Button) {
-          openModal3Button.addEventListener("click", openModalFunction2);
-        }
+        // Attach click event listeners to all modal-opening buttons
+        const openModalButtons = document.querySelectorAll(".openModal-3"); // Use a class selector
+        openModalButtons.forEach((button) => {
+          button.addEventListener("click", openModalFunction2);
+        });
 
-        // Attach click event listener to the close button of the second modal
+        // Attach click event listener to the close button of the modal
         modal3.querySelector(".close").addEventListener("click", closeModalFunction2);
 
         // Close modal when clicking outside the modal content
@@ -1032,53 +1063,81 @@
 
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", () => {
-        flatpickr("#pickup-date", {
-          dateFormat: "Y-m-d", // Original input value format for backend
-          altInput: true, // Enables a more user-friendly display format
-          altFormat: "F j, Y", // Basic format without ordinal suffix
-          appendTo: document.querySelector(".modal-content"),
-          locale: {
-            firstDayOfWeek: 1, // Set Monday as the first day of the week
-          },
-          closeOnSelect: false, // Prevent the calendar from closing automatically
-          nextArrow:
-            '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 36 0)" fill="#F5F5F5"/><path d="M23.0024 17.7119C22.9976 17.5264 22.9609 17.3579 22.8926 17.2065C22.8242 17.0503 22.7168 16.8989 22.5703 16.7524L17.0332 11.3325C16.8086 11.1128 16.5376 11.0029 16.2202 11.0029C16.0054 11.0029 15.8101 11.0566 15.6343 11.1641C15.4536 11.2666 15.3096 11.4058 15.2021 11.5815C15.0947 11.7573 15.041 11.9526 15.041 12.1675C15.041 12.4946 15.168 12.7803 15.4219 13.0244L20.2485 17.7046L15.4219 22.3921C15.168 22.646 15.041 22.9341 15.041 23.2563C15.041 23.4712 15.0947 23.6665 15.2021 23.8423C15.3096 24.0181 15.4536 24.1572 15.6343 24.2598C15.8101 24.3672 16.0054 24.4209 16.2202 24.4209C16.5376 24.4209 16.8086 24.3086 17.0332 24.084L22.5703 18.6641C22.7217 18.5176 22.8315 18.3687 22.8999 18.2173C22.9683 18.061 23.0024 17.8926 23.0024 17.7119Z" fill="#2C2E2C"/></svg>',
-          prevArrow:
-            '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="#F5F5F5"/><path d="M13.0332 17.7119C13.038 17.5264 13.0747 17.3579 13.1429 17.2065C13.2113 17.0503 13.3187 16.8989 13.4652 16.7524L18.998 11.3325C19.2226 11.1128 19.4936 11.0029 19.811 11.0029C20.0258 11.0029 20.2211 11.0566 20.3969 11.1641C20.5776 11.2666 20.7216 11.4058 20.8291 11.5815C20.9365 11.7573 20.9902 11.9526 20.9902 12.1675C20.9902 12.4946 20.8632 12.7803 20.6093 13.0244L15.775 17.7046L20.6093 22.3921C20.8632 22.646 20.9902 22.9341 20.9902 23.2563C20.9902 23.4712 20.9365 23.6665 20.8291 23.8423C20.7216 24.0181 20.5776 24.1572 20.3969 24.2598C20.2211 24.3672 20.0258 24.4209 19.811 24.4209C19.4936 24.4209 19.2226 24.3086 18.998 24.084L13.4652 18.6641C13.3138 18.5176 13.204 18.3687 13.1356 18.2173C13.0672 18.061 13.0332 17.8926 13.0332 17.7119Z" fill="#2C2E2C"/></svg>',
-          onChange: (selectedDates, dateStr, instance) => {
-            // Get the selected date
-            const date = selectedDates[0];
-            if (date) {
-              // Define a function to get the ordinal suffix
-              const getOrdinalSuffix = (day) => {
-                if (day > 3 && day < 21) return "th";
-                switch (day % 10) {
-                  case 1:
-                    return "st";
-                  case 2:
-                    return "nd";
-                  case 3:
-                    return "rd";
-                  default:
-                    return "th";
-                }
-              };
+          const element = document.querySelector("#pickup-date");
 
-              // Format the date manually with the ordinal suffix
-              const month = instance.formatDate(date, "F");
-              const day = instance.formatDate(date, "j");
-              const year = instance.formatDate(date, "Y");
-              const formattedDate = `${month} ${day}${getOrdinalSuffix(day)}, ${year}`;
+          if (element) {
+              console.log("Flatpickr initializing...");
 
-              // Set the altInput value to the custom formatted date
-              instance.altInput.value = formattedDate;
-            }
-          },
-          onReady: (selectedDates, dateStr, instance) => {
-               // Move the calendar container 20px higher
-               instance.calendarContainer.style.marginTop = "-40px";
-             },
-        });
+              flatpickr(element, {
+                  dateFormat: "Y-m-d", // Backend format
+                  altInput: true, // User-friendly display format
+                  altFormat: "F j, Y", // User-visible format
+                  minDate: "2025-06-01", // Start of date range (June 1, 2025)
+                  maxDate: "2025-09-30", // End of date range (September 30, 2025)
+                  nextArrow: `
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="36" height="36" rx="18" transform="matrix(-1 0 0 1 36 0)" fill="#F5F5F5"/>
+                          <path d="M23.0024 17.7119C22.9976 17.5264 22.9609 17.3579 22.8926 17.2065C22.8242 17.0503 22.7168 16.8989 22.5703 16.7524L17.0332 11.3325C16.8086 11.1128 16.5376 11.0029 16.2202 11.0029C16.0054 11.0029 15.8101 11.0566 15.6343 11.1641C15.4536 11.2666 15.3096 11.4058 15.2021 11.5815C15.0947 11.7573 15.041 11.9526 15.041 12.1675C15.041 12.4946 15.168 12.7803 15.4219 13.0244L20.2485 17.7046L15.4219 22.3921C15.168 22.646 15.041 22.9341 15.041 23.2563C15.041 23.4712 15.0947 23.6665 15.2021 23.8423C15.3096 24.0181 15.4536 24.1572 15.6343 24.2598C15.8101 24.3672 16.0054 24.4209 16.2202 24.4209C16.5376 24.4209 16.8086 24.3086 17.0332 24.084L22.5703 18.6641C22.7217 18.5176 22.8315 18.3687 22.8999 18.2173C22.9683 18.061 23.0024 17.8926 23.0024 17.7119Z" fill="#2C2E2C"/>
+                      </svg>
+                  `,
+                  prevArrow: `
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="36" height="36" rx="18" fill="#F5F5F5"/>
+                          <path d="M13.0332 17.7119C13.038 17.5264 13.0747 17.3579 13.1429 17.2065C13.2113 17.0503 13.3187 16.8989 13.4652 16.7524L18.998 11.3325C19.2226 11.1128 19.4936 11.0029 19.811 11.0029C20.0258 11.0029 20.2211 11.0566 20.3969 11.1641C20.5776 11.2666 20.7216 11.4058 20.8291 11.5815C20.9365 11.7573 20.9902 11.9526 20.9902 12.1675C20.9902 12.4946 20.8632 12.7803 20.6093 13.0244L15.775 17.7046L20.6093 22.3921C20.8632 22.646 20.9902 22.9341 20.9902 23.2563C20.9902 23.4712 20.9365 23.6665 20.8291 23.8423C20.7216 24.0181 20.5776 24.1572 20.3969 24.2598C20.2211 24.3672 20.0258 24.4209 19.811 24.4209C19.4936 24.4209 19.2226 24.3086 18.998 24.084L13.4652 18.6641C13.3138 18.5176 13.204 18.3687 13.1356 18.2173C13.0672 18.061 13.0332 17.8926 13.0332 17.7119Z" fill="#2C2E2C"/>
+                      </svg>
+                  `,
+                  onReady: (selectedDates, dateStr, instance) => {
+                      console.log("Flatpickr ready!");
+
+                      // Get the calendar container
+                      const calendar = instance.calendarContainer;
+
+                      if (calendar) {
+                          const adjustPosition = () => {
+                              // Get viewport and element details
+                              const viewportWidth = window.innerWidth;
+                              const viewportHeight = window.innerHeight;
+                              const calendarWidth = calendar.offsetWidth;
+                              const calendarHeight = calendar.offsetHeight;
+
+                              const inputRect = element.getBoundingClientRect();
+
+                              // Decide whether to center or align to input
+                              const centerHorizontally = viewportWidth >= 768; // Center on larger screens
+                              const centerVertically = viewportHeight >= 768; // Center on larger screens
+
+                              if (centerHorizontally && centerVertically) {
+                                  // Center the calendar in the viewport
+                                  calendar.style.position = "fixed";
+                                  calendar.style.top = `${(viewportHeight - calendarHeight) / 2}px`;
+                                  calendar.style.left = `${(viewportWidth - calendarWidth) / 2}px`;
+                              } else {
+                                  // Align to input field
+                                  calendar.style.position = "absolute";
+                                  calendar.style.top = `${inputRect.bottom + window.scrollY}px`;
+                                  calendar.style.left = `${inputRect.left + window.scrollX}px`;
+                              }
+
+                              calendar.style.zIndex = 9999; // Ensure it's on top
+                          };
+
+                          // Adjust positioning on ready
+                          adjustPosition();
+
+                          // Reposition on window resize
+                          window.addEventListener("resize", adjustPosition);
+
+                          // Reposition when input is focused
+                          element.addEventListener("focus", adjustPosition);
+                      }
+                  },
+                  onChange: (selectedDates, dateStr) => {
+                      console.log("Selected date:", dateStr);
+                  },
+              });
+          } else {
+              console.error("Element #pickup-date not found!");
+          }
       });
     </script>
 
