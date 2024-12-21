@@ -295,7 +295,16 @@ header svg{
   .header .menu-icon {
     display: none;
   }
+
+  .desktop-show{
+    display: none;
+  }
+
+
 }
+
+
+
 
 
 h1{
@@ -1321,7 +1330,7 @@ body {
 .input-container input:hover,
 .input-container select:hover,
 .input-container textarea:hover {
-    border: 1.5px solid #000;
+    border: 1.5px solid #000000;
     cursor: pointer;
 
 }
@@ -2075,7 +2084,7 @@ textarea {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 10px 16px 10px 20px;
+  padding: 10px 16px 10px 16px;
 }
 
 .menu a{
@@ -2124,7 +2133,9 @@ textarea {
     display: none;   
 }
 
-@media only screen and (max-width: 990px){
+
+
+@media only screen and (max-width: 990px) and (min-width: 720px) {
 
     .body-container{
         width: 92vw;
@@ -2134,6 +2145,138 @@ textarea {
 
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Adjust the min-width */
 
+    }
+
+    .hero-left{
+        padding-left: 4vw;
+    }
+
+    .info-left{
+        width: 54vw;
+    }
+
+    .sticky-cta{
+        transform: scale(0.9);
+    }
+
+    .z-index{
+        transform: scale(0.9);
+    }
+
+
+}
+
+@media only screen and (max-width: 880px){
+
+        header{
+        width: 100%;
+        background-color: transparent !important;
+        border-radius: 0px;
+        margin-top: 0;
+        /* padding: 9px 12px 9px 18px; */
+        box-shadow: none;
+    }
+
+    .header{
+        display: inline-block;
+        width: 100%;
+        border-radius: 0px;
+        margin: 0px;
+        overflow: visible;
+        height: 67px;
+        padding: 0;
+    }
+
+    .header .menu {
+        margin-left: 0px;
+        width: 100vw;
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+
+    .header button{
+        display: flex;
+    }
+
+    .desktop-show-btn{
+        display: none !important;
+    }
+
+    .menu a{
+        background-color: #F5F5F5;
+        border-radius: 0;
+        font-family: "Black";
+        font-size: 28px;
+        line-height: 1.1;
+        letter-spacing: 2%;
+        color: #1D1F1C;
+        margin-left: 16px;
+    }
+
+    header svg{
+        transform: scale(0.88);
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 6px;
+    }
+
+    header.scrolled{
+        background-color: #F5F5F5 !important;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    header.scrolled path {
+        fill: #2A2E28 !important;
+    }
+
+    header.scrolled .menu-icon {
+        background-color: #fff;
+    }
+
+
+    header.scrolled .menu-icon .navicon:after {
+        background: #1D1F1C;
+    }
+
+    header.scrolled .menu-icon .navicon:before {
+        background: #1D1F1C;
+    }
+
+    header button{
+
+    }
+
+    .header svg path:nth-child(1) {
+        fill: #fff; /* Original color of first path */
+    }
+    .header svg path:nth-child(2) {
+        fill: #B6DB91; /* Original color of second path */
+    }
+
+    .menu li{
+        margin: 0px;
+        background-color: #F5F5F5;
+    }
+
+    .menu li:nth-last-child(1){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .menu li:nth-child(1){
+        padding-top: 24px;
+    }
+
+    .header li a{
+        padding : 10px 20px
+    }
+
+    a{
+        margin: 0px;
     }
 
 
@@ -2196,42 +2339,7 @@ textarea {
         display: none;
     }
 
-    .header{
-        display: inline-block;
-        width: 100%;
-        border-radius: 0px;
-        margin: 0px;
-        overflow: visible;
-        height: 67px;
-        padding: 0;
-    }
 
-    .header .menu {
-        margin-left: 0px;
-        width: 100vw;
-      clear: both;
-      max-height: 0;
-      transition: max-height .2s ease-out;
-    }
-
-    .header button{
-        display: flex;
-    }
-
-    .desktop-show-btn{
-        display: none !important;
-    }
-
-    .menu a{
-        background-color: #F5F5F5;
-        border-radius: 0;
-        font-family: "Black";
-        font-size: 28px;
-        line-height: 1.1;
-        letter-spacing: 2%;
-        color: #1D1F1C;
-        margin-left: 16px;
-    }
 
     .sticky-reserve{
         display: flex;
@@ -2338,6 +2446,43 @@ textarea {
         margin-top: 0;
         /* padding: 9px 12px 9px 18px; */
         box-shadow: none;
+    }
+
+    .header{
+        display: inline-block;
+        width: 100%;
+        border-radius: 0px;
+        margin: 0px;
+        overflow: visible;
+        height: 67px;
+        padding: 0;
+    }
+
+    .header .menu {
+        margin-left: 0px;
+        width: 100vw;
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+
+    .header button{
+        display: flex;
+    }
+
+    .desktop-show-btn{
+        display: none !important;
+    }
+
+    .menu a{
+        background-color: #F5F5F5;
+        border-radius: 0;
+        font-family: "Black";
+        font-size: 28px;
+        line-height: 1.1;
+        letter-spacing: 2%;
+        color: #1D1F1C;
+        margin-left: 16px;
     }
 
     header svg{
@@ -2502,7 +2647,7 @@ textarea {
     }
 
     .info-left{
-        margin-top: 40px;
+        margin-top: 32px;
     }
     
     .fish-card{
