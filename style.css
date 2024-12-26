@@ -519,6 +519,78 @@ span{
     padding-left: 8px;
 }
 
+.section-7{
+    display: flex;
+    height: 763px;
+    width: 100%;
+    background-color: #2A2E28;
+    margin-top: 88px;
+}
+
+.section-7 h2{
+    z-index: 1;
+    color: #fff;
+    font-size: 56px;
+    padding-left: 7vw;
+}
+
+.section-7 h3{
+    z-index: 1;
+    color: #fff;
+    font-family: "Bold";
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 3%;
+    padding-left: 7vw;
+    padding-top: 30px;
+}
+
+.section-7 span{
+    z-index: 1;
+    color: #fff;
+    opacity: 0.8;
+    padding-bottom: 40px;
+    padding-left: 7vw;
+    font-size: 15px;
+}
+
+.sec-7-right{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 59vw;
+    overflow: hidden;
+}
+
+.sec-7-right .button-container{
+    padding-left: 7vw;
+    padding-bottom: 7vw;
+}
+
+.btn-bottom{
+    width: 300px;
+}
+
+
+.section-7 img{
+    position: absolute;
+    background: url('img/hero-back.png') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+    width: 59vw;
+    height: 763px;
+}
+
+footer{
+    height: 300px;
+    max-width: 100vw;
+}
+
+footer path{
+    fill: #2A2E28;
+}
+
 .faq-section {
     padding-top: 40px;
   text-align: center;
@@ -918,6 +990,7 @@ button:active{
 .button-container{
     margin-top: 82px;
     margin-left: -4px;
+    z-index: 1;
 }
 
 .button-container-thanks{
@@ -938,7 +1011,7 @@ body{
     align-items: center;;
     justify-content: space-between;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: #F5F5F5;
 }
@@ -1231,8 +1304,12 @@ body.modal-open {
 .info-left{
     margin-top: 40px;
     width: 45vw;
-    height: 4000px;
+    height: auto;
     scroll-behavior: smooth;
+}
+
+.hero-left button{
+    padding: 19px 32px 19px 32px;
 }
 
 .mail-container{
@@ -2166,6 +2243,26 @@ textarea {
 
 }
 
+@media only screen and (max-width: 1190px) and (min-width: 880px) {
+
+    .info-left{
+        width: 50vw!important;
+    }
+
+    .body-container{
+        width: 90vw;
+    }
+
+    .hero-left{
+        padding-left: 6vw;
+    }
+
+    .section-7 h2{
+        font-size: 48px;
+    }
+
+}
+
 @media only screen and (max-width: 880px){
 
         header{
@@ -2175,7 +2272,7 @@ textarea {
         margin-top: 0;
         /* padding: 9px 12px 9px 18px; */
         box-shadow: none;
-    }
+     }
 
     .header{
         display: inline-block;
@@ -2891,18 +2988,49 @@ textarea {
         margin-top: 24px;
     }
 
-}
-
-
-
-/*
-@supports (-webkit-touch-callout: none) {
-    @media only screen and (max-width: 768px) {
-        .safari-mobile .form-container {
-            background-color: black !important; /* Safari-only styles */
-        }
+    .section-7{
+        flex-direction: column-reverse;
+        margin-top: 48px;
     }
+
+    .section-7 .button-container{
+        bottom: inherit;
+        margin-top: 347px;
+    }
+
+    .sec-7-right{
+        width: 100vw;
+        height: 318px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-7 img{
+        width: 100vw;
+        height: 318px;
+    }
+
+    .section-7 h2{
+        font-size: 30px;
+        line-height: 1.1;
+        letter-spacing: 2%;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .section-7 h3{
+        font-size: 16px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .section-7 span{
+        padding-bottom: 24px;
+    }
+
 }
+
+
 
 
 
