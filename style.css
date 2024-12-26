@@ -297,7 +297,7 @@ header svg{
   }
 
   .desktop-show{
-    display: none;
+    display: none !important;
   }
 
 
@@ -2199,11 +2199,11 @@ textarea {
 }
 
 .mobile-show{
-    display: none;
+    display: none !important;
 }
 
 .desktop-show{
-    display: flex;
+    display: flex !important;
 }
 
 .sticky-thumbs-down{
@@ -2429,11 +2429,11 @@ textarea {
     }
 
     .mobile-show{
-        display: flex;
+        display: flex !important;
     }
 
     .desktop-show{
-        display: none;
+        display: none !important;
     }
 
 
@@ -2995,7 +2995,8 @@ textarea {
 
     .section-7 .button-container{
         bottom: inherit;
-        margin-top: 347px;
+        margin-top: 318px;
+        padding: 0px;
     }
 
     .sec-7-right{
@@ -3026,6 +3027,10 @@ textarea {
 
     .section-7 span{
         padding-bottom: 24px;
+    }
+
+    .section-7 .button-container button:nth-child(1){
+        width: 190px;
     }
 
 }
