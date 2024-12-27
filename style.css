@@ -2548,7 +2548,7 @@ textarea {
         bottom: -26px; /* Moves buttons outside the bottom of the container */
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1000;
+        z-index: 1;
         margin-left: 0px;
     }
 
@@ -3046,6 +3046,7 @@ textarea {
     .form-container h4{
         font-size: 34px;
         margin-top: 24px;
+        margin-bottom: 28px;
     }
 
     .section-7{
@@ -3146,6 +3147,11 @@ textarea {
         letter-spacing: 1%;
         line-height: 1.5;
         color: #1D1F1C;
+    }
+
+
+    .faq-container{
+        padding: 2vw 2vw 12vw 2vw !important;
     }
 
 }
