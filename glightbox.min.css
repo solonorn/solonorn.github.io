@@ -433,7 +433,7 @@ iframe.wait-autoplay{
     background:#000
 }
 .glightbox-clean .gclose,.glightbox-clean .gnext,.glightbox-clean .gprev{
-    background-color:rgba(0,0,0,.75);
+    background-color:rgba(100,100,100,.75);
     border-radius:999px
 }
 .glightbox-clean .gclose path,.glightbox-clean .gnext path,.glightbox-clean .gprev path{
@@ -455,7 +455,7 @@ iframe.wait-autoplay{
 }
 .glightbox-clean .gclose{
     width:35px;
-    height:35px;
+    height:50px;
     top:15px;
     right:10px;
     position:absolute
