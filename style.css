@@ -672,6 +672,7 @@ footer path{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 
 .faq-question .line-seperator{ 
@@ -3035,7 +3036,11 @@ textarea {
     }
 
     .faq-question{
-        margin-top: 40px;
+        margin-top: 0px;
+    }
+
+    .faq-question .line-seperator{
+        margin: 26px 0px 26px 0px;
     }
 
     .form-container h4{
@@ -3133,6 +3138,14 @@ textarea {
         margin-right: 4px;
         margin-top: 16px;
         margin-bottom: 32px;
+    }
+
+    footer span{
+        font-family: "Medium";
+        font-size: 16px;
+        letter-spacing: 1%;
+        line-height: 1.5;
+        color: #1D1F1C;
     }
 
 }
