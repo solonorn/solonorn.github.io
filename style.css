@@ -3095,7 +3095,7 @@ textarea {
 
     footer{
         width: 100vw;
-        height: 581px;
+        height: 655px;
         justify-content: flex-start;
         padding: 20px 2.5vw;
     }
@@ -3105,7 +3105,7 @@ textarea {
     }
 
     footer .menu a{
-        padding: 8px 0px 8px 0px !important;
+        padding: 8px 0px 8px 4px !important;
         font-family: "Bold";
         font-size: 24px;
     }
@@ -3116,6 +3116,23 @@ textarea {
 
     .footer-row-2{
         flex-direction: column;
+    }
+
+    .footer-row-2 ul{
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .socials{
+        padding-top: 32px;
+    }
+
+    footer .menu button{
+        width: 100%;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 16px;
+        margin-bottom: 32px;
     }
 
 }
