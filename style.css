@@ -3133,6 +3133,15 @@ textarea {
         padding-top: 32px;
     }
 
+    .menu button{
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
     footer .menu button{
         width: 100%;
         margin-left: 4px;
