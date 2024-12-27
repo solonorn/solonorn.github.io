@@ -1942,6 +1942,7 @@ textarea {
     justify-content: space-between;
     width: 84vw;
     margin-top: 56px;
+    margin-bottom: 56px;
 }
 .sticky-cta-container{
     display: flex;
@@ -2994,13 +2995,13 @@ textarea {
 
     .section-7{
         flex-direction: column-reverse;
-        margin-top: 48px;
+        margin-top: 0px;
         height: auto;
     }
 
     .section-7 .button-container{
         bottom: inherit;
-        /* margin-top: 318px; */
+        margin-top: 292px;
         padding: 0px;
     }
 
@@ -3008,7 +3009,7 @@ textarea {
         width: 100vw;
         height: 318px;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
     }
 
     .section-7 img{
@@ -3029,9 +3030,11 @@ textarea {
         text-align: center;
         padding-left: 0px;
         padding-top: 22px;
+        padding-bottom: 8px;
     }
 
     .section-7 span{
+        padding-top: 40px;
         padding-bottom: 24px;
     }
 
