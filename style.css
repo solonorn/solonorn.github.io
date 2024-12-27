@@ -524,7 +524,7 @@ span{
     height: 763px;
     width: 100%;
     background-color: #2A2E28;
-    margin-top: 88px;
+    margin-top: 48px;
 }
 
 .section-7 h2{
@@ -584,7 +584,55 @@ span{
 
 footer{
     height: 300px;
-    max-width: 100vw;
+    width: 84vw;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-row-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials{
+    display: flex;
+    gap: 16px;
+}
+
+.footer-row-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .menu button{
+    margin-top: 6px;
+    margin-left: 32px;
+}
+
+.footer-row-2 ul{
+    display: flex;
+    gap: 24px;
+    font-family: "Medium";
+    font-size: 16px;
+    letter-spacing: 1%;
+    line-height: 1.5;
+}
+
+footer .menu{
+    display: flex;
+}
+
+footer .menu li{
+    margin: 0px;
+}
+
+footer .menu a{
+    color: #1D1F1C;
+    padding: 18px 18px 18px 18px !important;
+    margin: 0px;
 }
 
 footer path{
@@ -3036,6 +3084,7 @@ textarea {
     .section-7 span{
         padding-top: 40px;
         padding-bottom: 24px;
+        padding-left: 0px;
     }
 
     .section-7 .button-container button:nth-child(1){
