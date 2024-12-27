@@ -589,6 +589,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 1428px;
 }
 
 .footer-row-1{
@@ -1991,6 +1992,7 @@ textarea {
     width: 84vw;
     margin-top: 56px;
     margin-bottom: 56px;
+    max-width: 1452px;
 }
 .sticky-cta-container{
     display: flex;
@@ -2054,7 +2056,7 @@ textarea {
 }
 .sticky-cta{
     display: flex;
-    width: 20vw;
+    width: 23%;
     height: auto;
     flex-direction: column;
     background-color: #fff;
@@ -3089,6 +3091,31 @@ textarea {
 
     .section-7 .button-container button:nth-child(1){
         width: 190px;
+    }
+
+    footer{
+        width: 100vw;
+        height: 581px;
+        justify-content: flex-start;
+        padding: 20px 2.5vw;
+    }
+
+    footer .menu{
+        flex-direction: column;
+    }
+
+    footer .menu a{
+        padding: 8px 0px 8px 0px !important;
+        font-family: "Bold";
+        font-size: 24px;
+    }
+
+    .footer-row-1{
+        flex-direction: column;
+    }
+
+    .footer-row-2{
+        flex-direction: column;
     }
 
 }
