@@ -1069,7 +1069,6 @@ body{
 .hero{
     display: flex;
     width: 100vw;
-    height: 100vh;
     background-color: #2A2E28;
 }
 
@@ -2613,7 +2612,6 @@ textarea {
     }
     .hero{
         flex-direction: column;
-        max-height: 852px !important;
     }
 
     .button-container button:nth-child(1){
@@ -2751,7 +2749,7 @@ textarea {
         align-items: center;
         padding-bottom: 0;
         z-index: 100;
-        height: 4000px;
+        max-height: 422px;
     }
 
     .hero-left img{
@@ -2776,7 +2774,7 @@ textarea {
     }
     .video-insert{
         width: 100%;
-        height: 43vh;
+        height: 50vh;
     }
 
     .gallery-2-bottom{
