@@ -101,8 +101,8 @@ input{
   z-index: 1000;
   overflow: hidden;
   height: 80px;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 header.scrolled{
@@ -584,7 +584,7 @@ span{
 
 footer{
     height: 300px;
-    width: 84vw;
+    width: 80vw;
     padding: 40px 0px;
     display: flex;
     flex-direction: column;
@@ -1147,7 +1147,7 @@ body{
     justify-content: flex-end;
     width: 60vw;
     height: 100%;
-    padding-left: 8vw;
+    padding-left: 10vw;
     padding-bottom: 12vh;
     box-sizing: border-box;
     background-image: url("");
@@ -2272,7 +2272,7 @@ textarea {
 
     .fish-grid{
 
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Adjust the min-width */
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Adjust the min-width */
 
     }
 
@@ -2293,6 +2293,8 @@ textarea {
     }
 
 
+
+
 }
 
 @media only screen and (max-width: 1190px) and (min-width: 880px) {
@@ -2306,7 +2308,7 @@ textarea {
     }
 
     .hero-left{
-        padding-left: 6vw;
+        padding-left: 4vw;
     }
 
     .section-7 h2{
