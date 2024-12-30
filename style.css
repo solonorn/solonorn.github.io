@@ -2490,9 +2490,20 @@ textarea {
         margin: 0px;
     }
 
+    .close img{
+        height: auto !important;
+        width: auto !important;
+    }
+
     .form-cta{
         width: 95vw;
     }
+
+    /*.form-container h3{
+        font-size: 32px;
+        line-height: 1.1;
+        letter-spacing: 2%;
+    }*/
 
 
 }    
