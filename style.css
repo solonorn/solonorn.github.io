@@ -2404,7 +2404,7 @@ textarea {
 
 }
 
-@media only screen and (max-width: 1388px) and (min-width: 880px) {
+@media only screen and (max-width: 1388px) and (min-width: 0px) {
 
     .modal-content{
         width: 89vw;
@@ -2464,6 +2464,38 @@ textarea {
 
 
 }
+
+@media only screen and (max-width: 880px){
+
+    .modal-content{
+        width: 95vw;
+    }
+
+    .modal-content img{
+        height: 158px;
+        width: 100%;
+        position: relative;
+        object-position: 0px;
+        border-radius: 0px;
+    }
+
+    .scroll-container{
+        flex-direction: column;
+
+    }
+
+    .form-container{
+        width: 100%;
+        padding: none;
+        margin: 0px;
+    }
+
+    .form-cta{
+        width: 95vw;
+    }
+
+
+}    
 
 @media only screen and (max-width: 880px){
 
