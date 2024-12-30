@@ -1069,6 +1069,7 @@ body{
 .hero{
     display: flex;
     width: 100vw;
+    height: 100vh;
     background-color: #2A2E28;
 }
 
@@ -2612,6 +2613,7 @@ textarea {
     }
     .hero{
         flex-direction: column;
+        height: inherit;
     }
 
     .button-container button:nth-child(1){
