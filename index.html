@@ -586,76 +586,97 @@
                         <!-- Package Selection -->
                         <h2 class="form-head">Choose a Package</h2>
                         <div class="packages">
-                          <label class="package">
-                            <input type="radio" name="package" value="1-day" required>
-                            <div class="package-content">
-                              <span class="popular-banner">Most Popular</span>
-                              <div class="package-left">
-                                <h3>1 day tour</h3>
-                                <ul>
-                                  <li>Private fishing + Lodge</li>
-                                  <li>Breakfast, lunch, dinner</li>
-                                  <li>Guide, rods, waders, flies</li>
-                                </ul>
-                                <p class="price">From $790 per person</p>
-                              </div>
-                            </div>
-                          </label>
-                          <label class="package" data-most-popular="true">
-                            <input type="radio" name="package" value="2-day">
-                            <div class="package-content">
-                              <span class="popular-banner">Most Popular</span>
-                              <div class="package-left">
-                                <h3>2 day tour</h3>
-                                <ul>
-                                  <li>Private fishing + Lodge</li>
-                                  <li>Breakfast, lunch, dinner</li>
-                                  <li>Guide, rods, waders, flies</li>
-                                </ul>
-                                <p class="price">From $1490 per person</p>
-                              </div>
-                            </div>
-                          </label>
-                          <label class="package">
-                            <input type="radio" name="package" value="3-day">
-                            <div class="package-content">
-                              <div class="package-left">
-                                <h3>3 day tour</h3>
-                                <ul>
-                                  <li>Private fishing + Lodge</li>
-                                  <li>Breakfast, lunch, dinner</li>
-                                  <li>Guide, rods, waders, flies</li>
-                                </ul>
-                                <p class="price">From $2490 per person</p>
-                              </div>
-                            </div>
-                          </label>
-                          <label class="package">
-                            <input type="radio" name="package" value="3-day">
-                            <div class="package-content">
-                              <div class="package-left">
-                                <h3>Custom tour</h3>
-                                <ul>
-                                  <li>Private fishing + Lodge</li>
-                                  <li>Breakfast, lunch, dinner</li>
-                                  <li>Guide, rods, waders, flies</li>
-                                </ul>
-                                <p class="price">From $2490 per person</p>
-                              </div>
-                            </div>
-                          </label>
+
+                          <div class="package-row">
+
+                              <label class="package">
+                                <input type="radio" name="package" value="1-day" required>
+                                <div class="package-content">
+                                  <span class="popular-banner">Most Popular</span>
+                                  <div class="package-left">
+                                    <h3>1 day tour</h3>
+                                    <ul>
+                                      <li>Private fishing + Lodge</li>
+                                      <li>Breakfast, lunch, dinner</li>
+                                      <li>Guide, rods, waders, flies</li>
+                                    </ul>
+                                    <p class="price">From $790 per person</p>
+                                  </div>
+                                </div>
+                              </label>
+
+                              <label class="package" data-most-popular="true">
+                                <input type="radio" name="package" value="2-day">
+                                <div class="package-content">
+                                  <span class="popular-banner">Most Popular</span>
+                                  <div class="package-left">
+                                    <h3>2 day tour</h3>
+                                    <ul>
+                                      <li>Private fishing + Lodge</li>
+                                      <li>Breakfast, lunch, dinner</li>
+                                      <li>Guide, rods, waders, flies</li>
+                                    </ul>
+                                    <p class="price">From $1490 per person</p>
+                                  </div>
+                                </div>
+                              </label>
+
+                          </div>
+
+                          <div class="package-row">
+
+                              <label class="package">
+                                <input type="radio" name="package" value="3-day">
+                                <div class="package-content">
+                                  <div class="package-left">
+                                    <h3>3 day tour</h3>
+                                    <ul>
+                                      <li>Private fishing + Lodge</li>
+                                      <li>Breakfast, lunch, dinner</li>
+                                      <li>Guide, rods, waders, flies</li>
+                                    </ul>
+                                    <p class="price">From $2490 per person</p>
+                                  </div>
+                                </div>
+                              </label>
+
+                              <label class="package">
+                                <input type="radio" name="package" value="3-day">
+                                <div class="package-content">
+                                  <div class="package-left">
+                                    <h3>Custom tour</h3>
+                                    <ul>
+                                      <li>Private fishing + Lodge</li>
+                                      <li>Breakfast, lunch, dinner</li>
+                                      <li>Guide, rods, waders, flies</li>
+                                    </ul>
+                                    <p class="price">From $2490 per person</p>
+                                  </div>
+                                </div>
+                              </label>
+
+                         </div>     
 
                         </div>
 
                         <div class="line-seperator"></div>
 
                         <!-- Group Size -->
-                        <h2 class="form-head">How many are in your group?</h2>
+
+                        <h2 class="form-head sub">How many ARE IN YOUr GROUP?</h2>
+                        <span class = "form-sub">Our lodges accommodate up to 8 people</span>
+
                         <div class="group-size">
                           <button type="button" id="decrement"></button>
                           <input type="number" id="group-number" name="group-size" value="2" min="1" max="8" required>
                           <button type="button" id="increment"></button>
                         </div>
+
+                        <div class="line-seperator"></div>
+
+                        <h2 class="form-head sub">When’s your trip?</h2>
+                        <span class = "form-sub">Available June – September</span>
+                        <div id="inline-calendar"></div>
 
                         <div class="line-seperator"></div>
 
@@ -697,7 +718,7 @@
                         </div>
                         -->
 
-                        <div id="inline-calendar"></div>
+                       
                         <div class="form-field">
                           <div class="input-container">
                             <label for="comments">Add comment</label>
@@ -710,6 +731,7 @@
                         <!-- Submit Button -->
                         <div class="form-cta">
                           <button type="submit">Send Request</button>
+                          <span>Reserve dates now, pay later</span>
                         </div>
                       </form>
                     </div>
@@ -775,6 +797,7 @@
                             <!-- Submit Button -->
                             <div class="form-cta">
                               <button type="submit">Submit enquiry</button>
+
                             </div>
                           </form>
                         </div>

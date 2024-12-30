@@ -19,7 +19,7 @@
     -ms-touch-action:manipulation;
     touch-action:manipulation;
     background:#fff;   
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
 }
 .flatpickr-calendar.open,.flatpickr-calendar.inline{
     opacity:1;
@@ -478,7 +478,7 @@ span.flatpickr-weekday{
     color:#393939;
     font-family: "Medium" !important;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 38px;
     text-align: center center;
     cursor:pointer;
     width: 40px;
@@ -590,7 +590,9 @@ span.flatpickr-weekday{
     display:inline-block;
     padding:0;
     -webkit-box-sizing:border-box;
-    box-sizing:border-box
+    box-sizing:border-box;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 .flatpickr-time{
     text-align:center;
