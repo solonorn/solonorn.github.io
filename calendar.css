@@ -10,7 +10,7 @@
     animation:none;
     direction:ltr;
     border:0;
-    border-radius: 12px;
+    border-radius: 16px;
     font-size:14px;
     line-height:24px;
     position:absolute;
@@ -30,7 +30,7 @@
     display:inline-block;
     z-index:99999
 }
-.flatpickr-calendar.animate.open{
+.flatpickr-calendar.fimate.open{
     -webkit-animation:fpFadeInDown 300ms cubic-bezier(.23,1,.32,1);
     animation:fpFadeInDown 300ms cubic-bezier(.23,1,.32,1)
 }
