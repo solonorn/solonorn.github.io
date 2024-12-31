@@ -96,7 +96,8 @@
           Full private lodging and river<br> system from $1490 per person
         </h3>
         <div class="button-container">
-          <button id="openModal">Reserve a spot</button>
+          <button id="openModal" class ="desktop-show">Reserve a spot</button>
+          <a href ="reserve.html" class ="mobile-show">Reserve a spot</a>
           <button class="secondary">Contact</button>
         </div>
       </div>
@@ -445,24 +446,21 @@
                                   <img class="form-cover" src="img/form-cover.jpg">
 
                                   <div class="form-container faq-container">
-                                    <h4>River Lýsa FAQ</h4>-
+                                    <h4>River Lýsa FAQ</h4>
 
                                     <div class="faq-question">
                                       <h5>What skill level do I need to have?</h5>
                                       <p>River Lýsa is perfect for everyone, from beginners to seasoned anglers. It’s a family-friendly fly fishing haven and a popular spot for landing your very first catch. For experienced anglers, the river offers a technical challenge, from longer lake casting to deep river euro-nymphing. There’s something for everyone!</p>
-                                      <div class="line-seperator"></div>
                                     </div>
 
                                     <div class="faq-question">
                                       <h5>What do I need to bring?</h5>
                                       <p>We’ve got you covered! Our guided tours include food, water, rods, waders, flies, leaders, and, of course, an expert guide. We recommend packing warm clothing—even in the summer. Iceland’s weather is as adventurous as its landscapes.</p>
-                                      <div class="line-seperator"></div>
                                     </div>
 
                                     <div class="faq-question">
                                       <h5>Can I customize our tour?</h5>
-                                      <p>Absolutely! We work with top travel agencies in Iceland and can expand your adventure to include other fly fishing hotspots or exciting activities like highland trekking, snowmobiling, helicopter rides, or whatever else you can dream up. Let us know your vision, and we’ll make it happen!</p>
-                                      <div class="line-seperator"></div>
+                                      <p>Absolutely! We work with top travel agencies in Iceland and can expand your adventure to include other fly fishing hotspots or exciting activities like highland trekking, snowmobiling, helicopter rides, or whatever else you can dream up. Let us know your vision, and we’ll make it happen!</p>x
                                     </div>
 
                                     <div class="faq-question">
@@ -596,10 +594,10 @@
                                   <!--<span class="popular-banner">Most Popular</span>-->
                                   <div class="package-left">
                                     <h3>1 day tour</h3>
+                                    <span>Dawn to dusk adventure</span>
                                     <ul>
-                                      <li>Private fishing + Lodge</li>
-                                      <li>Breakfast, lunch, dinner</li>
-                                      <li>Guide, rods, waders, flies</li>
+                                      <li><img class = "package-icon" src="img/route.svg">One day round trip</li>
+                                      <li><img class = "package-icon" src="img/dine.svg">Lunch & snacks</li>
                                     </ul>
                                     <p class="price">From $790 per person</p>
                                   </div>
@@ -612,11 +610,12 @@
                                   <span class="check-circle"></span> <!-- New element for the circle -->
                                   <!--<span class="popular-banner">Most Popular</span>-->
                                   <div class="package-left">
+
                                     <h3>2 day tour</h3>
+                                    <span>Explore the entire area</span>
                                     <ul>
-                                      <li>Private fishing + Lodge</li>
-                                      <li>Breakfast, lunch, dinner</li>
-                                      <li>Guide, rods, waders, flies</li>
+                                      <li><img class = "package-icon" src="img/lodge.svg">1 night in lodge Lýsa</li>
+                                      <li><img class = "package-icon" src="img/dine.svg">Breakfast, lunch, dinner</li>
                                     </ul>
                                     <p class="price">From $1490 per person</p>
                                   </div>
@@ -633,10 +632,10 @@
                                   <span class="check-circle"></span> <!-- New element for the circle -->
                                   <div class="package-left">
                                     <h3>3 day tour</h3>
+                                    <span>Catch them all!</span>
                                     <ul>
-                                      <li>Private fishing + Lodge</li>
-                                      <li>Breakfast, lunch, dinner</li>
-                                      <li>Guide, rods, waders, flies</li>
+                                      <li><img class = "package-icon" src="img/lodge.svg">1 night in lodge Lýsa</li>
+                                      <li><img class = "package-icon" src="img/dine.svg">Breakfast, lunch, dinner</li>
                                     </ul>
                                     <p class="price">From $2490 per person</p>
                                   </div>
@@ -649,12 +648,9 @@
                                   <span class="check-circle"></span> <!-- New element for the circle -->
                                   <div class="package-left">
                                     <h3>Custom tour</h3>
-                                    <ul>
-                                      <li>Private fishing + Lodge</li>
-                                      <li>Breakfast, lunch, dinner</li>
-                                      <li>Guide, rods, waders, flies</li>
-                                    </ul>
-                                    <p class="price">From $2490 per person</p>
+                                    <span>Expand your adventure to include more fly fishing hotspots or other exciting activities</span>
+
+                                    <p class="price">Bespoke price</p>
                                   </div>
                                 </div>
                               </label>
@@ -663,7 +659,6 @@
 
                         </div>
 
-                        <div class="line-seperator"></div>
 
                         <!-- Group Size -->
 
@@ -676,31 +671,30 @@
                           <button type="button" id="increment"></button>
                         </div>
 
-                        <div class="line-seperator"></div>
 
                         <h2 class="form-head sub">When’s your trip?</h2>
                         <span class = "form-sub">Available June – September</span>
                         <div id="inline-calendar"></div>
 
-                        <div class="line-seperator"></div>
 
                         <!-- User Information -->
                         <h2 class="form-head">Enter Your Information</h2>
-                        <div class="form-row">
-                          <div class="form-field">
+
+                        <div class="form-field">
                             <div class="input-container">
                               <label for="full-name">Full name</label>
                               <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
                             </div>
                           </div>
+
+                        <div class="form-row">
                           <div class="form-field">
                             <div class="input-container">
                               <label for="email">Email address</label>
                               <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                             </div>
                           </div>
-                        </div>
-                        <div class="form-row">
+
                           <div class="form-field">
                             <div class="input-container custom-select">
                               <label for="pickup-location">Pick-up location</label>
@@ -712,15 +706,11 @@
                               </select>
                             </div>
                           </div>
-                          <!--
-                          <div class="form-field">
-                            <div class="input-container custom-date-icon">
-                              <label for="pickup-date" class="custom-date">Date of pick-up</label>
-                              <input type="text" placeholder="Select date" id="pickup-date" name="pickup-date" required>
-                            </div>
-                          </div>
+
+
                         </div>
-                        -->
+
+                       
 
                        
                         <div class="form-field">
@@ -729,6 +719,7 @@
                             <textarea id="comments" name="comments" placeholder="Let us know if you have any questions"></textarea>
                           </div>
                         </div>
+
 
                         <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you?email=" />
 
