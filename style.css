@@ -3439,6 +3439,14 @@ textarea {
     .form-cta-mobile{
         bottom: 0vh;
         border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+    }
+
+    .form-head{
+        margin-bottom: 22px;
+        margin-top: 32px;
     }
 
 }

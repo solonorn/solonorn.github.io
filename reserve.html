@@ -256,30 +256,6 @@
     </script>
 
 
-    <script>
-      
-      // Get reference to the header and menu button
-      const header = document.querySelector('header');
-      const menuBtn = document.querySelector('#menu-btn');
-
-      // Function to handle scroll event
-      function handleScroll() {
-        if (window.scrollY > 50 || menuBtn.checked) {
-          // Add "scrolled" class when scroll is greater than 50px or menu is open
-          header.classList.add('scrolled');
-        } else {
-          // Remove "scrolled" class when at the top and menu is closed
-          header.classList.remove('scrolled');
-        }
-      }
-
-      // Add the scroll event listener
-      window.addEventListener('scroll', handleScroll);
-
-      // Add event listener for menu toggle
-      menuBtn.addEventListener('change', handleScroll);
-      
-    </script>
 
     <!-- GLightbox Library -->
     <script src="glightbox.min.js"></script>
