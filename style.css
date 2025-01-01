@@ -3453,6 +3453,14 @@ textarea {
         margin-top: 32px;
     }
 
+    .group-size{
+        padding: 20px 20px;
+    }
+
+    .form-container{
+        padding-bottom: 32vw;
+    }
+
 }
 
 
