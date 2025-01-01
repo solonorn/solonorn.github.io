@@ -1617,7 +1617,9 @@ textarea {
 }
 
 .package input[type="radio"] {
-  display: none; /* Hide radio button */
+    position: absolute;
+    opacity: 0; /* Hidden but clickable */
+    pointer-events: auto;
 }
 
 .package-content {
@@ -1766,7 +1768,7 @@ textarea {
 }
 
 .package input {
-  display: none;
+    opacity: 0;
 }
 
 .package input:checked + .package-content {  
@@ -2049,9 +2051,6 @@ textarea {
     opacity: 1;
 }
 
-.package input[type="radio"] {
-    display: none; /* Hide radio button */
-}
 
 .package-details {
     pointer-events: none; /* Prevent interactions with content */
