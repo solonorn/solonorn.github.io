@@ -1201,6 +1201,11 @@ body{
   position: relative;
 }
 
+.modal-content-mobile{
+    overflow: visible;
+
+}
+
 
 .form-cover {
   width: 100%;
