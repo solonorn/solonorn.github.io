@@ -1844,9 +1844,7 @@ textarea {
     z-index: 2000;
 }
 
-.form-cta-mobile{
-    bottom: 0vh;
-}
+
 
 .form-cta button{
     width: 43%;
@@ -3436,6 +3434,11 @@ textarea {
 
     .form-row{
         gap: 0px;
+    }
+
+    .form-cta-mobile{
+        bottom: 0vh;
+        border-radius: 0px;
     }
 
 }
