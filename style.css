@@ -1412,7 +1412,7 @@ body {
 /* Input Container */
 .input-container {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .input-container label {
@@ -1842,6 +1842,10 @@ textarea {
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
     z-index: 2000;
+}
+
+.form-cta-mobile{
+    bottom: 0vh;
 }
 
 .form-cta button{
@@ -3424,6 +3428,14 @@ textarea {
     .form-row{
         display: flex;
         flex-direction: column;
+    }
+
+    .input-container{
+        margin-bottom: 12px;
+    }
+
+    .form-row{
+        gap: 0px;
     }
 
 }
