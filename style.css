@@ -1203,10 +1203,7 @@ body{
   position: relative;
 }
 
-.modal-content-mobile{
-    overflow: visible;
 
-}
 
 
 .form-cover {
@@ -3459,6 +3456,12 @@ textarea {
 
     .form-container{
         padding-bottom: 32vw;
+    }
+
+    .modal-content-mobile{
+        overflow: visible;
+        margin-top: 67px;
+
     }
 
 }
