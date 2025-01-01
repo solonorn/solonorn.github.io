@@ -20,7 +20,9 @@ time, mark, audio, video {
     text-decoration: none;
     color: inherit;
     scroll-behavior: smooth;
+    font-synthesis: none !important
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -2564,6 +2566,7 @@ textarea {
         font-size: 32px;
         line-height: 1.1;
         letter-spacing: 2%;
+        margin-bottom: 0px;
     }
 
     .package{
