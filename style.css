@@ -3460,9 +3460,17 @@ textarea {
 
     .modal-content-mobile{
         overflow: visible;
-        margin-top: 67px;
 
     }
+
+    .scrolled-2{
+        background-color: transparent;
+    }
+
+    header.scrolled-2 path{
+        /*fill: #2A2E28 !important;*/
+    }
+
 
 }
 
