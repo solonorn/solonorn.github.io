@@ -1620,6 +1620,8 @@ textarea {
     position: absolute;
     opacity: 0; /* Hidden but clickable */
     pointer-events: auto;
+    width: 48px;
+    height: 48px;
 }
 
 .package-content {
