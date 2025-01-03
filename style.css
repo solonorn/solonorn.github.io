@@ -196,7 +196,7 @@ header svg{
 }
 
 .user-email{
-    
+
 }
 
 /* menu icon */
@@ -1986,6 +1986,10 @@ textarea {
     display: flex;
     flex-direction: column;
     height: 240%;
+}
+
+.no-left{
+    margin-left: 0vw !important;
 }
 
 .form-container h3{
