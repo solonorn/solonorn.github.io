@@ -503,21 +503,7 @@
 
          <div class="section-7">
 
-          <!-- Placeholder for Bottom Video -->
-          <div id="video-placeholder" style="width: 41vw; height: 100%px; background: url('/path/to/thumbnail.jpg') no-repeat center center; background-size: cover;"></div>
-
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              const placeholder = document.getElementById("video-placeholder");
-
-              // Replace the placeholder with the video as soon as the page loads
-              placeholder.innerHTML = `
-                <video src="img/video.mp4" autoplay muted controls style="width: 100%; height: 100%;"></video>
-              `;
-            });
-          </script>
-
-
+          <video poster ="img/poster.webp"class="video-insert" autoplay loop muted playsinline><source src="img/video.mp4" loading="lazy" type="video/mp4"></video>
            <div class="sec-7-right">
             <span>AVAILABLE JUNE – SEPTEMBER</span>
              <h2>Ready to embark on<br> an unforgettable fly<br> fishing adventure?</h2>
