@@ -1095,6 +1095,8 @@ body{
     height: 100vh;
     bottom: 0;
     left: 0;
+    object-fit: contain;
+
 }
 
 .z-index{
@@ -3010,6 +3012,7 @@ textarea {
 
     .hero-left img{
         width: 100%;
+        object-fit: contain;
     }
 
     .hero-left h1, 
