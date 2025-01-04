@@ -932,6 +932,10 @@ footer path{
     overflow: hidden;
 }
 
+.hover::hover{
+    cursor: pointer !important;
+}
+
 .gallery-3{
     display: none;
 }
@@ -1060,6 +1064,24 @@ button:active{
 .secondary{
     color: #fff;
     background-color: #555853;
+}
+
+.custom-show{
+    display: flex !important;
+    max-width: 266px !important;
+    margin-top: 4px;
+}
+
+.custom-show{
+    display: flex !important;
+    max-width: 266px;
+    font-family: "Medium" !important;
+    color: #2C2E2C !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 1% !important;
+    text-align: left !important;
+    opacity: 0.9 !important;
 }
 .secondary:hover{
     background-color: #60645E;
@@ -1279,9 +1301,9 @@ body{
 }
 
 .close img{
-    width: 20px;
-    height: 20px;
-    object-position: 0px;
+    width: 20px !important;
+    height: 20px !important;
+    object-position: 0px !important;
 }
 
 .close-container{
@@ -1478,6 +1500,7 @@ body {
     text-align: left;
     display: flex;
     gap: 10px;
+    opacity: 0.9;
 }
 
 .input-container input,
@@ -2521,7 +2544,7 @@ textarea {
 
         .form-cta{
         width: 61vw;
-        margin-left: -10vw;
+        margin-left: -12vw;
     }
 
 
@@ -2583,6 +2606,38 @@ textarea {
 
 
 
+
+}
+
+@media only screen and (max-width: 910px){
+    .scroll-container{
+        flex-direction: column;
+
+    }
+
+    .modal-content img{
+        height: 158px;
+        width: 100%;
+        position: relative;
+        object-position: 0px;
+        border-radius: 0px;
+    }
+
+    .form-container{
+        width: 100%;
+        margin-left: 0vw;
+        height: 240% !important;
+    }
+
+    .form-cta{
+        width: 89vw;
+    }
+
+    .form-post-container{
+        height: 1850px;
+    }
+
+
 }
 
 @media only screen and (max-width: 880px){
@@ -2616,10 +2671,7 @@ textarea {
         padding-right: 4vw;
     }
 
-    .scroll-container{
-        flex-direction: column;
 
-    }
 
     .form-container{
         width: 100%;
@@ -2770,6 +2822,41 @@ textarea {
 
     a{
         margin: 0px;
+    }
+
+    .package-span{
+        display: none;
+    }
+
+    .package-left{
+        padding: 14px 14px 14px 16px;
+    }
+
+    .package-left h3{
+        font-size: 20px !important;
+        margin-top: 0px;
+    }
+
+    .package ul{
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+
+    .price{
+        width: 92px;
+        text-transform: uppercase;
+        font-size: 12px !important;
+        line-height: 1.3;
+        color: #4A4C49 !important;
+        text-align: right !important;
+        position: absolute;
+        right: 16px;
+        bottom: 17px;
+    }
+
+    .package-content li{
+        line-height: 1.3;
+        align-items: center;
     }
 
 
@@ -3593,6 +3680,12 @@ textarea {
         line-height: 1.3;
         align-items: center;
     }
+
+    /* Shrink non-hovered packages */
+.packages:hover .package:not(:hover) {
+  transform: scale(1.0); /* Shrink non-hovered cards */
+  opacity: 0.8; /* Optional: Dim non-hovered cards */
+}
 
 }
 
