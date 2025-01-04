@@ -706,7 +706,7 @@ iframe.wait-autoplay{
 }
 @media (min-width:769px){
     .glightbox-container .ginner-container{
-        width:40vw;
+        width:80vw;
         height:auto;
         -webkit-box-orient:horizontal;
         -webkit-box-direction:normal;
@@ -770,10 +770,10 @@ iframe.wait-autoplay{
         overflow-y:auto
     }
     .glightbox-clean .gclose,.glightbox-clean .gnext,.glightbox-clean .gprev{
-        background-color: #333
+        background-color: #000
     }
     .glightbox-clean .gclose:hover,.glightbox-clean .gnext:hover,.glightbox-clean .gprev:hover{
-        background-color:rgba(0,0,0,.7)
+        background-color:rgba(0,0,0,1)
     }
     .glightbox-clean .gprev{
         top:45%
