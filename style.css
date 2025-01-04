@@ -69,6 +69,21 @@ input{
     border: none;
 }
 
+input::placeholder{
+    color: #000;
+    opacity: 0.5;
+}
+
+textarea::placeholder{
+    color: #000;
+    opacity: 0.5;
+}
+select::placeholder{
+    color: #000;
+    opacity: 0.5;
+}
+
+
 /* -- Font links -- */
 
 @font-face {                                                                                                                                                                                                                                                                              
@@ -685,6 +700,7 @@ footer path{
 .bespoke{
     margin-top: 12px;
     margin-bottom: 19px;
+    max-width: 205px;
 }
 
 .faq-question .line-seperator{ 
@@ -1987,7 +2003,7 @@ textarea {
     margin-left: 28vw;
     display: flex;
     flex-direction: column;
-    height: 240%;
+    height: 207% !important;
 }
 
 .no-left{
@@ -2442,6 +2458,9 @@ textarea {
     display: none;   
 }
 
+.split{
+    width: 50%;
+}
 
 
 @media only screen and (max-width: 990px) and (min-width: 720px) {
@@ -2480,7 +2499,7 @@ textarea {
 
 }
 
-@media only screen and (max-width: 1388px) and (min-width: 0px) {
+@media only screen and (max-width: 1521px) and (min-width: 0px) {
 
     .modal-content{
         width: 89vw;
@@ -2488,13 +2507,34 @@ textarea {
 
     .form-container{
         width: 61vw;
-        padding-left: 9vw !important;
-        padding-right: 9vw;
+        padding-left: 12vw !important;
+        padding-right: 12vw;
+    }
+
+    .close-container{
+        width: 89vw;
+    }
+
+        .form-cta{
+        width: 61vw;
+        margin-left: -10vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 1388px) and (min-width: 0px) {
+
+
+
+    .form-container{
+        padding-left: 6vw !important;
+        padding-right: 6vw;
     }
 
     .form-cta{
         width: 61vw;
-        margin-left: -9vw;
+        margin-left: -6vw;
     }
 
     .close-container{
@@ -2612,6 +2652,10 @@ textarea {
 }    
 
 @media only screen and (max-width: 880px){
+
+    .split{
+        width: 100%;
+    }
 
         header{
         width: 100%;
@@ -3545,7 +3589,6 @@ textarea {
         line-height: 1.3;
         align-items: center;
     }
-
 
 }
 
