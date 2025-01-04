@@ -936,6 +936,10 @@ footer path{
     display: none;
 }
 
+.gallery-hide{
+    display: none;
+}
+
 .gallery img:hover{
     transform: scale(1.1);
 }
