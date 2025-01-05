@@ -3175,6 +3175,7 @@ textarea {
     }
 
     .hero-left img{
+        height: 200%;
         width: 100%;
         object-fit: contain;
     }
