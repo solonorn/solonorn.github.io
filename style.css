@@ -79,8 +79,13 @@ textarea::placeholder{
     opacity: 0.5;
 }
 select::placeholder{
-    color: #000;
-    opacity: 0.5;
+    color: #000 !important;
+    opacity: 0.5 !important;
+}
+
+.custom-select::placeholder{
+        color: #000 !important;
+    opacity: 0.5 !important;
 }
 
 
