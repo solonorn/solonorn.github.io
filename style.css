@@ -1165,6 +1165,7 @@ body{
     align-items: center;
     overflow: hidden;
     padding-top: 10vh;
+    min-height: 827px;
 }
 
 .hero-center a{
@@ -1185,18 +1186,27 @@ body{
     font-family: "Bold";
     font-size: 28px;
     line-height: 124%;
-    margin-top: 40px;
+    margin-top: 32px;
 }
 
 .hero-center h3{
     text-align: center;
-    font-family: "Medium";
+    font-family: "Bold";
     letter-spacing: 2%;
     line-height: 1.1;
     font-size: 16px;
     margin-top: 28px;
 }
 
+.hero-center p{
+    color: #fff;
+    text-align: center;
+    font-family: "Medium";
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 322px;
+    margin-top: 18px;
+}
 
 .hero-center h4{
     text-align: center;
@@ -1441,7 +1451,7 @@ body.modal-open {
 }
 
 .mail-container{
-    margin-top: 80px;
+    margin-top: 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1449,8 +1459,8 @@ body.modal-open {
 }
 
 .mail-container img{
-    width: 32px;
-    height: 32px;
+    width: 114px;
+    height: auto;
 }
 
 /*Form start*/
@@ -3150,6 +3160,20 @@ textarea {
         max-height: 422px;
     }
 
+        .hero-center{
+        overflow: visible;
+        width: 100%;
+
+        justify-content: flex-start;
+        align-items: center !important;
+        padding-left: 0;
+        padding-top: 72px;
+        align-items: center;
+        padding-bottom: 0;
+        z-index: 100;
+
+    }
+
     .hero-left img{
         width: 100%;
         object-fit: contain;
@@ -3686,11 +3710,35 @@ textarea {
         align-items: center;
     }
 
-    /* Shrink non-hovered packages */
-.packages:hover .package:not(:hover) {
-  transform: scale(1.0); /* Shrink non-hovered cards */
-  opacity: 0.8; /* Optional: Dim non-hovered cards */
-}
+        /* Shrink non-hovered packages */
+    .packages:hover .package:not(:hover) {
+      transform: scale(1.0); /* Shrink non-hovered cards */
+      opacity: 0.8; /* Optional: Dim non-hovered cards */
+    }
+
+    .hero-center{
+        min-height: 0px;
+        height: auto;
+    }
+
+    .hero-center h1{
+        font-size: 48px;
+        margin-top: 20px;
+    }
+
+    .hero-center h2{
+        font-size: 20px;
+        margin-top: 16px;
+    }
+
+    .mail-container{
+        margin-top: 32px;
+    }
+
+    .button-container-thanks{
+        margin-top: 40px !important;
+        margin-bottom: 48px;
+    }
 
 }
 
