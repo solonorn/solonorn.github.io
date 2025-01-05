@@ -3740,6 +3740,11 @@ textarea {
         margin-bottom: 48px;
     }
 
+    .hero-left img, .hero-left-back img {
+        width: 100vw;
+        background-size: 200%;
+    }
+
 }
 
 .grayed-out-month .flatpickr-day {
