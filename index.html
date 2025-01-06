@@ -106,7 +106,7 @@ system from $1490 per person.">
         <div class="button-container">
           <button id="openModal" class ="desktop-show">Reserve a spot</button>
           <a href ="reserve.html" class ="mobile-show">Reserve a spot</a>
-          <button class="secondary">Contact</button>
+          <button id = "openModal-2" class="secondary">Contact</button>
         </div>
       </div>
       
@@ -466,6 +466,61 @@ system from $1490 per person.">
                             </a>
                         </div>
 
+
+                        <!-- Contact -->
+
+                        <div id="modal-2" class="modal">
+                                        <div class="modal-content">
+                                          <div class="close-container">
+                                            <span class="close"><img src="img/Close-X.svg"></span>
+                                          </div>
+                                          
+                                          <!-- Add a wrapper for scrollable content -->
+                                          <div class="scroll-container">
+                                            <img class="form-cover" src="img/form-cover.jpg">
+
+                                            <div class="form-container get-in-touch">
+                                              <h3>Get in touch<br> </h3>
+                                              <p class ="get-in-touch-p">Shoot us a message and we will get<br> back to you as soon as possible.</p>
+
+                                              <form action="https://getform.io/f/azyyydzb" method="POST" class="form-post-container">
+
+                                                  <!-- User Information -->
+                                                  <h2 class="form-head">Enter Your Information</h2>
+                                                  <div class="form-field">
+                                                      <div class="input-container">
+                                                          <label for="full-name">Full name</label>
+                                                          <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                                                      </div>
+                                                  </div>
+
+
+                                                      <div class="form-field">
+                                                          <div class="input-container">
+                                                              <label for="email">Email address</label>
+                                                              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                                          </div>
+                                                      </div>
+
+                                                  <div class="form-field">
+                                                      <div class="input-container">
+                                                          <label for="comments">Add comment</label>
+                                                          <textarea id="comments" name="comments" placeholder="Let us know if you have any questions"></textarea>
+                                                      </div>
+                                                  </div>
+                                                  <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you?email=" />
+                                                  <div class="form-cta form-cta-mobile">
+                                                      <button type="submit">Send Request</button>
+                                                      <span>Reserve dates now, pay later</span>
+                                                  </div>
+                                              </form>
+                                            </div>
+
+
+                                              </div>
+                                            </div>
+                                          </div>
+
                         <!-- FAQ Content -->
                             <div id="modal-3" class="modal">
                               <div class="modal-content">
@@ -546,12 +601,12 @@ system from $1490 per person.">
 
              <div class="button-container desktop-show">
                <button class = "btn-bottom" id="openModal">Book your spot now</button>
-               <button class="secondary">Contact us</button>
+               <button id = "openModal-2" class="secondary">Contact us</button>
              </div>
 
              <div class="button-container mobile-show">
                <button id="openModal">Book your spot</button>
-               <button class="secondary">Contact</button>
+               <button id = "openModal-2" class="secondary">Contact</button>
              </div>
 
              <p></p>
@@ -885,6 +940,8 @@ system from $1490 per person.">
       });
 
     </script>
+
+
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", () => {
         const modal2 = document.getElementById("modal-2");

@@ -698,7 +698,6 @@ footer path{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
 }
 
 
@@ -2053,7 +2052,7 @@ textarea {
     margin-left: 28vw;
     display: flex;
     flex-direction: column;
-    height: 207% !important;
+    height: 137% !important;
 }
 
 .no-left{
@@ -2076,6 +2075,15 @@ textarea {
     line-height: 1.1;
     color: #1D1F1C;
     margin-bottom: 48px;
+}
+
+.get-in-touch{
+    height: 100% !important;
+}
+
+.get-in-touch-p{
+    margin-top: 12px;
+    margin-bottom: 24px;
 }
 
 
@@ -3752,6 +3760,12 @@ textarea {
     .hero-left img, .hero-left-back img {
         width: 100vw;
         background-size: 200%;
+    }
+
+    .get-in-touch-p{
+        font-size: 16px;
+        margin-top: 12px;
+        margin-bottom: 24px;
     }
 
 }
