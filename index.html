@@ -106,7 +106,7 @@ system from $1490 per person.">
         <div class="button-container">
           <button id="openModal" class ="desktop-show">Reserve a spot</button>
           <a href ="reserve.html" class ="mobile-show">Reserve a spot</a>
-          <button id = "openModal-2" class="secondary">Contact</button>
+          <button class="openModal-2 secondary">Contact</button>
         </div>
       </div>
       
@@ -480,10 +480,10 @@ system from $1490 per person.">
                                             <img class="form-cover" src="img/form-cover.jpg">
 
                                             <div class="form-container get-in-touch">
-                                              <h3>Get in touch<br> </h3>
+                                              <h3 class ="GIT-Headline">Get in touch<br> </h3>
                                               <p class ="get-in-touch-p">Shoot us a message and we will get<br> back to you as soon as possible.</p>
 
-                                              <form action="https://getform.io/f/azyyydzb" method="POST" class="form-post-container">
+                                              <form action="https://getform.io/f/aejjxmlb" method="POST" class="form-post-container">
 
                                                   <!-- User Information -->
                                                   <h2 class="form-head">Enter Your Information</h2>
@@ -582,7 +582,7 @@ system from $1490 per person.">
                       <span>River Lýsa</span>
                       <span class ="span-1">Full private lodging and river<br> system from $1490 per person</span>
                       <button id="openModal">Reserve a spot</button>
-                      <button id = "openModal-2" class="secondary sticky-second-button">Contact us</button>
+                      <button class="openModal-2 secondary sticky-second-button">Contact us</button>
                       <span class ="span-2">Lock In Your Adventure with 15% Upfront!</span>
                     </div>
 
@@ -601,12 +601,12 @@ system from $1490 per person.">
 
              <div class="button-container desktop-show">
                <button class = "btn-bottom" id="openModal">Book your spot now</button>
-               <button id = "openModal-2" class="secondary">Contact us</button>
+               <button class="openModal-2 secondary">Contact us</button>
              </div>
 
              <div class="button-container mobile-show">
                <button id="openModal">Book your spot</button>
-               <button id = "openModal-2" class="secondary">Contact</button>
+               <button class="openModal-2 secondary">Contact us</button>
              </div>
 
              <p></p>
@@ -975,14 +975,23 @@ system from $1490 per person.">
           }, 0);
         };
 
-        // Attach click event listener to the second modal-opening button
-        const openModal2Button = document.getElementById("openModal-2");
-        if (openModal2Button) {
-          openModal2Button.addEventListener("click", openModalFunction2);
+        // Attach click event listeners to all modal-opening buttons with the class "openModal-2"
+        const openModal2Buttons = document.querySelectorAll(".openModal-2");
+        if (openModal2Buttons.length > 0) {
+          openModal2Buttons.forEach(button => {
+            button.addEventListener("click", openModalFunction2);
+          });
+        } else {
+          console.error("No buttons with class 'openModal-2' found.");
         }
 
         // Attach click event listener to the close button of the second modal
-        modal2.querySelector(".close").addEventListener("click", closeModalFunction2);
+        const closeButton = modal2.querySelector(".close");
+        if (closeButton) {
+          closeButton.addEventListener("click", closeModalFunction2);
+        } else {
+          console.error("Close button for modal-2 not found.");
+        }
 
         // Close modal when clicking outside the modal content
         modal2.addEventListener("click", (event) => {
