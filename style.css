@@ -82,11 +82,12 @@ select::placeholder{
     color: #000 !important;
     opacity: 0.5 !important;
 }
-
+/*
 option:disabled{
     color: yellow;
     opacity: 0.5;
 }
+*/
 
 .custom-select::placeholder{
         color: #000 !important;
@@ -2669,12 +2670,10 @@ textarea {
     }
 
     .form-cta{
-        width: 89vw;
+        width: 95vw !important;
     }
 
-    .form-post-container{
-        padding-bottom: 0px;
-    }
+
 
 
 }
@@ -2724,7 +2723,7 @@ textarea {
     }
 
     .form-cta{
-        width: 100vw;
+        width: 100vw !important;
         margin-left: -4vw;
     }
 
@@ -3778,6 +3777,10 @@ textarea {
 
     .GIT-Headline{
         font-size: 36px !important;
+    }
+
+    .form-post-container{
+        padding-bottom: 0px;
     }
 
 }
