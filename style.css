@@ -1199,6 +1199,7 @@ body{
 }
 
 .hero-center p{
+    opacity: 0.8;
     color: #fff;
     text-align: center;
     font-family: "Medium";
