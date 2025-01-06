@@ -83,6 +83,11 @@ select::placeholder{
     opacity: 0.5 !important;
 }
 
+option:disabled{
+    color: yellow;
+    opacity: 0.5;
+}
+
 .custom-select::placeholder{
         color: #000 !important;
     opacity: 0.5 !important;
@@ -1503,6 +1508,7 @@ body {
 .form-post-container{
     display: flex;
     flex-direction: column;
+    padding-bottom: 130px;
 
 }
 
@@ -1517,6 +1523,7 @@ body {
     gap: 10px;
     opacity: 0.9;
 }
+
 
 .input-container input,
 .input-container select,
@@ -2666,7 +2673,7 @@ textarea {
     }
 
     .form-post-container{
-        height: 1850px;
+        padding-bottom: 0px;
     }
 
 
