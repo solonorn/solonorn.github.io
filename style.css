@@ -2082,6 +2082,7 @@ textarea {
 }
 
 .get-in-touch-p{
+    opacity: 0.8;
     margin-top: 12px;
     margin-bottom: 24px;
 }
