@@ -583,32 +583,6 @@
               `
           });
 
-          // Group size increment and decrement buttons
-          const decrementButton = document.getElementById("decrement");
-          const incrementButton = document.getElementById("increment");
-          const groupNumber = document.getElementById("group-number");
-
-          incrementButton.addEventListener("click", () => {
-              const currentValue = parseInt(groupNumber.value, 10) || 0;
-              if (currentValue < parseInt(groupNumber.max, 10)) {
-                  groupNumber.value = currentValue + 1;
-              }
-          });
-
-          decrementButton.addEventListener("click", () => {
-              const currentValue = parseInt(groupNumber.value, 10) || 0;
-              if (currentValue > parseInt(groupNumber.min, 10)) {
-                  groupNumber.value = currentValue - 1;
-              }
-          });
-
-          groupNumber.addEventListener("blur", () => {
-              const minValue = parseInt(groupNumber.min, 10);
-              const maxValue = parseInt(groupNumber.max, 10);
-              const value = parseInt(groupNumber.value, 10);
-              if (isNaN(value) || value < minValue) groupNumber.value = minValue;
-              else if (value > maxValue) groupNumber.value = maxValue;
-          });
       });
     </script>
 
