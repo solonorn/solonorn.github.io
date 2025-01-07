@@ -192,7 +192,7 @@ header svg{
 .menu li{
     margin-top: 8px;
     opacity: 0.7;
-
+    transition: transform 0.3s ease;
 }
 
 .menu-active{
@@ -201,6 +201,8 @@ header svg{
 
 .menu li:hover{
     opacity: 1.0 !important;
+    transition: transform 0.3s ease;
+
 }
 
 .menu button{
@@ -1297,6 +1299,7 @@ body{
     box-sizing: border-box;
     background-image: url("");
     overflow: hidden;
+    min-height: 827px;
 }
 
 .hero-left h2{
@@ -1444,6 +1447,7 @@ body.modal-open {
   width: 48vw;
   height: 100%;
   object-fit: cover;
+  min-height: 827px;
 }
 
 .sticky-cta-container{
@@ -3895,6 +3899,18 @@ textarea {
 
     .day-tour-button{
         width: 60vw;
+    }
+
+    .menu li{
+        opacity: 1.0;
+    }
+
+    .hero-left{
+        min-height: 0px !important; 
+    }
+
+    .video-insert{
+        min-height: 0px !important;
     }
 
 }
