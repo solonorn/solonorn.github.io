@@ -347,6 +347,33 @@ h1{
     color: #ffffff;
 }
 
+.h1-h2{
+    font-family: "Black";
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 2%;
+    color: #ffffff;
+    margin-top: 22px;
+}
+
+.h3-h1{
+    font-family: "Black";
+    font-size: 80px;
+    line-height: 1.1;
+    letter-spacing: 2%;
+    color: #ffffff;
+    margin-top: 0px !important;
+}
+
+.h2-h3{
+    font-family: "Bold";
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 3%;
+    color: #ffffff;
+    margin-top: 36px !important;
+}
+
 h2{
     font-family: "Black";
     font-size: 40px;
@@ -3781,6 +3808,22 @@ textarea {
 
     .form-post-container{
         padding-bottom: 0px;
+    }
+
+    .h3-h1{
+        font-size: 48px;
+        margin: 0px !important;
+    }
+
+    .h1-h2{
+        font-size: 26px;
+        margin-top: 12px !important;
+    }
+
+    .h2-h3{
+        font-size: 16px;
+        margin-top: 20px !important;
+        margin-bottom: 78px;
     }
 
 }
