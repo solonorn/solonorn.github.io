@@ -1450,6 +1450,10 @@ body.modal-open {
   min-height: 827px;
 }
 
+.video-insert-2{
+    min-height: 0px;
+}
+
 .sticky-cta-container{
     display: flex;
     flex-direction: column;
