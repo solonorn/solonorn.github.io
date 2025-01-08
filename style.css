@@ -133,6 +133,9 @@ option:disabled{
   padding-right: 10vw;
 }
 
+
+
+
 header.scrolled{
     background-color: #fff !important;
 }
@@ -468,6 +471,58 @@ span{
 .body-container h1, h2, h3, p{
     color: #1D1F1C;
 }
+
+.team-wildline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 108px 108px;
+    flex-direction: column;
+    gap: 68px;
+}
+
+.team{
+    display: flex;
+    gap: 20px;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 348px;
+}
+
+.team-member-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member p{
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.team-member span{
+    margin-top: 8px;
+}
+
+
+
+.team-member img{
+    width: 100%;
+}
+
+.team-wildline h3{
+    font-size: 48px;
+    font-family: "Black";
+}
+
+
+
+
 
 .section-1 p{
     margin-top: 30px;
@@ -1208,8 +1263,18 @@ body{
 }
 
 .about-hero{
-    background-color: #f5f5f5 !important;
+    background-color: #f5f5f5;
+}
+
+.about-hero h1, h2, h3, h4, p{
     color: #1D1F1C !important;
+}
+
+.about-hero h1{
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 1% !important;
+    max-width: 685px;
 }
 
 .hero-left img, .hero-left-back img{
@@ -3923,6 +3988,71 @@ textarea {
     .video-insert{
         min-height: 0px !important;
     }
+
+    .about-hero h1{
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+        letter-spacing: 1% !important;
+        max-width: 685px;
+        padding: 0px 16px;
+    }
+
+    .about-hero h2{
+        padding: 0px 16px;
+        margin-top: 20px !important;
+    }
+
+
+    .about-hero h4{
+        padding: 0px 16px;
+        text-align: left;
+    }
+
+    .about-hero{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 72px;
+        max-height: 100000px;
+    }
+
+    .team-wildline{
+        width: 100vw;
+        padding: 40px 16px;
+        gap: 32px;
+    }
+
+    .team{
+        flex-direction: column;
+    }
+
+    .team-member-info{
+        align-items: flex-start;
+        padding: 0px 20px
+    }
+
+
+    .team-member{
+        width: 100%;
+        flex-direction: row;
+        background-color: white;;
+    }
+
+    .team-member img{
+        width: 150px;
+    }
+
+    .team-wildline h3{
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-wildline p{
+        text-align: left;
+        font-size: 18px;   
+    }
+
+
 
 }
 
