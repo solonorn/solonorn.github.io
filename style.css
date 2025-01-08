@@ -739,7 +739,6 @@ span{
 }
 
 footer{
-    height: 300px;
     width: 80vw;
     padding: 40px 0px;
     display: flex;
@@ -3735,7 +3734,6 @@ textarea {
 
     footer{
         width: 100vw;
-        height: 655px;
         justify-content: flex-start;
         padding: 20px 2.5vw;
     }
@@ -4052,7 +4050,9 @@ textarea {
         font-size: 18px;   
     }
 
-
+    .cta-height{
+        height: 655px;
+    }
 
 }
 
