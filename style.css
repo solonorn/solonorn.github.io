@@ -745,6 +745,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     max-width: 1428px;
+    height: 300px;
 }
 
 .footer-row-1{
@@ -2696,6 +2697,8 @@ textarea {
 
     .sticky-cta{
         transform: scale(0.9);
+        margin-right: -30px;
+        margin-top: -30px;
 
     }
 
@@ -2763,7 +2766,7 @@ textarea {
 @media only screen and (max-width: 1250px) and (min-width: 880px) {
 
     .info-left{
-        width: 50vw!important;
+        width: 55vw!important;
     }
 
     .body-container{
@@ -2940,6 +2943,23 @@ textarea {
         color: #1D1F1C;
         margin-left: 16px;
     }
+
+    footer{
+        width: 94vw;
+    }
+
+    footer .menu li{
+        padding-top: 0px !important;
+    }
+
+    footer .menu a{
+    background-color: transparent;
+    font-family: "Bold";
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3%;
+    justify-content: flex-start;
+}
 
     header svg{
         transform: scale(0.88);
@@ -4054,6 +4074,15 @@ textarea {
         height: 655px;
     }
 
+}
+
+
+@media only screen and (max-width: 440px){
+
+    .menu li:nth-child(1) {
+    padding-top: 24px !important;
+    }
+    
 }
 
 .grayed-out-month .flatpickr-day {
