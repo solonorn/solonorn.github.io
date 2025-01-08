@@ -3901,6 +3901,10 @@ textarea {
         max-height: none;
     }
 
+    .about-hero{
+        background-color: #f5f5f5 !important;
+    }
+
     .day-tour-button{
         width: 60vw;
     }
