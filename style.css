@@ -481,7 +481,7 @@ span{
     margin-bottom: 20px;
 }
 
-.section-3 h1{
+.section-3 h2{
     font-size: 44px;
     line-height: 1.1;
     letter-spacing: 2%;
@@ -3471,7 +3471,7 @@ textarea {
         margin-top: 32px !important;
     }
 
-    .section-3 h1{
+    .section-3 h2{
         font-size: 28px;
         line-height: 1.1;
         letter-spacing: 2%;
