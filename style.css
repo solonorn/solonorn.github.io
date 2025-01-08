@@ -2237,6 +2237,7 @@ textarea {
 }
 
 .get-in-touch-p{
+    text-align: center;
     opacity: 0.8;
     margin-top: 12px;
     margin-bottom: 24px;
@@ -2712,6 +2713,10 @@ textarea {
 
     .btn-bottom{
         width: 240px;
+    }
+
+    .section-4 .lodge-included {
+    width: 100%;
     }
 
 
