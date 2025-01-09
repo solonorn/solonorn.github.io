@@ -3775,7 +3775,8 @@ textarea {
         height: 318px;
         align-items: center;
         justify-content: start;
-        padding-right: 0px;
+        padding-right: 7vw;
+        padding-left: 7vw;
     }
 
     .section-7 img{
