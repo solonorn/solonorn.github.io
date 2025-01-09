@@ -6,7 +6,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://wildline.fishing/</loc>
   <lastmod>2025-01-08T23:27:34+00:00</lastmod>
@@ -25,13 +24,17 @@
 <url>
   <loc>https://wildline.fishing/about.html</loc>
   <lastmod>2025-01-08T23:27:34+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.50</priority>
 </url>
 <url>
   <loc>https://wildline.fishing/reserve.html</loc>
   <lastmod>2025-01-08T23:27:34+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.10</priority>
 </url>
-
+<url>
+  <loc>https://wildline.fishing/favicon.ico</loc>
+  <lastmod>2025-01-08T23:27:34+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
 
 </urlset>
