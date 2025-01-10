@@ -4119,6 +4119,7 @@ textarea {
 
     .day-tour-hero{
         max-height: none;
+        padding: auto 4vw;
     }
 
 
@@ -4202,16 +4203,13 @@ textarea {
     }
 
     .cta-height{
-        height: 655px;
+
     }
 
     .about-hero{
         padding-right: 0vw;
     }
 
-    .socials{
-        transform: scale(1.2);
-    }
 
 }
 
