@@ -4202,6 +4202,10 @@ textarea {
         padding-right: 0vw;
     }
 
+    .socials{
+        transform: scale(1.2);
+    }
+
 }
 
 
