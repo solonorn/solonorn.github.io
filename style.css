@@ -1090,6 +1090,10 @@ footer path{
     overflow: hidden;
 }
 
+.hover{
+    display: inline-block;
+}
+
 .hover::hover{
     cursor: pointer !important;
 }
@@ -4192,6 +4196,10 @@ textarea {
 
     .cta-height{
         height: 655px;
+    }
+
+    .about-hero{
+        padding-right: 0vw;
     }
 
 }
