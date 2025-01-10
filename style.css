@@ -3880,6 +3880,7 @@ textarea {
         width: 100vw;
         justify-content: flex-start;
         padding: 20px 2.5vw;
+        height: auto;
     }
 
     footer .menu{
@@ -3908,6 +3909,12 @@ textarea {
 
     .socials{
         padding-top: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 32px;
+        gap: 24px;
     }
 
     .menu button{
