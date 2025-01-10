@@ -359,6 +359,7 @@ h1{
     font-size: 80px;
     line-height: 1.1;
     letter-spacing: 2%;
+    letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
 }
 
@@ -367,6 +368,7 @@ h1{
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
     margin-top: 22px;
 }
@@ -376,6 +378,7 @@ h1{
     font-size: 80px;
     line-height: 1.1;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
     margin-top: 0px !important;
 }
@@ -385,6 +388,7 @@ h1{
     font-size: 22px;
     line-height: 1.3;
     letter-spacing: 3%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
     margin-top: 36px !important;
 }
@@ -424,6 +428,7 @@ h2{
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
 }
 
@@ -432,6 +437,7 @@ h3{
     font-size: 22px;
     line-height: 1.3;
     letter-spacing: 3%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
 }
 
@@ -440,6 +446,7 @@ h4{
     font-size: 16px;
     line-height: 1;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
 }
 
@@ -448,6 +455,7 @@ p{
     font-size: 19px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
 }
 
@@ -457,6 +465,7 @@ span{
     line-height: 1.4;
     color: #447B28;
     letter-spacing: 0.4px;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
 }
 
 
@@ -541,6 +550,7 @@ span{
     font-size: 44px;
     line-height: 1.1;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     padding-top: 68px;
 }
 
@@ -580,6 +590,7 @@ span{
     font-size: 44px;
     line-height: 1.1;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     padding-top: 20px;
     padding-left: 8px;
 }
@@ -588,6 +599,7 @@ span{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     padding-left: 8px;
     padding-top: 26px;
     padding-bottom: 54px;
@@ -627,6 +639,7 @@ span{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     background-color: #fff;
     border-radius: 16px;
     overflow: hidden;
@@ -642,6 +655,7 @@ span{
 .section-5 span{
     font-family: "Medium";
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     line-height: 1.2;
     color: #1D1F1C;
     font-size: 16px;
@@ -673,6 +687,7 @@ span{
     font-size: 44px;
     line-height: 1.1;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     padding-left: 8px;
 }
 
@@ -699,6 +714,7 @@ span{
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 3%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     padding-left: 7vw;
     padding-top: 30px;
 }
@@ -778,6 +794,7 @@ footer .menu button{
     font-family: "Medium";
     font-size: 16px;
     letter-spacing: 1%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     line-height: 1.5;
 }
 
@@ -851,6 +868,7 @@ footer path{
 .faq-question h5{
     font-size: 24px;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     font-family: "Black";
 }
 
@@ -858,6 +876,7 @@ footer path{
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     font-family: "Medium";
     margin-top: 12px;
     max-width: 70%;
@@ -983,6 +1002,7 @@ footer path{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
 }
 
 .fish-grid-content li{
@@ -990,6 +1010,7 @@ footer path{
     font-family: "Medium";
     font-size: 12px;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #4A4C49;
 }
 
@@ -1158,6 +1179,7 @@ button {
     font-size: 16px;
     line-height: 1;
     letter-spacing: 1%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #2A2E28;
     background-color: #B6DB91;
     padding: 18px 32px 18px 32px;
@@ -1171,6 +1193,7 @@ a{
         font-size: 16px;
         line-height: 1;
         letter-spacing: 1%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         color: #2A2E28;
         background-color: #B6DB91;
         padding: 18px 32px 18px 32px;
@@ -1217,6 +1240,7 @@ button:active{
     font-size: 13px !important;
     line-height: 1.6 !important;
     letter-spacing: 1% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     text-align: left !important;
     opacity: 0.9 !important;
 }
@@ -1277,6 +1301,7 @@ body{
     font-size: 40px !important;
     line-height: 1.2 !important;
     letter-spacing: 1% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     max-width: 685px;
 }
 
@@ -1324,6 +1349,7 @@ body{
     text-align: center;
     font-size: 84px;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     line-height: 110%;
     margin-top: 54px;
 }
@@ -1340,6 +1366,7 @@ body{
     text-align: center;
     font-family: "Bold";
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     line-height: 1.1;
     font-size: 16px;
     margin-top: 28px;
@@ -1556,6 +1583,7 @@ body.modal-open {
     font-size: 24px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C;
     margin-left: 4px;
 }
@@ -1570,6 +1598,7 @@ body.modal-open {
     font-size: 13px !important;
     line-height: 1 !important;
     letter-spacing: 0% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C !important;
     margin-top: 20px;
     width: 100%;
@@ -1667,6 +1696,7 @@ body {
     font-size: 13px;
     line-height: 1.6;
     letter-spacing: 1%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     text-align: left;
     display: flex;
     gap: 10px;
@@ -1861,6 +1891,7 @@ textarea {
     font-size: 14px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     font-family: "Bold";
     color: #333;
     text-align: left;
@@ -1954,6 +1985,7 @@ textarea {
   padding: 6px 10px;
   text-transform: uppercase;
   letter-spacing: 2%;
+    letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
   line-height: 1.2;
   font-size: 12px;
   font-family: "Black";
@@ -2018,6 +2050,7 @@ textarea {
     font-size: 14px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #616260;
     text-align: left;
 }
@@ -2113,6 +2146,7 @@ textarea {
     line-height: 1.2;
     color: #4A4C49;
     letter-spacing: 0.1px;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     margin-top: 8px;
     margin-bottom: 2px;
 
@@ -2148,6 +2182,7 @@ textarea {
     font-size: 24px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C;
 }
 .sticky-container{
@@ -2161,6 +2196,7 @@ textarea {
     font-size: 15px !important;
     line-height: 1.3 !important;
     letter-spacing: 2% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C !important;
     margin-top: 8px !important;
     width: 100%;
@@ -2171,6 +2207,7 @@ textarea {
     font-size: 13px !important;
     line-height: 1 !important;
     letter-spacing: 0% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C !important;
     margin-top: 20px;
     width: 100%;
@@ -2218,6 +2255,7 @@ textarea {
 .form-container h3{
     font-size: 44px;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     line-height: 1.1;
     font-family: "Black";
     text-align: center;
@@ -2228,6 +2266,7 @@ textarea {
     font-size: 54px;
     font-family: "Black";
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     line-height: 1.1;
     color: #1D1F1C;
     margin-bottom: 48px;
@@ -2250,6 +2289,7 @@ textarea {
     font-size: 16px !important;
     line-height: 1.2 !important;
     letter-spacing: 2% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     text-transform: uppercase;
     color: #2C2E2C;
     width: 100%;
@@ -2267,6 +2307,7 @@ textarea {
     font-size: 17px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #545654;
     text-align: center;
     margin-bottom: 24px;
@@ -2426,6 +2467,7 @@ textarea {
     font-size: 24px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C;
 }
 .sticky-container{
@@ -2439,6 +2481,7 @@ textarea {
     font-size: 13px !important;
     line-height: 1 !important;
     letter-spacing: 0% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C !important;
     margin-top: 20px;
     width: 100%;
@@ -2492,6 +2535,7 @@ textarea {
     font-size: 24px;
     line-height: 1.3;
     letter-spacing: 2%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C;
 }
 .sticky-container{
@@ -2505,6 +2549,7 @@ textarea {
     font-size: 13px !important;
     line-height: 1 !important;
     letter-spacing: 0% !important;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #1D1F1C !important;
     margin-top: 20px;
     width: 100%;
@@ -2634,6 +2679,7 @@ textarea {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 3%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #fff;
     justify-content: flex-start;
 }
@@ -2847,6 +2893,7 @@ textarea {
         font-family: "Black";
         font-size: 19px;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         line-height: 1.1;
     }
 
@@ -2854,6 +2901,7 @@ textarea {
         font-family: "Medium";
         font-size: 12px;
         letter-spacing: 0%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         line-height: 1.3;
         color: #4A4C49;
         margin-top: 4px;
@@ -2874,6 +2922,7 @@ textarea {
         font-family: "Black";
         font-size: 19px;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         line-height: 1.1;
     }
 
@@ -2881,6 +2930,7 @@ textarea {
         font-family: "Medium";
         font-size: 12px;
         letter-spacing: 0%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         line-height: 1.3;
         color: #4A4C49;
         margin-top: 4px;
@@ -2963,6 +3013,7 @@ textarea {
         font-size: 32px;
         line-height: 1.1;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         margin-bottom: 0px;
     }
 
@@ -3021,6 +3072,7 @@ textarea {
         font-size: 28px;
         line-height: 1.1;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         color: #1D1F1C;
         margin-left: 16px;
     }
@@ -3039,6 +3091,7 @@ textarea {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 3%;
+      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     justify-content: flex-start;
 }
 
@@ -3190,6 +3243,7 @@ textarea {
     h3{
         font-size: 16px;
         letter-spacing: 3%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     }
     h4{
         font-size: 14px;
@@ -3323,6 +3377,7 @@ textarea {
         font-size: 28px;
         line-height: 1.1;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         color: #1D1F1C;
         margin-left: 16px;
     }
@@ -3501,6 +3556,7 @@ textarea {
         font-size: 16px;
         line-height: 1.3;
         letter-spacing: 2.5;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         margin-top: 15px;
     }
 
@@ -3620,6 +3676,7 @@ textarea {
         font-size: 28px;
         line-height: 1.1;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         margin-left: 20px;
         padding-top: 44px;
     }
@@ -3651,6 +3708,7 @@ textarea {
         font-size: 30px;
         line-height: 1.1;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         padding-top: 0px;
     }
 
@@ -3658,6 +3716,7 @@ textarea {
         font-size: 18px;
         line-height: 1.3;
         letter-spacing: 2.5%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         padding-top: 14px;
         padding-bottom: 28px;
     }
@@ -3722,6 +3781,7 @@ textarea {
         font-size: 26px;
         line-height: 1.1;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         padding-left: 8px;
     }
 
@@ -3788,6 +3848,7 @@ textarea {
         font-size: 30px;
         line-height: 1.1;
         letter-spacing: 2%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         text-align: center;
         padding-left: 0px;
     }
@@ -3865,6 +3926,7 @@ textarea {
         font-family: "Medium";
         font-size: 16px;
         letter-spacing: 1%;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         line-height: 1.5;
         color: #1D1F1C;
     }
@@ -4067,6 +4129,7 @@ textarea {
         font-size: 28px !important;
         line-height: 1.2 !important;
         letter-spacing: 1% !important;
+          letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         max-width: 685px;
         padding: 0px 16px;
     }
