@@ -4119,7 +4119,8 @@ textarea {
 
     .day-tour-hero{
         max-height: none;
-        padding: auto 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
 
 
