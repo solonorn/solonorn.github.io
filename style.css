@@ -1489,6 +1489,15 @@ body{
     width: 28vw;
     height: 97vh;
     object-fit: cover;
+    object-position: 31%;
+    position: fixed;
+}
+
+.modal-content video{
+    z-index: 1;
+    width: 28vw;
+    height: 97vh;
+    object-fit: cover;
     object-position: 28%;
     position: fixed;
 }
