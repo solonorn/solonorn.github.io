@@ -486,7 +486,7 @@ span{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding: 108px 108px;
+    padding: 5vw 10vw;
     flex-direction: column;
     gap: 68px;
 }
@@ -500,7 +500,6 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 348px;
 }
 
 .team-member-info{
@@ -512,6 +511,7 @@ span{
 .team-member p{
     font-size: 20px;
     margin-top: 24px;
+    text-align: center;
 }
 
 .team-member span{
@@ -2864,6 +2864,10 @@ textarea {
         padding-right: 5vw !important;
     }
 
+    .team-wildline{
+        padding: 5vw 5vw;
+    }
+
 
 
 
@@ -4184,6 +4188,7 @@ textarea {
 
     .team{
         flex-direction: column;
+        width: 100%;
     }
 
     .team-member-info{
@@ -4199,7 +4204,7 @@ textarea {
     }
 
     .team-member img{
-        width: 150px;
+        width: 40%;
     }
 
     .team-wildline h3{
