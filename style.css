@@ -1637,7 +1637,7 @@ body.modal-open {
 }
 
 .info-left{
-    margin-top: 32px;
+    margin-top: 20px;
     width: 45vw;
     height: auto;
     scroll-behavior: smooth;
