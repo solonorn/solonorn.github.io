@@ -120,11 +120,18 @@ option:disabled{
 
 /* header */
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    max-width: 1452px;
+}
+
 .header {
     display: flex;
   background-color: transparent;
   position: fixed;
-  justify-content: space-between;
+  justify-content: center;
   width: 100vw;
   z-index: 1000;
   overflow: hidden;
@@ -132,6 +139,7 @@ option:disabled{
   padding-left: 10vw;
   padding-right: 10vw;
 }
+
 
 
 
@@ -1291,6 +1299,9 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #2A2E28;
+    max-height: 1100px;
+    position: relative;
+    justify-content: center;
 }
 
 .about-hero{
@@ -1398,14 +1409,28 @@ body{
     position: relative;
     flex-direction: column;
     justify-content: flex-end;
-    width: 60vw;
+    width: 80vw;
     height: 100%;
-    padding-left: 10vw;
     padding-bottom: 12vh;
     box-sizing: border-box;
     background-image: url("");
     overflow: hidden;
     min-height: 827px;
+    max-width: 1452px;
+    overflow: visible;
+    padding-left: 0 !important;
+}
+
+.hero img{
+    position: absolute;
+background: url('img/hero-back.png') no-repeat center center;
+background-size: cover;
+z-index: 0;
+width: 64vw;
+height: 100vh;
+max-height: 1100px;
+left: 0;
+object-fit: cover;
 }
 
 .hero-left h2{
@@ -1562,6 +1587,12 @@ body.modal-open {
   width: 48vw;
   height: 100%;
   object-fit: cover;
+  position: ;
+}
+
+.hero-video{
+    position: absolute;
+    right: 0;
 }
 
 .video-insert-2{
@@ -1641,6 +1672,7 @@ body.modal-open {
     width: 45vw;
     height: auto;
     scroll-behavior: smooth;
+    max-width: 890px;
 }
 
 .hero-left button{
@@ -2839,6 +2871,10 @@ textarea {
 
 @media only screen and (max-width: 1250px) and (min-width: 880px) {
 
+    .hero-left{
+        width: 90vw !important;
+    }
+
     .info-left{
         width: 55vw!important;
     }
@@ -2875,6 +2911,19 @@ textarea {
 }
 
 @media only screen and (max-width: 910px){
+
+    .hero-video{
+        position: relative;
+    }
+
+    .hero{
+        overflow: hidden;
+    }
+
+    .hero img{
+        width: 100vw;
+    }
+
     .scroll-container{
         flex-direction: column;
 
