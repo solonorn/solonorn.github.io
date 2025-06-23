@@ -668,6 +668,11 @@ span{
     font-family: "Black";;
 }
 
+.thanks-staff{
+    position: relative !important;
+    width: 114px !important
+}
+
 .section-5 span{
     font-family: "Medium";
     letter-spacing: 2%;
@@ -4200,8 +4205,7 @@ textarea {
 
     .day-tour-hero{
         max-height: none;
-        padding-left: 4vw;
-        padding-right: 4vw;
+
     }
 
 
