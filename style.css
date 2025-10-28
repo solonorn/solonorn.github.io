@@ -1048,6 +1048,7 @@ footer path{
 .fish-card img {
     width: 40%;
     height: 108px;
+    max-width: 108px;
     object-fit: cover;
 }
 
