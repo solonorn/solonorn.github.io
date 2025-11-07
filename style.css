@@ -2568,7 +2568,18 @@ textarea {
   width: 41vw;
   height: 100%;
   object-fit: cover;
+  max-width: 800px;
 }
+
+
+@media only screen and (min-width: 2068px){
+    .hero-video{
+        margin-right: 15vw;
+    }
+
+}
+
+
 .sticky-cta-container{
     display: flex;
     flex-direction: column;
@@ -3648,12 +3659,13 @@ textarea {
     
     .fish-card{
         flex-direction: column;
-        width: 60% !important;
+        width: 50% !important;
     }
 
     .fish-card img{
         width: 100% !important;
         height: 100px;
+        max-width: none;
     }
 
     .fish-grid-content ul{
@@ -3665,11 +3677,11 @@ textarea {
     }
 
     .fish-card-2nd{
-        object-position: 0px -54px;
+        object-position: 0px 50%;
     }
 
     .fish-card-last{
-        object-position: 0px -86px;
+        object-position: 0px 79%;
     }
 
     .fish-grid-content{
@@ -4222,7 +4234,7 @@ textarea {
     }
 
     .video-insert{
-        min-height: 0px !important;
+        min-height: 600px !important;
     }
 
     .about-hero h1{
