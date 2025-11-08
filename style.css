@@ -2615,9 +2615,9 @@ textarea {
     margin-bottom: 12px;
 }
 
-.body-container p{
+.body-container-blog p{
+    margin-top: 28px;
     font-family: "Regular";
-    margin-top: 28px    d;
 }
 
 .sticky-cta-container{
