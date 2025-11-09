@@ -381,7 +381,7 @@ h1{
 
 .h1-h2{
     font-family: "Black";
-    font-size: 44px;
+    font-size: 46px;
     line-height: 1.1;
     letter-spacing: 2%;
       letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
@@ -4293,7 +4293,7 @@ textarea {
     }
 
     .h1-h2{
-        font-size: 26px;
+        font-size: 30px;
         margin-top: 12px !important;
     }
 
