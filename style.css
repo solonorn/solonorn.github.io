@@ -617,7 +617,7 @@ span{
     letter-spacing: 2%;
       letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     padding-left: 8px;
-    padding-top: 26px;
+    padding-top: 20px;
     padding-bottom: 54px;
 }
 
@@ -975,8 +975,8 @@ footer path{
 }
 
 .section-3 .gallery{
-    margin-top: 48px !important;
-    margin-bottom: 52px !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
 }
 
 .section-3 span{
@@ -986,7 +986,7 @@ footer path{
 
 .lodge-included{
     width: 100%;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .section-3 .gallery-2-bottom{
@@ -1683,7 +1683,7 @@ body.modal-open {
 }
 
 .info-left{
-    margin-top: 20px;
+    margin-top: 8px;
     width: 45vw;
     height: auto;
     scroll-behavior: smooth;
