@@ -2721,7 +2721,7 @@ textarea {
 .sticky-container{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 16px;
     box-sizing: border-box;
 }
 .span-2{
@@ -3036,6 +3036,10 @@ textarea {
 
     .team-wildline{
         padding: 5vw 5vw;
+    }
+
+    nav{
+        width: 90vw;
     }
 
 
