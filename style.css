@@ -1611,7 +1611,7 @@ body.modal-open {
 }
 
 .video-insert-2{
-    min-height: 0px;
+    min-height: none !important;
 }
 
 .sticky-cta-container{
@@ -4446,9 +4446,9 @@ textarea {
 
     .video-insert{
         height: 100%;
-        min-height: 100vh;
 
     }
+
 
     .day-tour-hero{
         justify-content: flex-start;
