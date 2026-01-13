@@ -4437,6 +4437,7 @@ textarea {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
         padding-top: 56px;
+        padding-bottom: 40px !important;
     }
 
     .section-6 h3{
@@ -4543,7 +4544,7 @@ textarea {
     }
 
     footer .menu{
-        margin-top: 40px;
+        margin-top: 0px;
         flex-direction: column;
     }
 
