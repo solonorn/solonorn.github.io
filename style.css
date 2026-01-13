@@ -3800,8 +3800,12 @@ textarea {
 
 @media only screen and (max-width: 720px){
 
+    .quote-img-section-top{
+        margin-top: -50px !important;
+    }
+
     .quote-img-section{
-        margin-top: -5px !important;
+        margin-top: -5px;
     }
 
     .section-8 span{
