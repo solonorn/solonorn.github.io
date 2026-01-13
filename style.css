@@ -3800,6 +3800,18 @@ textarea {
 
 @media only screen and (max-width: 720px){
 
+    .quote-img-section{
+        margin-top: -5px !important;
+    }
+
+    .section-8 span{
+        font-size: 14px;
+    }
+
+    .quote-text{
+        gap: 20px !important;
+    }
+
     .button-container{
         margin-top: 0px !important;
     }
