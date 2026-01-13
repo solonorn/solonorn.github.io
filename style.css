@@ -2945,7 +2945,7 @@ textarea {
     position: sticky;
     overflow: hidden;
     top: 105px;
-    min-width: 300px;
+    min-width: 320px;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.04);
 }
 }
@@ -3289,7 +3289,6 @@ textarea {
     .quotemobile-show{
         display: none !important;
     }
-
 
 
 
@@ -4904,13 +4903,27 @@ textarea {
         padding-right: 0vw;
     }
 
+}
+
+@media only screen and (max-height: 920px){
+
+    .hero{
+        min-height: 800px;
+    }
+
+    .h1-h2{
+        margin-top: 32px !important;
+    }
+
+    .h2-h3{
+        margin-top: 40px !important;
+    }
 
 }
 
 @media only screen and (max-height: 1000px){
 
-
-        .h1-h2{
+    .h1-h2{
         margin-top: 64px;
     }
 
