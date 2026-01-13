@@ -4945,6 +4945,7 @@ textarea {
 
     .h1-h2{
         margin-top: 64px;
+        line-height: 1;
     }
 
     .hero-left h4{
