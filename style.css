@@ -777,7 +777,7 @@ span{
 }
 
 .section-2 h2{
-    margin-top: 52px;
+    margin-top: 44px;
     font-size: 30px;
     line-height: 1.2;
     width: 450px;
@@ -1288,7 +1288,7 @@ footer .menu a{
     display: flex;
     justify-content: space-between;
     height: 492px;
-    margin-top: 52px;
+    margin-top: 48px;
     border-radius: 16px;
     overflow: hidden;
     position: relative;
