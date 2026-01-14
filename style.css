@@ -583,7 +583,7 @@ width: 50vw;
     font-size: 36px !important;
     font-family: "Loopy" !important;
     color: #519031;
-    -webkit-text-stroke: 0.2px #519031;
+    -webkit-text-stroke: 0.4px #519031;
     letter-spacing: 0px !important;
 }
 
@@ -703,7 +703,7 @@ span{
     margin-left: 0vw !important;
     letter-spacing: 0 !important;
     margin-top: 0px !important;
-    -webkit-text-stroke: 0.3px #BFC0BE !important;
+    -webkit-text-stroke: 0.55px #BFC0BE !important;
 }
 
 .white{
