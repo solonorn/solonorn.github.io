@@ -4905,7 +4905,7 @@ textarea {
 
 }
 
-@media only screen and (max-height: 920px){
+@media only screen and (max-height: 850px){
 
     .hero{
         min-height: 800px;
@@ -4916,7 +4916,7 @@ textarea {
     }
 
     .h2-h3{
-        margin-top: 40px !important;
+        margin-top: 44px !important;
         font-size: 16px !important;
         line-height: 14px !important;
     }
@@ -4930,11 +4930,11 @@ textarea {
     }
 
     .hero-left{
-        padding-bottom: 100px !important;
+        padding-bottom: 80px !important;
     }
 
     .button-container{
-        margin-top: 52px !important;
+        margin-top: 48px !important;
     }
 
 
