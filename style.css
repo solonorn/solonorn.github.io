@@ -448,8 +448,8 @@ width: 50vw;
 
 .h2-h3{
     font-family: "Bold";
-    font-size: 18px !important;
-    line-height: 18px !important;
+    font-size: 17px !important;
+    line-height: 17px !important;
     letter-spacing: 3% !important;
     color: #D4D5D3 !important;
     margin-top: 64px;
@@ -461,7 +461,7 @@ width: 50vw;
 }
 
 .price-loopy{
-    font-size: 26px !important;
+    font-size: 25px !important;
     font-family: "Loopy" !important;
     color: #B6DB91 !important;
     -webkit-text-stroke: 0.6px #B6DB91;
@@ -703,7 +703,7 @@ span{
     margin-left: 0vw !important;
     letter-spacing: 0 !important;
     margin-top: 0px !important;
-    -webkit-text-stroke: 0.55px #BFC0BE !important;
+    -webkit-text-stroke: 0.3px #BFC0BE !important;
 }
 
 .white{
@@ -4944,7 +4944,7 @@ textarea {
 @media only screen and (max-height: 1000px){
 
     .h1-h2{
-        margin-top: 64px;
+        margin-top: 84px;
         line-height: 1;
     }
 
@@ -4953,7 +4953,7 @@ textarea {
     }
 
     .button-container{
-        margin-top: 60px;
+        margin-top: 72px;
     }
 
     .h2-h3{
