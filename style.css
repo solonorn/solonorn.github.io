@@ -4126,7 +4126,7 @@ textarea {
         padding-left: 0;
         padding-top: 72px;
         align-items: center;
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
         z-index: 100;
         max-height: none;
     }
@@ -4930,11 +4930,11 @@ textarea {
     }
 
     .hero-left{
-        padding-bottom: 80px !important;
+        padding-bottom: 80px;
     }
 
     .button-container{
-        margin-top: 48px !important;
+        margin-top: 48px;
     }
 
 
