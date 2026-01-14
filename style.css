@@ -398,7 +398,7 @@ h1{
     letter-spacing: 2%;
       letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
-    margin-top: 9vh;
+    margin-top: 8vh;
     max-width: 760px;
     width: 50vw;
 }
@@ -4944,7 +4944,7 @@ textarea {
 @media only screen and (max-height: 1000px){
 
     .h1-h2{
-        margin-top: 84px;
+        margin-top: 80px;
         line-height: 1;
     }
 
