@@ -4230,6 +4230,7 @@ textarea {
         letter-spacing: 2.5;
           letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
         margin-top: 15px;
+        max-width: 270px !important;
     }
 
     .info-left{
