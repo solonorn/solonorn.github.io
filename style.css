@@ -3583,7 +3583,7 @@ textarea {
     .footer-row-3{
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -4386,7 +4386,7 @@ textarea {
     .section-4-right{
         width: 100%;
         flex-direction: row;
-        margin-bottom: 22px;
+        margin-bottom: 24px;
     }
 
     .section-4 img{
@@ -4595,7 +4595,7 @@ textarea {
     .footer-row-3{
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -4608,9 +4608,8 @@ textarea {
 
     .socials{
         padding-top: 32px;
-        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: 20px;
         margin-bottom: 32px;
         gap: 24px;
