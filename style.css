@@ -281,7 +281,7 @@ header svg{
   position: relative;
   user-select: none;
   margin-top: 9px;
-  margin-right: 12px;
+  margin-right: 9px;
   margin-bottom: 9px;
 }
 
@@ -4064,10 +4064,10 @@ textarea {
     }
 
     header svg{
-        transform: scale(0.88);
+        transform: scale(0.92);
         position: absolute;
-        margin-top: 5px;
-        margin-left: 6px;
+        margin-top: 3px;
+        margin-left: 5px;
     }
 
     header.scrolled{
