@@ -173,7 +173,7 @@ system from $1490 per person.">
                                                   <li><img class="package-icon" src="img/route.svg">One day round trip</li>
                                                   <li><img class="package-icon" src="img/dine.svg">Lunch & snacks</li>
                                               </ul>
-                                              <p class="price">From $790 per person</p>
+                                              <p class="price">From $890 per person</p>
                                           </div>
                                       </div>
                                   </label>
@@ -188,7 +188,7 @@ system from $1490 per person.">
                                                   <li><img class="package-icon" src="img/lodge.svg">1 night in lodge Lýsa</li>
                                                   <li><img class="package-icon" src="img/dine.svg">Breakfast, lunch, dinner</li>
                                               </ul>
-                                              <p class="price">From $1490 per person</p>
+                                              <p class="price">From $1790 per person</p>
                                           </div>
                                       </div>
                                   </label>
@@ -205,7 +205,7 @@ system from $1490 per person.">
                                                   <li><img class="package-icon" src="img/lodge.svg">2 nights in lodge Lýsa</li>
                                                   <li><img class="package-icon" src="img/dine.svg">Breakfast, lunch, dinner</li>
                                               </ul>
-                                              <p class="price">From $2490 per person</p>
+                                              <p class="price">From $2790 per person</p>
                                           </div>
                                       </div>
                                   </label>
@@ -234,7 +234,7 @@ system from $1490 per person.">
 
                           <!-- Calendar -->
                           <h2 class="form-head sub">When’s your trip?</h2>
-                          <span class="form-sub">Available June – September</span>
+                          <span class="form-sub">Available April – September</span>
                           <div id="inline-calendar"></div>
                           <input type="hidden" id="selected-date" name="trip-date" />
 
@@ -617,11 +617,11 @@ system from $1490 per person.">
               dateFormat: "Y-m-d",
               altInput: true,
               altFormat: "F j, Y",
-              defaultDate: "2025-06-01",
+              defaultDate: "2026-04-01",
               disable: [
                   function (date) {
                       const month = date.getMonth();
-                      return month < 5 || month > 8;
+                      return month < 3 || month > 8;
                   }
               ],
               onChange: function (selectedDates, dateStr) {
