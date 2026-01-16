@@ -1564,6 +1564,7 @@ body{
 .sub-h1-h2{
     line-height: 1.3 !important;
     margin-top: 40px !important;
+    mar
 }
 
 .about-hero h1{
@@ -3370,9 +3371,8 @@ textarea {
 @media only screen and (max-width: 910px){
 
     .section-7 h2{
-        font-size: 39px !important;
+        font-size: 39px;
     }
-
 
 
     .hero{
