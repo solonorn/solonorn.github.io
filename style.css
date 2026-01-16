@@ -3364,6 +3364,10 @@ textarea {
 
 @media only screen and (max-width: 910px){
 
+    .section-7 h2{
+        font-size: 39px !important;
+    }
+
 
 
     .hero{
