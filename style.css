@@ -1296,6 +1296,7 @@ footer .menu a{
 
 .gallery-row{
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
