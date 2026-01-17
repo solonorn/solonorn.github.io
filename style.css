@@ -3161,9 +3161,7 @@ textarea {
 
 @media only screen and (max-width: 990px) and (min-width: 720px) {
 
-    .gallery a{
-        width: 100%;
-    }
+
 
 
     .body-container{
@@ -3813,6 +3811,10 @@ textarea {
 }
 
 @media only screen and (max-width: 720px){
+
+        .gallery a{
+        width: 100%;
+    }
 
     .quote-img-section-top{
         margin-top: -55px !important;
