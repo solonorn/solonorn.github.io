@@ -429,6 +429,7 @@ h1{
     letter-spacing: 0 !important;
     margin-top: 0px !important;
     -webkit-text-stroke: 2px #DEAF68;
+    stroke-linejoin: round;
 }
 
 .black{
