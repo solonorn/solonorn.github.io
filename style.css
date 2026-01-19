@@ -468,6 +468,17 @@ width: 50vw;
     margin-bottom: 14px;
 }
 
+.h2-h3-mobile{
+    font-family: "Bold";
+    font-size: 15px !important;
+    line-height: 16px !important;
+    letter-spacing: 3% !important;
+    color: #D4D5D3 !important;
+    margin-top: 30px !important;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
 .h2-h3-2{
     margin-top: 44px;
 }
@@ -3166,8 +3177,16 @@ textarea {
     display: none !important;
 }
 
+.mobile-show-2{
+    display: none !important;
+}
+
 .desktop-show{
     display: flex !important;
+}
+
+.desktop-show-2{
+    display: inline-block;
 }
 
 .sticky-thumbs-down{
@@ -3964,7 +3983,15 @@ textarea {
         display: flex !important;
     }
 
+    .mobile-show-2{
+        display: inline-block !important;
+    }
+
     .desktop-show{
+        display: none !important;
+    }
+
+    .desktop-show-2{
         display: none !important;
     }
 
@@ -4011,7 +4038,7 @@ textarea {
     }
 
     .z-index{
-        margin-top: 16px;
+        margin-top: 12px;
         align-items: center;
         width: 100vw;
     }
@@ -4836,7 +4863,6 @@ textarea {
         margin-top: 40px !important;
         margin-bottom: 8px !important;
         line-height: 16px !important;
-        transform: translateY(-10px); !important;
     }
 
     .day-tour-h1{
