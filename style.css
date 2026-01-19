@@ -123,6 +123,11 @@ option:disabled{
     src: url(America/espiritu.otf) format("opentype");
     font-display: swap;                                                                                                                                                                                                                                                                                                                                                                                                                                   
 }
+@font-face {                                                                                                                                                                                                                                                                              
+    font-family:'Cassis';                                                                                                                                                                                                                                                                
+    src: url(America/Cassis-Black.otf) format("opentype");
+    font-display: swap;                                                                                                                                                                                                                                                                                                                                                                                                                                   
+}
 
 
 /* header */
@@ -355,6 +360,13 @@ header svg{
 
 }
 
+@media only screen and (max-width: 1159px){
+    .h1-h2{
+        margin-top: 6vh !important;
+    }
+}
+
+
 @media only screen and (min-width: 880px){
   .header li {
     float: left;
@@ -393,12 +405,11 @@ h1{
 
 .h1-h2{
     font-family: "Black";
-    font-size: 46px;
+    font-size: 68px;
+    letter-spacing: 1%;
     line-height: 1.1;
-    letter-spacing: 2%;
-      letter-spacing: 0.02em; /* Fallback for browsers that don't support % */
     color: #ffffff;
-    margin-top: 8vh;
+    margin-top: 13vh;
     max-width: 760px;
     width: 50vw;
 }
@@ -421,14 +432,13 @@ h1{
 }
 
 .h3-h1{
-    font-family: "Loopy";
-    font-size: clamp(140px, 13vw, 230px);
+    font-family: "Cassis";
+    text-transform: uppercase;
+    font-size: 78px;
     line-height: 1.1;
     color: #DEAF68 !important;
-    margin-left: -28px;
     letter-spacing: 0 !important;
     margin-top: 0px !important;
-    -webkit-text-stroke: 2px #DEAF68;
     stroke-linejoin: round;
 }
 
@@ -449,13 +459,19 @@ width: 50vw;
 
 .h2-h3{
     font-family: "Bold";
-    font-size: 17px !important;
-    line-height: 17px !important;
+    font-size: 18px !important;
+    line-height: 18px !important;
     letter-spacing: 3% !important;
     color: #D4D5D3 !important;
     margin-top: 64px;
     text-transform: uppercase;
+    margin-bottom: 14px;
 }
+
+.h2-h3-2{
+    margin-top: 44px;
+}
+
 
 .space-left{
     margin-left: 8px;
@@ -565,8 +581,9 @@ width: 50vw;
 }
 
 .loopy-on-dark{
-    color: #B6DB91 !important;
-    -webkit-text-stroke: 0.3px #B6DB91 !important;
+    color: #DEAF68 !important;
+    -webkit-text-stroke: 0.3px #DEAF68 !important;
+    opacity: 1 !important;
 }
 
 
@@ -697,12 +714,11 @@ span{
 }
 
 .loopy-date{
-    margin-bottom: 5vh !important;
+    margin-bottom: 3.5vh !important;
     font-family: "Loopy" !important;
     font-size: 34px !important;
     line-height: 1.1 !important;
     color: #BFC0BE !important;
-    margin-left: 0vw !important;
     letter-spacing: 0 !important;
     margin-top: 0px !important;
     -webkit-text-stroke: 0.3px #BFC0BE !important;
@@ -1512,7 +1528,13 @@ button:active{
 
 .button-container{
     display: flex;
-    margin-top: 84px;
+    margin-top: 68px;
+    z-index: 1;
+}
+
+.button-container-2{
+    display: flex;
+    margin-top: 56px;
     z-index: 1;
 }
 
@@ -1563,7 +1585,7 @@ body{
 .sub-h1-h2{
     line-height: 1.3 !important;
     margin-top: 40px !important;
-    mar
+    font-size: 22px !important;
 }
 
 .about-hero h1{
@@ -1665,11 +1687,11 @@ body{
     justify-content: flex-end;
     width: 90vw;
     height: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 8vh;
     box-sizing: border-box;
     background-image: url("");
     overflow: hidden;
-    min-height: 800px;
+    min-height: 730px;
     max-width: 1780px;
     overflow: visible;
     padding-left: 0 !important;
@@ -1935,7 +1957,7 @@ body.modal-open {
 }
 
 .hero-left button{
-    padding: 19px 32px 19px 32px;
+    padding: 19px 36px 19px 36px;
 }
 
 .mail-container{
@@ -3810,6 +3832,12 @@ textarea {
 
 @media only screen and (max-width: 720px){
 
+    .loopy-date{
+        font-size: 27px !important;
+        -webkit-text-stroke: 0.2px #BFC0BE !important;
+        margin-bottom: 12px !important;
+    }
+
         .gallery a{
         width: 100%;
     }
@@ -3973,6 +4001,7 @@ textarea {
         margin-top: 0 !important;
         z-index: 1;
         margin-left: 0px;
+        margin-bottom: 0px;
         transform: translateY(26px);
     }
 
@@ -4144,6 +4173,7 @@ textarea {
         padding-bottom: 0 !important;
         z-index: 100;
         max-height: none;
+        padding-top: 64px !important;
     }
 
         .hero-center{
@@ -4562,7 +4592,12 @@ textarea {
         padding-bottom: 24px;
         padding-left: 0px;
         font-size: 28px;
-        -webkit-text-stroke: 0.3px #B6DB91 !important;
+        -webkit-text-stroke: 0.3px #B6DB91;
+    }
+
+    .loopy-on-dark{
+        -webkit-text-stroke: 0.3px #DEAF68 !important;
+
     }
 
     .section-7 .button-container button:nth-child(1){
@@ -4784,13 +4819,12 @@ textarea {
     }
 
     .h3-h1{
-        font-size: 25vw;
+        font-size: 13vw !important;
         margin: 0px !important;
-        -webkit-text-stroke: 1.5px #DEAF68;
     }
 
     .h1-h2{
-        font-size: 7.1vw;
+        font-size: 9vw !important;
         margin-top: 28px !important;
         width: 90vw;
         line-height: 1.1 !important;
@@ -4799,7 +4833,7 @@ textarea {
     .h2-h3{
 
         font-size: 15px !important;
-        margin-top: 34px !important;
+        margin-top: 40px !important;
         margin-bottom: 8px !important;
         line-height: 16px !important;
         transform: translateY(-10px); !important;
@@ -4923,24 +4957,51 @@ textarea {
 
 }
 
-@media only screen and (max-height: 850px){
+@media only screen and (max-height: 890px){
+
+    .h1-h2{
+        margin-top: 12vh;
+        font-size: 56px;
+        max-width: 630px;
+    }
 
     .hero{
-        min-height: 800px;
+        min-height: 860px;
+    }
+
+    .button-container{
+        margin-top: 56px;
+    }
+
+    .h3-h1{
+        font-size: 74px;
+    }
+
+}
+
+@media only screen and (max-height: 800px){
+
+    .hero{
+        min-height: 700px;
+        justify-content: ;
     }
 
     .h1-h2{
-        margin-top: 28px !important;
+        
+        font-size: 44px;
+        max-width: 730px;
+        margin-top: 11vh;
     }
 
     .h2-h3{
         margin-top: 44px !important;
-        font-size: 16px !important;
-        line-height: 14px !important;
+        font-size: 18px !important;
+        line-height: 19px !important;
+        margin-bottom: 28px;
     }
 
     .hero-left h4{
-        margin-bottom: 32px !important;
+        margin-bottom: 20px !important;
     }
 
     .price-loopy{
@@ -4948,21 +5009,49 @@ textarea {
     }
 
     .hero-left{
-        padding-bottom: 68px;
+        padding-top: 112px;
+        min-height: 700px;
     }
 
     .button-container{
-        margin-top: 48px;
+        margin-top: 36px;
+    }
+
+    .h3-h1{
+        font-size: 69px;
+    }
+
+    .loopy-date{
+        font-size: 30px !important;
     }
 
 
 
 }
 
+@media only screen and (max-height: 690px){
+
+    .hero-left{
+        justify-content: flex-start;
+        min-height: 670px;
+    }
+
+    .hero{
+        min-height: 670px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px){
+    .h1-h2{
+        font-size: 48px;
+    }
+}
+
 @media only screen and (max-height: 1000px){
 
     .h1-h2{
-        margin-top: 80px;
         line-height: 1.1;
     }
 
@@ -4970,12 +5059,8 @@ textarea {
         margin-bottom: 40px;
     }
 
-    .button-container{
-        margin-top: 72px;
-    }
-
     .h2-h3{
-        margin-top: 56px;
+        margin-top: 64px;
     }
 
 }
@@ -4998,7 +5083,6 @@ textarea {
     }
 
     .about-hero{
-        justify-content: flex-start;
         padding-top: 100px;
         height: 100%;
     }
