@@ -3853,6 +3853,14 @@ textarea {
 
 @media only screen and (max-width: 720px){
 
+    .sub-h4{
+        text-align: center !important;
+    }
+
+    .h4-alt{
+        text-align: center !important;
+    }
+
     .loopy-date{
         font-size: 27px !important;
         -webkit-text-stroke: 0.2px #BFC0BE !important;
@@ -4882,6 +4890,7 @@ textarea {
     .day-tour-h2{
         font-size: 18px !important;
         padding: 0px 20px;
+        text-align: center !important;
     }
 
     .day-tour-included{
@@ -4904,7 +4913,7 @@ textarea {
 
 
     .day-tour-button{
-        width: 60vw;
+        width: 60vw !important;
     }
 
 
