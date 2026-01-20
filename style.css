@@ -4321,7 +4321,7 @@ textarea {
     }
 
     .info-left{
-        margin-top: 32px;
+        margin-top: 28px;
     }
     
     .fish-card{
@@ -4499,9 +4499,7 @@ textarea {
 
     .section-5 a{
         margin-top: 28px;
-        width: 60%;
-        transform: translateX(-50%);
-        margin-left: 50%;
+        width: 140px;
         font-size: 15px;
     }
 
