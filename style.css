@@ -4041,7 +4041,7 @@ textarea {
     .button-container{
         margin-top: 0 !important;
         z-index: 1;
-        margin-left: -8px;
+        margin-left: -6px;
         margin-bottom: 0px;
         transform: translateY(28px);
         width: 94vw;
@@ -4078,7 +4078,7 @@ textarea {
     }
 
     .button-container a{
-        width: 55vw;
+        width: 51vw;
         margin-right: 12px;
         box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
         padding: 20px 32px 20px 32px !important;
