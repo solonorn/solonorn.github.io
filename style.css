@@ -410,7 +410,7 @@ h1{
     line-height: 1.1;
     color: #ffffff;
     margin-top: 14vh;
-    max-width: 720px;
+    max-width: 610px;
     width: 50vw;
 }
 
@@ -4041,10 +4041,10 @@ textarea {
     .button-container{
         margin-top: 0 !important;
         z-index: 1;
-        margin-left: 0px;
+        margin-left: -8px;
         margin-bottom: 0px;
-        transform: translateY(26px);
-        width: 92vw;
+        transform: translateY(28px);
+        width: 94vw;
     }
 
     .button-container button{
@@ -4055,8 +4055,9 @@ textarea {
 
     .z-index{
         margin-top: 18px;
-        align-items: center;
+        align-items: start;
         width: 100vw;
+        margin-left: 10vw;
     }
     .button-container{
         display: flex;
@@ -4077,7 +4078,7 @@ textarea {
     }
 
     .button-container a{
-        width: 50vw;
+        width: 55vw;
         margin-right: 12px;
         box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
         padding: 20px 32px 20px 32px !important;
@@ -4866,8 +4867,8 @@ textarea {
 
     .h1-h2{
         font-size: 8vw !important;
-        margin-top: 16px !important;
-        width: 90vw;
+        margin-top: 20px !important;
+        width: 78vw;
         line-height: 1.1 !important;
         letter-spacing: 1.5% !important;
         text-align: left !important;
